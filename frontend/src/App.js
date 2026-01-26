@@ -14,6 +14,7 @@ import { Contact } from "./components/Contact";
 import { Footer } from "./components/Footer";
 import { Toaster } from "./components/ui/sonner";
 import ProductPage from "./pages/ProductPage";
+import MobileAppPage from "./pages/MobileAppPage";
 
 const Home = () => {
   return (
@@ -40,6 +41,7 @@ function App() {
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/products" element={<ProductPage />} />
+          <Route path="/mobile-app" element={<MobileAppPage />} />
         </Routes>
       </BrowserRouter>
       <Toaster />
