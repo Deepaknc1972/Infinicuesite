@@ -34,7 +34,7 @@ export const Features = () => {
             return (
               <Card 
                 key={feature.id} 
-                className="bg-gray-900/50 border-gray-800 hover:border-emerald-500/50 transition-all duration-300 overflow-hidden group cursor-pointer"
+                className="glass overflow-hidden group cursor-pointer hover:scale-105"
                 style={{ animationDelay: `${index * 0.1}s` }}
               >
                 <div className="relative h-48 overflow-hidden">
