@@ -49,7 +49,7 @@ export const AboutUs = () => {
             </div>
 
             {/* Floating Cards */}
-            <div className="absolute -bottom-8 -left-8 bg-gray-900 border border-emerald-500/30 rounded-xl p-6 backdrop-blur-xl">
+            <div className="absolute -bottom-8 -left-8 glass-strong rounded-xl p-6">
               <Shield className="text-emerald-400 mb-2" size={32} />
               <div className="text-2xl font-bold text-white">500+</div>
               <div className="text-sm text-gray-400">Protected Organizations</div>
