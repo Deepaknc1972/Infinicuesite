@@ -32,7 +32,7 @@ export const Testimonials = () => {
           {testimonials.map((testimonial, index) => (
             <Card 
               key={testimonial.id}
-              className="bg-gray-900/50 backdrop-blur border-gray-800 hover:border-emerald-500/50 transition-all duration-300 group"
+              className="glass group hover:scale-105"
               style={{ animationDelay: `${index * 0.1}s` }}
             >
               <CardContent className="p-8 relative">
