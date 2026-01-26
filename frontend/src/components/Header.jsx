@@ -100,7 +100,7 @@ export const Header = () => {
               Hardware
             </button>
             <button onClick={() => { navigate('/mobile-app'); setMobileMenuOpen(false); }} className="block w-full text-left text-gray-300 hover:text-emerald-400 transition-colors py-2">
-              Mobile App
+              Solution
             </button>
             <button onClick={() => scrollToSection('pricing')} className="block w-full text-left text-gray-300 hover:text-emerald-400 transition-colors py-2">
               Pricing
