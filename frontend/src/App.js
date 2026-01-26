@@ -5,6 +5,7 @@ import { Header } from "./components/Header";
 import { Hero } from "./components/Hero";
 import { AboutUs } from "./components/AboutUs";
 import { HowItWorks } from "./components/HowItWorks";
+import { ThreatsPrevented } from "./components/ThreatsPrevented";
 import { Features } from "./components/Features";
 import { Products } from "./components/Products";
 import { Pricing } from "./components/Pricing";
@@ -20,6 +21,7 @@ const Home = () => {
       <Hero />
       <AboutUs />
       <HowItWorks />
+      <ThreatsPrevented />
       <Features />
       <Products />
       <Pricing />
