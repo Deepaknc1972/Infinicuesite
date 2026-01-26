@@ -185,7 +185,7 @@ export const mockData = {
       name: "Sarah Johnson",
       role: "Chief Security Officer",
       company: "TechCorp Global",
-      content: "SEC@R has transformed our security posture. Real-time consent management and automated threat detection have reduced our incident response time by 85%.",
+      content: "SEC@R's consent-first approach is revolutionary. Even when our data was compromised in a breach, the attackers couldn't use it. Multi-device authentication saved us millions.",
       rating: 5,
       avatar: "SJ"
     },
@@ -194,7 +194,7 @@ export const mockData = {
       name: "Michael Chen",
       role: "VP of IT Security",
       company: "FinanceSecure Inc",
-      content: "Infinicue Solutions doesn't just provide software; they provide peace of mind. The fraud detection capabilities are unmatched in the industry.",
+      content: "Transaction blocking without Data Principal consent has eliminated our fraud losses. SEC@R doesn't just detect threats - it makes stolen data completely worthless.",
       rating: 5,
       avatar: "MC"
     },
@@ -203,7 +203,7 @@ export const mockData = {
       name: "Emily Rodriguez",
       role: "Compliance Director",
       company: "HealthData Systems",
-      content: "Compliance automation has saved us countless hours. SEC@R makes GDPR and CCPA compliance effortless with automatic reporting and documentation.",
+      content: "The consent-first architecture gives us peace of mind. We know that even if attackers breach our systems, they cannot activate patient data without proper authentication.",
       rating: 5,
       avatar: "ER"
     },
@@ -212,7 +212,7 @@ export const mockData = {
       name: "David Park",
       role: "CTO",
       company: "CloudVentures",
-      content: "The integration was seamless, and the results were immediate. We've prevented multiple data breaches since implementing SEC@R six months ago.",
+      content: "Multi-device layer authentication has transformed our security posture. We've had zero unauthorized data activations since implementing SEC@R. It's truly theft-proof.",
       rating: 5,
       avatar: "DP"
     }
