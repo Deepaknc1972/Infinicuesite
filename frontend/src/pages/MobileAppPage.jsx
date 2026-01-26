@@ -450,6 +450,99 @@ const MobileAppPage = () => {
         </div>
       </section>
 
+      {/* API Architecture Section */}
+      <section className="py-24 bg-black">
+        <div className="container mx-auto px-6">
+          <div className="text-center mb-16">
+            <h2 className="text-sm font-semibold text-emerald-400 uppercase tracking-wider mb-4">API Architecture</h2>
+            <h3 className="text-4xl md:text-5xl font-bold text-white mb-6">
+              Enterprise-Grade REST APIs
+            </h3>
+            <p className="text-xl text-gray-400 max-w-3xl mx-auto">
+              Secure, scalable, and easy-to-integrate APIs designed for seamless connectivity with any authority or institution.
+            </p>
+          </div>
+
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mb-12">
+            <Card className="bg-gray-900/50 border-gray-800">
+              <CardContent className="p-6 text-center">
+                <div className="w-16 h-16 mx-auto mb-4 bg-emerald-500/20 rounded-2xl flex items-center justify-center">
+                  <Shield className="text-emerald-400" size={32} />
+                </div>
+                <h4 className="text-white font-bold mb-2">Secure</h4>
+                <p className="text-gray-400 text-sm">OAuth 2.0, mTLS, end-to-end encryption</p>
+              </CardContent>
+            </Card>
+
+            <Card className="bg-gray-900/50 border-gray-800">
+              <CardContent className="p-6 text-center">
+                <div className="w-16 h-16 mx-auto mb-4 bg-emerald-500/20 rounded-2xl flex items-center justify-center">
+                  <Zap className="text-emerald-400" size={32} />
+                </div>
+                <h4 className="text-white font-bold mb-2">Fast</h4>
+                <p className="text-gray-400 text-sm">Sub-100ms latency, real-time webhooks</p>
+              </CardContent>
+            </Card>
+
+            <Card className="bg-gray-900/50 border-gray-800">
+              <CardContent className="p-6 text-center">
+                <div className="w-16 h-16 mx-auto mb-4 bg-emerald-500/20 rounded-2xl flex items-center justify-center">
+                  <Server className="text-emerald-400" size={32} />
+                </div>
+                <h4 className="text-white font-bold mb-2">Scalable</h4>
+                <p className="text-gray-400 text-sm">Handles millions of requests per day</p>
+              </CardContent>
+            </Card>
+
+            <Card className="bg-gray-900/50 border-gray-800">
+              <CardContent className="p-6 text-center">
+                <div className="w-16 h-16 mx-auto mb-4 bg-emerald-500/20 rounded-2xl flex items-center justify-center">
+                  <FileCheck className="text-emerald-400" size={32} />
+                </div>
+                <h4 className="text-white font-bold mb-2">Documented</h4>
+                <p className="text-gray-400 text-sm">Comprehensive API docs & SDKs</p>
+              </CardContent>
+            </Card>
+          </div>
+
+          <Card className="bg-gradient-to-r from-gray-900/50 to-gray-800/50 border-emerald-500/30">
+            <CardContent className="p-8">
+              <h4 className="text-2xl font-bold text-white mb-6">Key API Endpoints</h4>
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+                <div className="space-y-3">
+                  <div className="bg-black/40 rounded-lg p-4 border border-gray-800">
+                    <code className="text-emerald-400 text-sm">POST /api/consent/request</code>
+                    <p className="text-gray-400 text-xs mt-2">Initiate consent verification request</p>
+                  </div>
+                  <div className="bg-black/40 rounded-lg p-4 border border-gray-800">
+                    <code className="text-emerald-400 text-sm">GET /api/consent/status</code>
+                    <p className="text-gray-400 text-xs mt-2">Check consent verification status</p>
+                  </div>
+                  <div className="bg-black/40 rounded-lg p-4 border border-gray-800">
+                    <code className="text-emerald-400 text-sm">POST /api/device/verify</code>
+                    <p className="text-gray-400 text-xs mt-2">Verify device authenticity and health</p>
+                  </div>
+                </div>
+                <div className="space-y-3">
+                  <div className="bg-black/40 rounded-lg p-4 border border-gray-800">
+                    <code className="text-emerald-400 text-sm">POST /api/transaction/authorize</code>
+                    <p className="text-gray-400 text-xs mt-2">Request transaction authorization</p>
+                  </div>
+                  <div className="bg-black/40 rounded-lg p-4 border border-gray-800">
+                    <code className="text-emerald-400 text-sm">POST /api/identity/verify</code>
+                    <p className="text-gray-400 text-xs mt-2">Verify Data Principal identity</p>
+                  </div>
+                  <div className="bg-black/40 rounded-lg p-4 border border-gray-800">
+                    <code className="text-emerald-400 text-sm">POST /api/webhook/register</code>
+                    <p className="text-gray-400 text-xs mt-2">Register webhook for real-time events</p>
+                  </div>
+                </div>
+              </div>
+            </CardContent>
+          </Card>
+        </div>
+      </section>
+
       {/* Integrations Section */}
       <section className="py-24 bg-gray-950">
         <div className="container mx-auto px-6">
