@@ -57,7 +57,7 @@ export const Contact = () => {
         <div className="grid grid-cols-1 lg:grid-cols-3 gap-8 max-w-6xl mx-auto">
           {/* Contact Info Cards */}
           <div className="space-y-6">
-            <Card className="bg-gray-900/50 border-gray-800 hover:border-emerald-500/50 transition-all duration-300">
+            <Card className="glass hover:scale-105">
               <CardContent className="p-6 flex items-start space-x-4">
                 <div className="w-12 h-12 bg-emerald-500/20 rounded-lg flex items-center justify-center flex-shrink-0">
                   <Mail className="text-emerald-400" size={24} />
@@ -71,7 +71,7 @@ export const Contact = () => {
               </CardContent>
             </Card>
 
-            <Card className="bg-gray-900/50 border-gray-800 hover:border-emerald-500/50 transition-all duration-300">
+            <Card className="glass hover:scale-105">
               <CardContent className="p-6 flex items-start space-x-4">
                 <div className="w-12 h-12 bg-emerald-500/20 rounded-lg flex items-center justify-center flex-shrink-0">
                   <Phone className="text-emerald-400" size={24} />
@@ -85,7 +85,7 @@ export const Contact = () => {
               </CardContent>
             </Card>
 
-            <Card className="bg-gray-900/50 border-gray-800 hover:border-emerald-500/50 transition-all duration-300">
+            <Card className="glass hover:scale-105">
               <CardContent className="p-6 flex items-start space-x-4">
                 <div className="w-12 h-12 bg-emerald-500/20 rounded-lg flex items-center justify-center flex-shrink-0">
                   <MapPin className="text-emerald-400" size={24} />
