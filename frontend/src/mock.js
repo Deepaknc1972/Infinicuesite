@@ -126,15 +126,16 @@ export const mockData = {
     {
       id: 1,
       name: "Starter",
-      price: "$499",
+      price: "$999",
       period: "/month",
       description: "Perfect for small businesses",
       features: [
-        "Up to 50 users",
-        "Basic threat detection",
-        "Consent management",
+        "Up to 1,000 Data Principals",
+        "Basic consent verification",
+        "Transaction blocking",
         "Email support",
-        "Monthly reports"
+        "Monthly compliance reports",
+        "Cloud deployment"
       ],
       cta: "Start Free Trial",
       popular: false
@@ -142,16 +143,17 @@ export const mockData = {
     {
       id: 2,
       name: "Business",
-      price: "$1,999",
+      price: "$3,999",
       period: "/month",
       description: "For growing companies",
       features: [
-        "Up to 500 users",
-        "Advanced AI detection",
-        "Real-time monitoring",
+        "Up to 10,000 Data Principals",
+        "Multi-device authentication",
+        "Real-time consent monitoring",
         "Priority support",
         "Weekly reports",
-        "Custom integrations"
+        "Custom integrations",
+        "Advanced analytics"
       ],
       cta: "Start Free Trial",
       popular: true
@@ -163,13 +165,14 @@ export const mockData = {
       period: "",
       description: "For large organizations",
       features: [
-        "Unlimited users",
+        "Unlimited Data Principals",
         "Full platform access",
-        "Dedicated team",
-        "24/7 support",
+        "Dedicated security team",
+        "24/7 authentication support",
         "Daily reports",
         "On-premise option",
-        "SLA guarantee"
+        "SLA guarantee",
+        "Custom consent workflows"
       ],
       cta: "Contact Sales",
       popular: false
