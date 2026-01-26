@@ -20,7 +20,7 @@ export const AboutUs = () => {
               {aboutUs.description}
             </p>
 
-            <div className="bg-gradient-to-r from-emerald-500/10 to-teal-500/10 border border-emerald-500/20 rounded-2xl p-6">
+            <div className="glass-emerald rounded-2xl p-6">
               <p className="text-lg text-gray-300 italic">
                 {aboutUs.mission}
               </p>
@@ -29,9 +29,9 @@ export const AboutUs = () => {
             {/* Stats Grid */}
             <div className="grid grid-cols-2 gap-6 pt-8">
               {aboutUs.stats.map((stat, index) => (
-                <div key={index} className="bg-gray-900/50 backdrop-blur border border-gray-800 rounded-xl p-6 hover:border-emerald-500/50 transition-all duration-300">
+                <div key={index} className="glass rounded-xl p-6 hover:scale-105 transition-all duration-300">
                   <div className="text-3xl font-bold text-emerald-400 mb-2">{stat.value}</div>
-                  <div className="text-sm text-gray-500">{stat.label}</div>
+                  <div className="text-sm text-gray-400">{stat.label}</div>
                 </div>
               ))}
             </div>
