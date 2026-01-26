@@ -100,8 +100,8 @@ export const ThreatsPrevented = () => {
 
         {/* Bottom Highlight */}
         <div className="max-w-5xl mx-auto">
-          <Card className="bg-gradient-to-r from-red-500/10 via-emerald-500/10 to-red-500/10 border-emerald-500/30">
-            <CardContent className="p-8">
+          <Card className="glass-emerald">
+            <CardContent className="p-12 text-center">
               <div className="grid md:grid-cols-2 gap-8">
                 <div>
                   <h4 className="text-xl font-bold text-white mb-3 flex items-center">
