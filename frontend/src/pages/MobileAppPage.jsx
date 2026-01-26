@@ -395,10 +395,11 @@ const MobileAppPage = () => {
           <div className="text-center mb-16">
             <h2 className="text-sm font-semibold text-emerald-400 uppercase tracking-wider mb-4">Backend Architecture</h2>
             <h3 className="text-4xl md:text-5xl font-bold text-white mb-6">
-              Intelligent Decision Engine
+              Intelligent Decision Engine with API Gateway
             </h3>
             <p className="text-xl text-gray-400 max-w-3xl mx-auto">
-              The SEC@R backend processes all signals from the mobile app to make instant, intelligent consent decisions.
+              The SEC@R backend processes signals from mobile apps and smart hardware, makes instant consent decisions, 
+              and communicates with integrated authorities through secure API connections.
             </p>
           </div>
 
