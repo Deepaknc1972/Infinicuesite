@@ -3,6 +3,35 @@ html {
     scroll-behavior: smooth;
 }
 
+/* Glassmorphism Utility Classes */
+.glass {
+    background: rgba(255, 255, 255, 0.05);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.glass-strong {
+    background: rgba(255, 255, 255, 0.08);
+    backdrop-filter: blur(24px);
+    -webkit-backdrop-filter: blur(24px);
+    border: 1px solid rgba(255, 255, 255, 0.15);
+}
+
+.glass-dark {
+    background: rgba(0, 0, 0, 0.4);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+    border: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.glass-emerald {
+    background: rgba(16, 185, 129, 0.1);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+    border: 1px solid rgba(16, 185, 129, 0.3);
+}
+
 /* Custom Animations */
 @keyframes fade-in {
     from {
@@ -35,6 +64,15 @@ html {
     }
 }
 
+@keyframes glass-shimmer {
+    0% {
+        background-position: -1000px 0;
+    }
+    100% {
+        background-position: 1000px 0;
+    }
+}
+
 .animate-fade-in {
     animation: fade-in 0.8s ease-out forwards;
 }
@@ -49,7 +87,14 @@ html {
 
 /* Hover Effects */
 button, a {
-    transition: color 0.3s ease, background-color 0.3s ease, border-color 0.3s ease, transform 0.2s ease;
+    transition: all 0.3s ease;
+}
+
+.glass:hover {
+    background: rgba(255, 255, 255, 0.08);
+    border-color: rgba(16, 185, 129, 0.4);
+    transform: translateY(-2px);
+    box-shadow: 0 8px 32px rgba(16, 185, 129, 0.15);
 }
 
 /* Custom Scrollbar */
@@ -58,25 +103,28 @@ button, a {
 }
 
 ::-webkit-scrollbar-track {
-    background: #000;
+    background: rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(10px);
 }
 
 ::-webkit-scrollbar-thumb {
-    background: #10b981;
+    background: rgba(16, 185, 129, 0.5);
+    backdrop-filter: blur(10px);
     border-radius: 5px;
 }
 
 ::-webkit-scrollbar-thumb:hover {
-    background: #059669;
+    background: rgba(16, 185, 129, 0.8);
 }
 
 /* Selection Color */
 ::selection {
-    background-color: #10b981;
-    color: #000;
+    background-color: rgba(16, 185, 129, 0.3);
+    color: #fff;
+    backdrop-filter: blur(10px);
 }
 
 ::-moz-selection {
-    background-color: #10b981;
-    color: #000;
+    background-color: rgba(16, 185, 129, 0.3);
+    color: #fff;
 }
