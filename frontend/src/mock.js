@@ -10,7 +10,7 @@ export const mockData = {
   
   hero: {
     title: "Make Stolen Data Worthless with Consent-First Security",
-    subtitle: "SEC@R prevents the utility of stolen data by requiring multi-device layer authentication before data activation. No consent from the Data Principal? No transaction. It's that simple.",
+    subtitle: "SEC@R prevents impersonation, synthetic identity fraud, phishing, SIM swap, SS7 attacks, and BIN attacks by requiring multi-device layer authentication before data activation. Protect your bank and customers from PII misuse - no consent from the Data Principal means no transaction.",
     cta: "Get Started",
     secondaryCta: "Watch Demo",
     image: "https://images.unsplash.com/photo-1550751827-4bd374c3f58b?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NTY2NzZ8MHwxfHNlYXJjaHwxfHxjeWJlcnNlY3VyaXR5fGVufDB8fHx8MTc2OTQwOTI0MXww&ixlib=rb-4.1.0&q=85"
