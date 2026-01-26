@@ -99,7 +99,7 @@ export const Contact = () => {
           </div>
 
           {/* Contact Form */}
-          <Card className="lg:col-span-2 bg-gray-900/50 border-gray-800">
+          <Card className="lg:col-span-2 glass-strong">
             <CardHeader>
               <CardTitle className="text-2xl text-white">Send us a Message</CardTitle>
             </CardHeader>
