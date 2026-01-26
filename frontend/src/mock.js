@@ -18,13 +18,13 @@ export const mockData = {
 
   aboutUs: {
     title: "About Infinicue Solutions",
-    description: "We are pioneers in cybersecurity, specializing in consent control and fraud mitigation. Our SEC@R platform empowers businesses to take control of their digital security with real-time consent management, automated threat detection, and comprehensive data protection.",
-    mission: "Our mission is to simplify complex security challenges, automate protection mechanisms, and resolve threats before they impact your business.",
+    description: "We've revolutionized data security with SEC@R - a consent-first platform that makes stolen data worthless. By requiring multi-device layer authentication to identify the Data Principal before any data activation, we ensure that even if data is stolen, it cannot be used. Our approach shifts security from prevention to utility denial.",
+    mission: "Our mission is to eliminate the value of stolen data through consent-first architecture, making data breaches economically pointless for cybercriminals.",
     stats: [
       { value: "500+", label: "Enterprise Clients" },
-      { value: "99.9%", label: "Uptime Guarantee" },
-      { value: "24/7", label: "Security Monitoring" },
-      { value: "<1s", label: "Response Time" }
+      { value: "99.9%", label: "Authentication Success" },
+      { value: "0", label: "Unauthorized Activations" },
+      { value: "<1s", label: "Consent Verification" }
     ],
     image: "https://images.unsplash.com/photo-1548092372-0d1bd40894a3?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjA1OTV8MHwxfHNlYXJjaHwxfHxkYXRhJTIwc2VjdXJpdHl8ZW58MHx8fHwxNzY5NDA5MjUyfDA&ixlib=rb-4.1.0&q=85"
   },
