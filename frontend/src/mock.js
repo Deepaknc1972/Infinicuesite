@@ -78,41 +78,46 @@ export const mockData = {
     {
       id: 1,
       name: "SEC@R Enterprise",
-      description: "Complete enterprise solution for large organizations",
+      description: "Complete consent-first security for large organizations",
       features: [
-        "Unlimited users and devices",
-        "Advanced AI threat detection",
-        "Custom compliance frameworks",
+        "Unlimited Data Principals",
+        "Multi-device layer authentication",
+        "Custom consent workflows",
         "Dedicated security team",
-        "24/7 premium support",
-        "On-premise deployment option"
+        "24/7 authentication monitoring",
+        "On-premise deployment option",
+        "Advanced transaction blocking",
+        "Real-time consent analytics"
       ],
       badge: "Most Popular"
     },
     {
       id: 2,
       name: "SEC@R Business",
-      description: "Comprehensive protection for growing businesses",
+      description: "Comprehensive data protection for growing businesses",
       features: [
-        "Up to 500 users",
-        "Real-time consent management",
-        "Automated fraud detection",
-        "Compliance reporting",
+        "Up to 10,000 Data Principals",
+        "Standard authentication layers",
+        "Automated consent verification",
+        "Transaction blocking protocols",
         "Email & chat support",
-        "Cloud-based platform"
+        "Cloud-based platform",
+        "Compliance reporting",
+        "Weekly security reports"
       ]
     },
     {
       id: 3,
       name: "SEC@R Starter",
-      description: "Essential security for small teams",
+      description: "Essential consent-first protection for small teams",
       features: [
-        "Up to 50 users",
-        "Basic consent tracking",
-        "Threat monitoring",
-        "Standard compliance",
+        "Up to 1,000 Data Principals",
+        "Basic device authentication",
+        "Consent-first data activation",
+        "Transaction blocking",
         "Email support",
-        "Cloud deployment"
+        "Cloud deployment",
+        "Monthly reports"
       ]
     }
   ],
