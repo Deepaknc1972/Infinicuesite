@@ -95,26 +95,38 @@ const MobileAppPage = () => {
     {
       icon: CreditCard,
       title: "Banking Systems",
-      description: "Direct integration with core banking systems for transaction authorization, account access, and payment consent verification.",
+      description: "Direct API integration with core banking systems for transaction authorization, account access, and payment consent verification.",
       features: ["Transaction approval", "Account authentication", "Payment authorization", "Fraud prevention"]
     },
     {
       icon: Building2,
-      title: "Government ID Authorities",
-      description: "Seamless integration with national identity systems for secure identity verification and document authentication.",
-      features: ["AADHAAR verification", "Voter ID authentication", "PAN validation", "National ID systems"]
+      title: "Insurance Companies",
+      description: "Seamless API connectivity with insurance providers for policy management, claims processing, and secure customer verification.",
+      features: ["Policy authentication", "Claims approval", "Customer verification", "Premium payments"]
     },
     {
       icon: Landmark,
-      title: "Passport Authorities",
-      description: "Integration with passport issuance and verification systems for secure international identity management.",
-      features: ["Passport verification", "Border control", "Visa processing", "Travel authorization"]
+      title: "Government Authorities",
+      description: "Integration with national identity systems and government agencies for secure identity verification and document authentication.",
+      features: ["AADHAAR verification", "Voter ID authentication", "PAN validation", "Passport verification"]
     },
     {
       icon: FileCheck,
       title: "Certificate Authorities (CA)",
-      description: "Government CA integration for digital signatures, ensuring legally binding electronic document signing.",
+      description: "Government CA API integration for digital signatures, ensuring legally binding electronic document signing.",
       features: ["Digital signatures", "Document signing", "PKI management", "Certificate validation"]
+    },
+    {
+      icon: Smartphone,
+      title: "Telecom Service Providers",
+      description: "Direct API integration with telecom operators for SIM verification, mobile number authentication, and network-based security.",
+      features: ["SIM authentication", "Mobile number verification", "Network validation", "SS7 attack prevention"]
+    },
+    {
+      icon: Shield,
+      title: "Enterprise Systems",
+      description: "Universal API framework for integration with any enterprise system requiring consent-based authentication and authorization.",
+      features: ["Custom integrations", "API gateway", "Webhook support", "Real-time events"]
     }
   ];
 
