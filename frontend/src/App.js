@@ -4,6 +4,7 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import { Header } from "./components/Header";
 import { Hero } from "./components/Hero";
 import { AboutUs } from "./components/AboutUs";
+import { HowItWorks } from "./components/HowItWorks";
 import { Features } from "./components/Features";
 import { Products } from "./components/Products";
 import { Pricing } from "./components/Pricing";
@@ -18,6 +19,7 @@ const Home = () => {
       <Header />
       <Hero />
       <AboutUs />
+      <HowItWorks />
       <Features />
       <Products />
       <Pricing />
