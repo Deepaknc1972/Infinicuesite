@@ -32,44 +32,44 @@ export const mockData = {
   features: [
     {
       id: 1,
-      title: "Real-Time Consent Management",
-      description: "Manage user consent dynamically with our SEC@R platform. Track, update, and enforce consent policies in real-time across all touchpoints.",
+      title: "Consent-First Data Activation",
+      description: "Data remains dormant until the Data Principal grants consent through multi-device layer authentication. Stolen data without consent verification is completely unusable.",
       icon: "Shield",
       image: "https://images.unsplash.com/photo-1633265486064-086b219458ec?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjA1OTV8MHwxfHNlYXJjaHwyfHxkYXRhJTIwc2VjdXJpdHl8ZW58MHx8fHwxNzY5NDA5MjUyfDA&ixlib=rb-4.1.0&q=85"
     },
     {
       id: 2,
-      title: "Advanced Fraud Detection",
-      description: "AI-powered fraud detection identifies and neutralizes threats before they cause damage. Stay ahead of cybercriminals with predictive analytics.",
-      icon: "AlertTriangle",
+      title: "Multi-Device Layer Authentication",
+      description: "Verify the Data Principal's identity across multiple device layers before any transaction proceeds. Our system cross-validates identity through device fingerprinting, biometrics, and behavioral patterns.",
+      icon: "Smartphone",
       image: "https://images.unsplash.com/photo-1614064641938-3bbee52942c7?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjA1OTV8MHwxfHNlYXJjaHwzfHxkYXRhJTIwc2VjdXJpdHl8ZW58MHx8fHwxNzY5NDA5MjUyfDA&ixlib=rb-4.1.0&q=85"
     },
     {
       id: 3,
-      title: "Data Breach Prevention",
-      description: "Proactive monitoring and automated response systems prevent data breaches before they occur. Multi-layer security ensures complete protection.",
-      icon: "Lock",
+      title: "Data Principal Verification",
+      description: "Identify and authenticate the rightful owner of data before activation. SEC@R ensures only verified Data Principals can authorize data usage and transactions.",
+      icon: "UserCheck",
       image: "https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NTY2NzZ8MHwxfHNlYXJjaHwzfHxjeWJlcnNlY3VyaXR5fGVufDB8fHx8MTc2OTQwOTI0MXww&ixlib=rb-4.1.0&q=85"
     },
     {
       id: 4,
-      title: "Compliance Automation",
-      description: "Automatically maintain compliance with GDPR, CCPA, and other regulations. Generate audit reports and ensure regulatory adherence effortlessly.",
-      icon: "FileCheck",
+      title: "Transaction Blocking",
+      description: "Failed authentication automatically blocks transactions. If the system cannot collect necessary consent data points, the transaction is immediately terminated with zero exceptions.",
+      icon: "Ban",
       image: "https://images.pexels.com/photos/5380655/pexels-photo-5380655.jpeg"
     },
     {
       id: 5,
-      title: "Threat Intelligence",
-      description: "Access real-time threat intelligence from global sources. Stay informed about emerging threats and vulnerabilities in your industry.",
-      icon: "Brain",
+      title: "Real-Time Consent Monitoring",
+      description: "Continuously monitor and enforce consent requirements across all data touchpoints. Any attempt to access data without proper consent triggers immediate blocking protocols.",
+      icon: "Eye",
       image: "https://images.unsplash.com/photo-1667372283545-1261fb5c427a?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjA1OTV8MHwxfHNlYXJjaHw0fHxkYXRhJTIwc2VjdXJpdHl8ZW58MHx8fHwxNzY5NDA5MjUyfDA&ixlib=rb-4.1.0&q=85"
     },
     {
       id: 6,
-      title: "Automated Response",
-      description: "Instant automated responses to security incidents. Minimize damage and reduce recovery time with intelligent automation workflows.",
-      icon: "Zap",
+      title: "Stolen Data Neutralization",
+      description: "Make stolen data economically worthless. Even if cybercriminals obtain your data, they cannot activate or monetize it without the Data Principal's authenticated consent.",
+      icon: "ShieldAlert",
       image: "https://images.pexels.com/photos/5380618/pexels-photo-5380618.jpeg"
     }
   ],
