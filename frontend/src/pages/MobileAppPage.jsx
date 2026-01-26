@@ -138,17 +138,17 @@ const MobileAppPage = () => {
             <div>
               <Badge className="bg-emerald-500/20 text-emerald-400 border-emerald-500/30 mb-6">
                 <MonitorSmartphone className="mr-2" size={16} />
-                SEC@R Mobile App
+                Complete SEC@R Solution
               </Badge>
               
               <h1 className="text-5xl md:text-6xl font-bold text-white mb-6 leading-tight">
-                Your Consent Controller
-                <span className="block text-emerald-400 mt-2">In Your Pocket</span>
+                End-to-End Consent Control
+                <span className="block text-emerald-400 mt-2">Ecosystem</span>
               </h1>
               
               <p className="text-xl text-gray-400 mb-8 leading-relaxed">
-                SEC@R mobile app transforms your smartphone into a powerful consent controller. 
-                Detect threats, monitor devices, control access, and protect your identity - all from one app.
+                Complete solution combining mobile apps (iOS & Android), smart hardware, and backend decision engine. 
+                Connect seamlessly with banks, insurance, government authorities, telecom providers, and more through secure APIs.
               </p>
 
               <div className="mb-8">
