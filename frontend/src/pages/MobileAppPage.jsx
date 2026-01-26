@@ -19,8 +19,6 @@ import {
   AlertTriangle,
   Check,
   ArrowRight,
-  Download,
-  Apple,
   MonitorSmartphone,
   Zap,
   Eye,
