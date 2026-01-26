@@ -1,16 +1,41 @@
 import React, { useState } from 'react';
 import { Menu, X } from 'lucide-react';
 import { Button } from './ui/button';
+import { useNavigate, useLocation } from 'react-router-dom';
 
 export const Header = () => {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
+  const navigate = useNavigate();
+  const location = useLocation();
+  
+  const isHomePage = location.pathname === '/';
 
   const scrollToSection = (id) => {
-    const element = document.getElementById(id);
-    if (element) {
-      element.scrollIntoView({ behavior: 'smooth' });
-      setMobileMenuOpen(false);
+    if (!isHomePage) {
+      navigate('/');
+      setTimeout(() => {
+        const element = document.getElementById(id);
+        if (element) {
+          element.scrollIntoView({ behavior: 'smooth' });
+        }
+      }, 100);
+    } else {
+      const element = document.getElementById(id);
+      if (element) {
+        element.scrollIntoView({ behavior: 'smooth' });
+      }
     }
+    setMobileMenuOpen(false);
+  };
+
+  const goToProducts = () => {
+    navigate('/products');
+    setMobileMenuOpen(false);
+  };
+
+  const goToHome = () => {
+    navigate('/');
+    setMobileMenuOpen(false);
   };
 
   return (
@@ -18,7 +43,7 @@ export const Header = () => {
       <nav className="container mx-auto px-6 py-4">
         <div className="flex items-center justify-between">
           {/* Logo */}
-          <div className="flex items-center space-x-2">
+          <button onClick={goToHome} className="flex items-center space-x-2">
             <div className="w-10 h-10 bg-gradient-to-br from-emerald-400 to-teal-600 rounded-lg flex items-center justify-center font-bold text-black">
               IS
             </div>
@@ -26,7 +51,7 @@ export const Header = () => {
               <div className="text-xl font-bold text-white">Infinicue Solutions</div>
               <div className="text-xs text-emerald-400">Simplify | Automate | Resolve</div>
             </div>
-          </div>
+          </button>
 
           {/* Desktop Navigation */}
           <div className="hidden md:flex items-center space-x-8">
@@ -36,8 +61,8 @@ export const Header = () => {
             <button onClick={() => scrollToSection('features')} className="text-gray-300 hover:text-emerald-400 transition-colors">
               Features
             </button>
-            <button onClick={() => scrollToSection('products')} className="text-gray-300 hover:text-emerald-400 transition-colors">
-              Products
+            <button onClick={goToProducts} className="text-gray-300 hover:text-emerald-400 transition-colors">
+              Hardware
             </button>
             <button onClick={() => scrollToSection('pricing')} className="text-gray-300 hover:text-emerald-400 transition-colors">
               Pricing
@@ -71,8 +96,8 @@ export const Header = () => {
             <button onClick={() => scrollToSection('features')} className="block w-full text-left text-gray-300 hover:text-emerald-400 transition-colors py-2">
               Features
             </button>
-            <button onClick={() => scrollToSection('products')} className="block w-full text-left text-gray-300 hover:text-emerald-400 transition-colors py-2">
-              Products
+            <button onClick={goToProducts} className="block w-full text-left text-gray-300 hover:text-emerald-400 transition-colors py-2">
+              Hardware
             </button>
             <button onClick={() => scrollToSection('pricing')} className="block w-full text-left text-gray-300 hover:text-emerald-400 transition-colors py-2">
               Pricing
