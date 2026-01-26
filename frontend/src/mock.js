@@ -9,8 +9,8 @@ export const mockData = {
   },
   
   hero: {
-    title: "Protect Your Digital Assets with Real-Time Consent Control",
-    subtitle: "Infinicue Solutions delivers enterprise-grade cybersecurity solutions that simplify consent management, automate fraud detection, and resolve data breaches before they happen.",
+    title: "Make Stolen Data Worthless with Consent-First Security",
+    subtitle: "SEC@R prevents the utility of stolen data by requiring multi-device layer authentication before data activation. No consent from the Data Principal? No transaction. It's that simple.",
     cta: "Get Started",
     secondaryCta: "Watch Demo",
     image: "https://images.unsplash.com/photo-1550751827-4bd374c3f58b?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NTY2NzZ8MHwxfHNlYXJjaHwxfHxjeWJlcnNlY3VyaXR5fGVufDB8fHx8MTc2OTQwOTI0MXww&ixlib=rb-4.1.0&q=85"
