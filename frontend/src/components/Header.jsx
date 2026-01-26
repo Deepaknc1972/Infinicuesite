@@ -64,11 +64,11 @@ export const Header = () => {
             <button onClick={goToProducts} className="text-gray-300 hover:text-emerald-400 transition-colors">
               Hardware
             </button>
+            <button onClick={() => navigate('/mobile-app')} className="text-gray-300 hover:text-emerald-400 transition-colors">
+              Mobile App
+            </button>
             <button onClick={() => scrollToSection('pricing')} className="text-gray-300 hover:text-emerald-400 transition-colors">
               Pricing
-            </button>
-            <button onClick={() => scrollToSection('testimonials')} className="text-gray-300 hover:text-emerald-400 transition-colors">
-              Testimonials
             </button>
             <button onClick={() => scrollToSection('contact')} className="text-gray-300 hover:text-emerald-400 transition-colors">
               Contact
