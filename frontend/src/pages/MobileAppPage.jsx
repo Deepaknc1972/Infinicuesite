@@ -454,16 +454,17 @@ const MobileAppPage = () => {
       <section className="py-24 bg-gray-950">
         <div className="container mx-auto px-6">
           <div className="text-center mb-16">
-            <h2 className="text-sm font-semibold text-emerald-400 uppercase tracking-wider mb-4">Enterprise Integrations</h2>
+            <h2 className="text-sm font-semibold text-emerald-400 uppercase tracking-wider mb-4">API Integrations</h2>
             <h3 className="text-4xl md:text-5xl font-bold text-white mb-6">
-              Seamless Integration with Critical Systems
+              Connect with Any Authority or Institution
             </h3>
             <p className="text-xl text-gray-400 max-w-3xl mx-auto">
-              SEC@R backend connects directly with banks, government authorities, and certificate authorities for real-world consent control.
+              SEC@R provides secure REST APIs for seamless integration with banks, insurance companies, government authorities, 
+              telecom providers, and enterprise systems for real-time consent control.
             </p>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             {integrations.map((integration, index) => {
               const Icon = integration.icon;
               return (
