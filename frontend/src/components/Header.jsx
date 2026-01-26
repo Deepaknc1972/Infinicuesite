@@ -65,7 +65,7 @@ export const Header = () => {
               Hardware
             </button>
             <button onClick={() => navigate('/mobile-app')} className="text-gray-300 hover:text-emerald-400 transition-colors">
-              Mobile App
+              Solution
             </button>
             <button onClick={() => scrollToSection('pricing')} className="text-gray-300 hover:text-emerald-400 transition-colors">
               Pricing
