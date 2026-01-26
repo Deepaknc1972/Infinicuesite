@@ -1,15 +1,15 @@
 import React from 'react';
 import { mockData } from '../mock';
-import { Shield, AlertTriangle, Lock, FileCheck, Brain, Zap } from 'lucide-react';
+import { Shield, Smartphone, UserCheck, Ban, Eye, ShieldAlert } from 'lucide-react';
 import { Card, CardContent } from './ui/card';
 
 const iconMap = {
   Shield: Shield,
-  AlertTriangle: AlertTriangle,
-  Lock: Lock,
-  FileCheck: FileCheck,
-  Brain: Brain,
-  Zap: Zap
+  Smartphone: Smartphone,
+  UserCheck: UserCheck,
+  Ban: Ban,
+  Eye: Eye,
+  ShieldAlert: ShieldAlert
 };
 
 export const Features = () => {
