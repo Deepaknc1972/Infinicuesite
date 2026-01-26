@@ -99,11 +99,11 @@ export const Header = () => {
             <button onClick={goToProducts} className="block w-full text-left text-gray-300 hover:text-emerald-400 transition-colors py-2">
               Hardware
             </button>
+            <button onClick={() => { navigate('/mobile-app'); setMobileMenuOpen(false); }} className="block w-full text-left text-gray-300 hover:text-emerald-400 transition-colors py-2">
+              Mobile App
+            </button>
             <button onClick={() => scrollToSection('pricing')} className="block w-full text-left text-gray-300 hover:text-emerald-400 transition-colors py-2">
               Pricing
-            </button>
-            <button onClick={() => scrollToSection('testimonials')} className="block w-full text-left text-gray-300 hover:text-emerald-400 transition-colors py-2">
-              Testimonials
             </button>
             <button onClick={() => scrollToSection('contact')} className="block w-full text-left text-gray-300 hover:text-emerald-400 transition-colors py-2">
               Contact
