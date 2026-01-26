@@ -76,7 +76,7 @@ export const ThreatsPrevented = () => {
             return (
               <Card 
                 key={index}
-                className="bg-gray-900/50 backdrop-blur border-gray-800 hover:border-emerald-500/50 transition-all duration-300 group"
+                className="glass group hover:scale-105"
                 style={{ animationDelay: `${index * 0.05}s` }}
               >
                 <CardContent className="p-6">
