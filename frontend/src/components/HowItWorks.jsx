@@ -81,7 +81,7 @@ export const HowItWorks = () => {
 
         {/* Key Benefit Highlight */}
         <div className="mt-16 max-w-4xl mx-auto">
-          <Card className="bg-gradient-to-r from-emerald-500/10 to-teal-500/10 border-emerald-500/30">
+          <Card className="glass-emerald">
             <CardContent className="p-8 text-center">
               <h4 className="text-2xl font-bold text-white mb-4">
                 The Result: Stolen Data Becomes Worthless
