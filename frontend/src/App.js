@@ -13,6 +13,7 @@ import { Testimonials } from "./components/Testimonials";
 import { Contact } from "./components/Contact";
 import { Footer } from "./components/Footer";
 import { Toaster } from "./components/ui/sonner";
+import ProductPage from "./pages/ProductPage";
 
 const Home = () => {
   return (
@@ -38,6 +39,7 @@ function App() {
       <BrowserRouter>
         <Routes>
           <Route path="/" element={<Home />} />
+          <Route path="/products" element={<ProductPage />} />
         </Routes>
       </BrowserRouter>
       <Toaster />
