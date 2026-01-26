@@ -44,7 +44,7 @@ export const Features = () => {
                     className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
                   />
                   <div className="absolute inset-0 bg-gradient-to-t from-gray-900 to-transparent"></div>
-                  <div className="absolute top-4 right-4 w-12 h-12 bg-emerald-500/20 backdrop-blur-xl border border-emerald-500/30 rounded-lg flex items-center justify-center">
+                  <div className="absolute top-4 right-4 w-12 h-12 glass-emerald rounded-lg flex items-center justify-center">
                     <Icon className="text-emerald-400" size={24} />
                   </div>
                 </div>
