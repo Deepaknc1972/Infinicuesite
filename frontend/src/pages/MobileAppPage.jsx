@@ -423,18 +423,18 @@ const MobileAppPage = () => {
           {/* Architecture Diagram */}
           <Card className="bg-gradient-to-r from-gray-900/50 to-gray-800/50 border-emerald-500/30">
             <CardContent className="p-8">
-              <div className="grid grid-cols-1 md:grid-cols-3 gap-8 items-center">
+              <div className="grid grid-cols-1 md:grid-cols-5 gap-6 items-center">
                 {/* Mobile App */}
                 <div className="text-center">
                   <div className="w-20 h-20 mx-auto mb-4 bg-emerald-500/20 rounded-2xl flex items-center justify-center">
                     <Smartphone className="text-emerald-400" size={40} />
                   </div>
                   <h4 className="text-white font-bold mb-2">Mobile App</h4>
-                  <p className="text-gray-400 text-sm">Collects signals, detects threats, triggers events</p>
+                  <p className="text-gray-400 text-sm">iOS & Android</p>
                 </div>
 
                 <div className="flex justify-center">
-                  <ArrowRight className="text-emerald-400 hidden md:block" size={40} />
+                  <ArrowRight className="text-emerald-400 hidden md:block" size={32} />
                 </div>
 
                 {/* Backend */}
@@ -443,8 +443,29 @@ const MobileAppPage = () => {
                     <Server className="text-emerald-400" size={40} />
                   </div>
                   <h4 className="text-white font-bold mb-2">Decision Engine</h4>
-                  <p className="text-gray-400 text-sm">Processes data, makes decisions, enforces consent</p>
+                  <p className="text-gray-400 text-sm">AI-Powered Backend</p>
                 </div>
+
+                <div className="flex justify-center">
+                  <ArrowRight className="text-emerald-400 hidden md:block" size={32} />
+                </div>
+
+                {/* Authorities */}
+                <div className="text-center">
+                  <div className="w-20 h-20 mx-auto mb-4 bg-emerald-500/20 rounded-2xl flex items-center justify-center">
+                    <Building2 className="text-emerald-400" size={40} />
+                  </div>
+                  <h4 className="text-white font-bold mb-2">Authorities</h4>
+                  <p className="text-gray-400 text-sm">Banks, Govt, Telecom</p>
+                </div>
+              </div>
+
+              <div className="mt-8 pt-8 border-t border-gray-700">
+                <h5 className="text-white font-semibold mb-4 text-center">Complete Data Flow</h5>
+                <p className="text-gray-400 text-center text-sm max-w-3xl mx-auto">
+                  Mobile app detects BLE devices, network, location, and threats → Backend engine processes signals and makes consent decision → 
+                  APIs notify connected authorities (banks, insurance, govt, telecom) → Transaction approved or blocked based on consent
+                </p>
               </div>
             </CardContent>
           </Card>
