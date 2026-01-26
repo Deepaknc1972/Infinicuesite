@@ -25,7 +25,7 @@ export const Products = () => {
           {products.map((product, index) => (
             <Card 
               key={product.id}
-              className={`bg-gray-900/50 border-gray-800 hover:border-emerald-500/50 transition-all duration-300 relative overflow-hidden group ${
+              className={`glass relative overflow-hidden group hover:scale-105 ${
                 product.badge ? 'ring-2 ring-emerald-500/30' : ''
               }`}
               style={{ animationDelay: `${index * 0.1}s` }}
