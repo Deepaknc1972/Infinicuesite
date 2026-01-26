@@ -25,7 +25,7 @@ export const Pricing = () => {
           {pricing.map((plan, index) => (
             <Card 
               key={plan.id}
-              className={`bg-gray-900/50 border-gray-800 hover:border-emerald-500/50 transition-all duration-300 relative ${
+              className={`glass relative hover:scale-105 ${
                 plan.popular ? 'ring-2 ring-emerald-500 scale-105' : ''
               }`}
               style={{ animationDelay: `${index * 0.1}s` }}
