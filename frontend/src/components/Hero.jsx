@@ -65,16 +65,16 @@ export const Hero = () => {
         </div>
 
         {/* Trust Indicators */}
-        <div className="mt-16 flex flex-wrap items-center justify-center gap-8 text-gray-500 animate-fade-in" style={{ animationDelay: '0.3s' }}>
-          <div className="flex items-center space-x-2">
+        <div className="mt-16 flex flex-wrap items-center justify-center gap-8 text-gray-400 animate-fade-in" style={{ animationDelay: '0.3s' }}>
+          <div className="flex items-center space-x-2 glass px-4 py-2 rounded-full">
             <div className="w-6 h-6 bg-emerald-500/20 rounded flex items-center justify-center text-emerald-400 text-xs font-bold">✓</div>
             <span>SOC 2 Certified</span>
           </div>
-          <div className="flex items-center space-x-2">
+          <div className="flex items-center space-x-2 glass px-4 py-2 rounded-full">
             <div className="w-6 h-6 bg-emerald-500/20 rounded flex items-center justify-center text-emerald-400 text-xs font-bold">✓</div>
             <span>GDPR Compliant</span>
           </div>
-          <div className="flex items-center space-x-2">
+          <div className="flex items-center space-x-2 glass px-4 py-2 rounded-full">
             <div className="w-6 h-6 bg-emerald-500/20 rounded flex items-center justify-center text-emerald-400 text-xs font-bold">✓</div>
             <span>ISO 27001</span>
           </div>
