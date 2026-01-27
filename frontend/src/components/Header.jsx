@@ -55,25 +55,25 @@ export const Header = () => {
 
           {/* Desktop Navigation */}
           <div className="hidden md:flex items-center space-x-8">
-            <button onClick={() => scrollToSection('about')} className="text-gray-300 hover:text-emerald-400 transition-colors">
+            <button onClick={() => scrollToSection('about')} className="text-gray-300 hover:text-purple-400 transition-colors">
               About Us
             </button>
-            <button onClick={() => scrollToSection('features')} className="text-gray-300 hover:text-emerald-400 transition-colors">
+            <button onClick={() => scrollToSection('features')} className="text-gray-300 hover:text-green-400 transition-colors">
               Features
             </button>
-            <button onClick={goToProducts} className="text-gray-300 hover:text-emerald-400 transition-colors">
+            <button onClick={goToProducts} className="text-gray-300 hover:text-purple-400 transition-colors">
               Products
             </button>
-            <button onClick={() => navigate('/mobile-app')} className="text-gray-300 hover:text-emerald-400 transition-colors">
+            <button onClick={() => navigate('/mobile-app')} className="text-gray-300 hover:text-green-400 transition-colors">
               Solution
             </button>
-            <button onClick={() => scrollToSection('pricing')} className="text-gray-300 hover:text-emerald-400 transition-colors">
+            <button onClick={() => scrollToSection('pricing')} className="text-gray-300 hover:text-purple-400 transition-colors">
               Pricing
             </button>
-            <button onClick={() => scrollToSection('contact')} className="text-gray-300 hover:text-emerald-400 transition-colors">
+            <button onClick={() => scrollToSection('contact')} className="text-gray-300 hover:text-green-400 transition-colors">
               Contact
             </button>
-            <Button onClick={() => scrollToSection('contact')} className="bg-emerald-500 hover:bg-emerald-600 text-black font-semibold">
+            <Button onClick={() => scrollToSection('contact')} className="bg-gradient-to-r from-green-500 to-purple-600 hover:from-green-600 hover:to-purple-700 text-white font-semibold">
               Get Started
             </Button>
           </div>
