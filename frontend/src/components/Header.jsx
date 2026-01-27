@@ -90,22 +90,22 @@ export const Header = () => {
         {/* Mobile Menu */}
         {mobileMenuOpen && (
           <div className="md:hidden mt-4 pb-4 space-y-4">
-            <button onClick={() => scrollToSection('about')} className="block w-full text-left text-gray-300 hover:text-emerald-400 transition-colors py-2">
+            <button onClick={() => scrollToSection('about')} className="block w-full text-left text-gray-300 hover:text-purple-400 transition-colors py-2">
               About Us
             </button>
-            <button onClick={() => scrollToSection('features')} className="block w-full text-left text-gray-300 hover:text-emerald-400 transition-colors py-2">
+            <button onClick={() => scrollToSection('features')} className="block w-full text-left text-gray-300 hover:text-cyan-400 transition-colors py-2">
               Features
             </button>
-            <button onClick={goToProducts} className="block w-full text-left text-gray-300 hover:text-emerald-400 transition-colors py-2">
+            <button onClick={goToProducts} className="block w-full text-left text-gray-300 hover:text-purple-400 transition-colors py-2">
               Products
             </button>
-            <button onClick={() => { navigate('/mobile-app'); setMobileMenuOpen(false); }} className="block w-full text-left text-gray-300 hover:text-emerald-400 transition-colors py-2">
+            <button onClick={() => { navigate('/mobile-app'); setMobileMenuOpen(false); }} className="block w-full text-left text-gray-300 hover:text-cyan-400 transition-colors py-2">
               Solution
             </button>
-            <button onClick={() => scrollToSection('pricing')} className="block w-full text-left text-gray-300 hover:text-emerald-400 transition-colors py-2">
-              Pricing
+            <button onClick={() => scrollToSection('architecture')} className="block w-full text-left text-gray-300 hover:text-purple-400 transition-colors py-2">
+              Architecture
             </button>
-            <button onClick={() => scrollToSection('contact')} className="block w-full text-left text-gray-300 hover:text-emerald-400 transition-colors py-2">
+            <button onClick={() => scrollToSection('contact')} className="block w-full text-left text-gray-300 hover:text-cyan-400 transition-colors py-2">
               Contact
             </button>
             <Button onClick={() => scrollToSection('contact')} className="w-full bg-emerald-500 hover:bg-emerald-600 text-black font-semibold">
