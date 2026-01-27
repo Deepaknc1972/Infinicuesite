@@ -5,6 +5,7 @@ export const productData = {
       description: "Secure hardware wallet with built-in biometric authentication and SEC@R integration. Carry your digital identity safely with multi-layer protection.",
       price: "$299",
       badge: "Bestseller",
+      image: "https://images.unsplash.com/photo-1550751827-4bd374c3f58b?fm=jpg&q=60&w=3000&auto=format&fit=crop",
       features: [
         "Biometric fingerprint scanner",
         "NFC & Bluetooth connectivity",
