@@ -18,7 +18,7 @@ export const mockData = {
 
   aboutUs: {
     title: "About Infinicue Solutions",
-    description: "We've revolutionized data security with SEC@R - a consent-first platform that makes stolen data worthless. By requiring multi-device layer authentication to identify the Data Principal before any data activation, we ensure that even if data is stolen, it cannot be used. Our approach shifts security from prevention to utility denial.",
+    description: "We revolutionize data security with SEC@R - a consent-first platform that makes stolen data worthless. By Automated multi-device layer authentication to identify the Data Principal before any data activation, we ensure that even if data is stolen, it cannot be used. Our approach shifts security from prevention to utility denial.",
     mission: "Our mission is to eliminate the value of stolen data through consent-first architecture, making data breaches economically pointless for cybercriminals.",
     stats: [
       { value: "500+", label: "Enterprise Clients" },
