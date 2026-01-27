@@ -76,13 +76,14 @@ const ProductPage = () => {
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-start">
             {/* Left: Product Image & Info */}
             <div>
-              <Card className="bg-gray-900/50 border-gray-800 overflow-hidden">
-                <div className="relative h-96 bg-gradient-to-br from-emerald-500/20 to-teal-500/20 flex items-center justify-center">
-                  {React.createElement(productIcons[selectedProduct.name], { 
-                    className: "text-emerald-400", 
-                    size: 200,
-                    strokeWidth: 1
-                  })}
+              <Card className="glass overflow-hidden">
+                <div className="relative h-96 bg-gradient-to-br from-gray-900 to-black">
+                  <img 
+                    src={selectedProduct.image} 
+                    alt={selectedProduct.name}
+                    className="w-full h-full object-cover"
+                  />
+                  <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent"></div>
                   {selectedProduct.badge && (
                     <div className="absolute top-4 right-4">
                       <Badge className="bg-emerald-500 text-black font-semibold">
