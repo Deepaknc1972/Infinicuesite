@@ -62,7 +62,7 @@ export const Header = () => {
               Features
             </button>
             <button onClick={goToProducts} className="text-gray-300 hover:text-emerald-400 transition-colors">
-              Hardware
+              Products
             </button>
             <button onClick={() => navigate('/mobile-app')} className="text-gray-300 hover:text-emerald-400 transition-colors">
               Solution
