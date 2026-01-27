@@ -90,7 +90,7 @@ export const Header = () => {
         {/* Mobile Menu */}
         {mobileMenuOpen && (
           <div className="md:hidden mt-4 pb-4 space-y-4">
-            <button onClick={() => { navigate('/about'); setMobileMenuOpen(false); }} className="block w-full text-left text-gray-300 hover:text-purple-400 transition-colors py-2">
+            <button onClick={() => scrollToSection('about')} className="block w-full text-left text-gray-300 hover:text-purple-400 transition-colors py-2">
               About Us
             </button>
             <button onClick={() => scrollToSection('features')} className="block w-full text-left text-gray-300 hover:text-cyan-400 transition-colors py-2">
@@ -108,7 +108,7 @@ export const Header = () => {
             <button onClick={() => scrollToSection('contact')} className="block w-full text-left text-gray-300 hover:text-cyan-400 transition-colors py-2">
               Contact
             </button>
-            <Button onClick={() => scrollToSection('contact')} className="w-full bg-emerald-500 hover:bg-emerald-600 text-black font-semibold">
+            <Button onClick={() => scrollToSection('contact')} className="w-full bg-gradient-to-r from-cyan-500 to-purple-600 hover:from-cyan-600 hover:to-purple-700 text-white font-semibold">
               Get Started
             </Button>
           </div>
