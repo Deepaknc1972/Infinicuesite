@@ -9,7 +9,7 @@ import { ThreatsPrevented } from "./components/ThreatsPrevented";
 import { PrivacyFirst } from "./components/PrivacyFirst";
 import { Features } from "./components/Features";
 import { Products } from "./components/Products";
-import { Pricing } from "./components/Pricing";
+import { SolutionArchitecture } from "./components/SolutionArchitecture";
 import { Testimonials } from "./components/Testimonials";
 import { Contact } from "./components/Contact";
 import { Footer } from "./components/Footer";
@@ -28,7 +28,7 @@ const Home = () => {
       <PrivacyFirst />
       <Features />
       <Products />
-      <Pricing />
+      <SolutionArchitecture />
       <Testimonials />
       <Contact />
       <Footer />
