@@ -106,9 +106,9 @@ button, a {
 
 .glass:hover {
     background: rgba(255, 255, 255, 0.08);
-    border-color: rgba(16, 185, 129, 0.4);
+    border-color: rgba(168, 85, 247, 0.4);
     transform: translateY(-2px);
-    box-shadow: 0 8px 32px rgba(16, 185, 129, 0.15);
+    box-shadow: 0 8px 32px rgba(168, 85, 247, 0.15);
 }
 
 /* Custom Scrollbar */
@@ -122,23 +122,23 @@ button, a {
 }
 
 ::-webkit-scrollbar-thumb {
-    background: rgba(16, 185, 129, 0.5);
+    background: linear-gradient(180deg, rgba(16, 185, 129, 0.5), rgba(168, 85, 247, 0.5));
     backdrop-filter: blur(10px);
     border-radius: 5px;
 }
 
 ::-webkit-scrollbar-thumb:hover {
-    background: rgba(16, 185, 129, 0.8);
+    background: linear-gradient(180deg, rgba(16, 185, 129, 0.8), rgba(168, 85, 247, 0.8));
 }
 
 /* Selection Color */
 ::selection {
-    background-color: rgba(16, 185, 129, 0.3);
+    background: linear-gradient(135deg, rgba(16, 185, 129, 0.3), rgba(168, 85, 247, 0.3));
     color: #fff;
     backdrop-filter: blur(10px);
 }
 
 ::-moz-selection {
-    background-color: rgba(16, 185, 129, 0.3);
+    background: linear-gradient(135deg, rgba(16, 185, 129, 0.3), rgba(168, 85, 247, 0.3));
     color: #fff;
 }
