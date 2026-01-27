@@ -47,7 +47,7 @@ export const Contact = () => {
       <div className="container mx-auto px-6">
         {/* Section Header */}
         <div className="text-center mb-16">
-          <h2 className="text-sm font-semibold text-emerald-400 uppercase tracking-wider mb-4">Contact Us</h2>
+          <h2 className="text-sm font-semibold text-green-400 uppercase tracking-wider mb-4">Contact Us</h2>
           <h3 className="text-4xl md:text-5xl font-bold text-white mb-6">Get in Touch</h3>
           <p className="text-xl text-gray-400 max-w-3xl mx-auto">
             Ready to secure your business? Reach out to our team for a personalized consultation.
@@ -59,12 +59,12 @@ export const Contact = () => {
           <div className="space-y-6">
             <Card className="glass hover:scale-105">
               <CardContent className="p-6 flex items-start space-x-4">
-                <div className="w-12 h-12 bg-emerald-500/20 rounded-lg flex items-center justify-center flex-shrink-0">
-                  <Mail className="text-emerald-400" size={24} />
+                <div className="w-12 h-12 bg-green-500/20 rounded-lg flex items-center justify-center flex-shrink-0">
+                  <Mail className="text-green-400" size={24} />
                 </div>
                 <div>
                   <h4 className="text-white font-semibold mb-1">Email</h4>
-                  <a href={`mailto:${contactInfo.email}`} className="text-gray-400 hover:text-emerald-400 transition-colors">
+                  <a href={`mailto:${contactInfo.email}`} className="text-gray-400 hover:text-green-400 transition-colors">
                     {contactInfo.email}
                   </a>
                 </div>
@@ -73,12 +73,12 @@ export const Contact = () => {
 
             <Card className="glass hover:scale-105">
               <CardContent className="p-6 flex items-start space-x-4">
-                <div className="w-12 h-12 bg-emerald-500/20 rounded-lg flex items-center justify-center flex-shrink-0">
-                  <Phone className="text-emerald-400" size={24} />
+                <div className="w-12 h-12 bg-green-500/20 rounded-lg flex items-center justify-center flex-shrink-0">
+                  <Phone className="text-green-400" size={24} />
                 </div>
                 <div>
                   <h4 className="text-white font-semibold mb-1">Phone</h4>
-                  <a href={`tel:${contactInfo.phone}`} className="text-gray-400 hover:text-emerald-400 transition-colors">
+                  <a href={`tel:${contactInfo.phone}`} className="text-gray-400 hover:text-green-400 transition-colors">
                     {contactInfo.phone}
                   </a>
                 </div>
@@ -87,8 +87,8 @@ export const Contact = () => {
 
             <Card className="glass hover:scale-105">
               <CardContent className="p-6 flex items-start space-x-4">
-                <div className="w-12 h-12 bg-emerald-500/20 rounded-lg flex items-center justify-center flex-shrink-0">
-                  <MapPin className="text-emerald-400" size={24} />
+                <div className="w-12 h-12 bg-green-500/20 rounded-lg flex items-center justify-center flex-shrink-0">
+                  <MapPin className="text-green-400" size={24} />
                 </div>
                 <div>
                   <h4 className="text-white font-semibold mb-1">Address</h4>
@@ -114,7 +114,7 @@ export const Contact = () => {
                       value={formData.name}
                       onChange={handleChange}
                       required
-                      className="bg-gray-800 border-gray-700 text-white focus:border-emerald-500"
+                      className="bg-gray-800 border-gray-700 text-white focus:border-green-500"
                       placeholder="John Doe"
                     />
                   </div>
@@ -127,7 +127,7 @@ export const Contact = () => {
                       value={formData.email}
                       onChange={handleChange}
                       required
-                      className="bg-gray-800 border-gray-700 text-white focus:border-emerald-500"
+                      className="bg-gray-800 border-gray-700 text-white focus:border-green-500"
                       placeholder="john@company.com"
                     />
                   </div>
@@ -141,7 +141,7 @@ export const Contact = () => {
                       name="company"
                       value={formData.company}
                       onChange={handleChange}
-                      className="bg-gray-800 border-gray-700 text-white focus:border-emerald-500"
+                      className="bg-gray-800 border-gray-700 text-white focus:border-green-500"
                       placeholder="Your Company"
                     />
                   </div>
@@ -153,7 +153,7 @@ export const Contact = () => {
                       type="tel"
                       value={formData.phone}
                       onChange={handleChange}
-                      className="bg-gray-800 border-gray-700 text-white focus:border-emerald-500"
+                      className="bg-gray-800 border-gray-700 text-white focus:border-green-500"
                       placeholder="+1 (555) 123-4567"
                     />
                   </div>
@@ -168,14 +168,14 @@ export const Contact = () => {
                     onChange={handleChange}
                     required
                     rows={6}
-                    className="bg-gray-800 border-gray-700 text-white focus:border-emerald-500 resize-none"
+                    className="bg-gray-800 border-gray-700 text-white focus:border-green-500 resize-none"
                     placeholder="Tell us about your security needs..."
                   />
                 </div>
 
                 <Button 
                   type="submit" 
-                  className="w-full bg-emerald-500 hover:bg-emerald-600 text-black font-semibold py-6 text-lg group"
+                  className="w-full bg-green-500 hover:bg-purple-600 text-black font-semibold py-6 text-lg group"
                 >
                   Send Message
                   <Send className="ml-2 group-hover:translate-x-1 transition-transform" size={20} />
