@@ -151,6 +151,7 @@ export const productData = {
       description: "Specialized USB device for cryptographic digital signatures with SEC@R consent verification. Ensures legally binding signatures with multi-device authentication.",
       price: "$249",
       badge: "Enterprise",
+      image: "https://images.unsplash.com/photo-1551818014-7c8ace9c1b5c?q=85&fm=jpg&crop=entropy&cs=srgb",
       features: [
         "PKI-based digital signatures",
         "Multi-device consent verification",
