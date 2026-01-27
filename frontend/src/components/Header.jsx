@@ -55,7 +55,7 @@ export const Header = () => {
 
           {/* Desktop Navigation */}
           <div className="hidden md:flex items-center space-x-8">
-            <button onClick={() => scrollToSection('about')} className="text-gray-300 hover:text-purple-400 transition-colors">
+            <button onClick={() => navigate('/about')} className="text-gray-300 hover:text-purple-400 transition-colors">
               About Us
             </button>
             <button onClick={() => scrollToSection('features')} className="text-gray-300 hover:text-cyan-400 transition-colors">
