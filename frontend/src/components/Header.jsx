@@ -44,12 +44,12 @@ export const Header = () => {
         <div className="flex items-center justify-between">
           {/* Logo */}
           <button onClick={goToHome} className="flex items-center space-x-2">
-            <div className="w-10 h-10 bg-gradient-to-br from-emerald-400 to-teal-600 rounded-lg flex items-center justify-center font-bold text-black">
+            <div className="w-10 h-10 bg-gradient-to-br from-green-400 to-purple-600 rounded-lg flex items-center justify-center font-bold text-black">
               IS
             </div>
             <div>
               <div className="text-xl font-bold text-white">Infinicue Solutions</div>
-              <div className="text-xs text-emerald-400">Simplify | Automate | Resolve</div>
+              <div className="text-xs bg-gradient-to-r from-green-400 to-purple-500 bg-clip-text text-transparent">Simplify | Automate | Resolve</div>
             </div>
           </button>
 
