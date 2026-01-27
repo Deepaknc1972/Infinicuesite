@@ -102,6 +102,7 @@ export const productData = {
       name: "Smart USB Drives",
       description: "Encrypted USB storage device with built-in authentication processor. Protects sensitive data with multi-layer consent verification before access.",
       price: "$149",
+      image: "https://images.unsplash.com/photo-1587145820098-23e484e69816?q=85&fm=jpg&crop=entropy&cs=srgb",
       features: [
         "Hardware-encrypted storage",
         "Built-in fingerprint scanner",
