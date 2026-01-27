@@ -26,10 +26,10 @@ html {
 }
 
 .glass-emerald {
-    background: rgba(16, 185, 129, 0.1);
+    background: rgba(6, 182, 212, 0.1);
     backdrop-filter: blur(20px);
     -webkit-backdrop-filter: blur(20px);
-    border: 1px solid rgba(16, 185, 129, 0.3);
+    border: 1px solid rgba(6, 182, 212, 0.3);
 }
 
 .glass-purple {
@@ -40,7 +40,7 @@ html {
 }
 
 .glass-gradient {
-    background: linear-gradient(135deg, rgba(16, 185, 129, 0.1), rgba(168, 85, 247, 0.1));
+    background: linear-gradient(135deg, rgba(6, 182, 212, 0.1), rgba(168, 85, 247, 0.1));
     backdrop-filter: blur(20px);
     -webkit-backdrop-filter: blur(20px);
     border: 1px solid rgba(255, 255, 255, 0.15);
