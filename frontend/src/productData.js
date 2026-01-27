@@ -54,6 +54,7 @@ export const productData = {
       description: "Discreet wearable authentication device that enables seamless multi-device layer verification. Perfect for continuous authentication without disruption.",
       price: "$199",
       badge: "New",
+      image: "https://images.unsplash.com/photo-1651752090085-50375d90bf8b?crop=entropy&cs=srgb&fm=jpg&q=85",
       features: [
         "Continuous wear authentication",
         "Gesture-based consent approval",
