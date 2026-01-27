@@ -200,6 +200,7 @@ export const productData = {
       description: "Advanced smartwatch with continuous authentication and real-time consent management. Your wrist becomes a powerful authentication device.",
       price: "$399",
       badge: "Premium",
+      image: "https://images.unsplash.com/photo-1660844817855-3ecc7ef21f12?q=85&fm=jpg&crop=entropy&cs=srgb",
       features: [
         "Continuous biometric monitoring",
         "Real-time consent notifications",
