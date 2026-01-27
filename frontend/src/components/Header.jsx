@@ -97,7 +97,7 @@ export const Header = () => {
               Features
             </button>
             <button onClick={goToProducts} className="block w-full text-left text-gray-300 hover:text-emerald-400 transition-colors py-2">
-              Hardware
+              Products
             </button>
             <button onClick={() => { navigate('/mobile-app'); setMobileMenuOpen(false); }} className="block w-full text-left text-gray-300 hover:text-emerald-400 transition-colors py-2">
               Solution
