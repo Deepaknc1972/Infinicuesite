@@ -17,6 +17,7 @@ import { Footer } from "./components/Footer";
 import { Toaster } from "./components/ui/sonner";
 import ProductPage from "./pages/ProductPage";
 import MobileAppPage from "./pages/MobileAppPage";
+import UseCasesPage from "./pages/UseCasesPage";
 
 const Home = () => {
   return (
