@@ -47,6 +47,7 @@ function App() {
           <Route path="/" element={<Home />} />
           <Route path="/products" element={<ProductPage />} />
           <Route path="/mobile-app" element={<MobileAppPage />} />
+          <Route path="/use-cases" element={<UseCasesPage />} />
         </Routes>
       </BrowserRouter>
       <Toaster />
