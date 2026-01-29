@@ -55,11 +55,11 @@ export const Header = () => {
 
           {/* Desktop Navigation */}
           <div className="hidden md:flex items-center space-x-6">
-            <button onClick={goToHome} className="text-gray-300 hover:text-green-400 transition-colors text-sm">
-              Home
-            </button>
             <button onClick={() => navigate('/about-us')} className="text-gray-300 hover:text-green-400 transition-colors text-sm">
               About Us
+            </button>
+            <button onClick={goToHome} className="text-gray-300 hover:text-green-400 transition-colors text-sm">
+              Approach
             </button>
             <button onClick={() => navigate('/use-cases')} className="text-gray-300 hover:text-green-400 transition-colors text-sm">
               Use Cases
@@ -93,11 +93,11 @@ export const Header = () => {
         {/* Mobile Menu */}
         {mobileMenuOpen && (
           <div className="md:hidden mt-4 pb-4 space-y-4">
-            <button onClick={goToHome} className="block w-full text-left text-gray-300 hover:text-green-400 transition-colors py-2">
-              Home
-            </button>
             <button onClick={() => { navigate('/about-us'); setMobileMenuOpen(false); }} className="block w-full text-left text-gray-300 hover:text-green-400 transition-colors py-2">
               About Us
+            </button>
+            <button onClick={goToHome} className="block w-full text-left text-gray-300 hover:text-green-400 transition-colors py-2">
+              Approach
             </button>
             <button onClick={() => { navigate('/use-cases'); setMobileMenuOpen(false); }} className="block w-full text-left text-gray-300 hover:text-green-400 transition-colors py-2">
               Use Cases
