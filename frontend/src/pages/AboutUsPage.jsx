@@ -39,9 +39,6 @@ const AboutUsPage = () => {
       {/* About Us Section */}
       <AboutUs />
 
-      {/* Cyber Fraud Statistics */}
-      <CyberFraudStats />
-
       {/* Mission & Vision */}
       <section className="py-24 bg-gradient-to-b from-gray-950 to-black">
         <div className="container mx-auto px-6">
@@ -149,6 +146,9 @@ const AboutUsPage = () => {
           </div>
         </div>
       </section>
+
+      {/* Cyber Fraud Statistics */}
+      <CyberFraudStats />
 
       <Footer />
     </div>
