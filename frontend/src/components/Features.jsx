@@ -20,7 +20,7 @@ export const Features = () => {
       <div className="container mx-auto px-6">
         {/* Section Header */}
         <div className="text-center mb-16">
-          <h2 className="text-sm font-semibold text-cyan-400 uppercase tracking-wider mb-4">Features</h2>
+          <h2 className="text-sm font-semibold text-green-400 uppercase tracking-wider mb-4">Features</h2>
           <h3 className="text-4xl md:text-5xl font-bold text-white mb-6">Comprehensive Security Solutions</h3>
           <p className="text-xl text-gray-400 max-w-3xl mx-auto">
             Protect your business with our advanced suite of cybersecurity features designed for the modern enterprise.
@@ -45,11 +45,11 @@ export const Features = () => {
                   />
                   <div className="absolute inset-0 bg-gradient-to-t from-gray-900 to-transparent"></div>
                   <div className="absolute top-4 right-4 w-12 h-12 glass-emerald rounded-lg flex items-center justify-center">
-                    <Icon className="text-cyan-400" size={24} />
+                    <Icon className="text-green-400" size={24} />
                   </div>
                 </div>
                 <CardContent className="p-6">
-                  <h4 className="text-xl font-bold text-white mb-3 group-hover:text-cyan-400 transition-colors">
+                  <h4 className="text-xl font-bold text-white mb-3 group-hover:text-green-400 transition-colors">
                     {feature.title}
                   </h4>
                   <p className="text-gray-400 leading-relaxed">

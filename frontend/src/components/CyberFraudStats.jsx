@@ -127,15 +127,15 @@ export const CyberFraudStats = () => {
               <Card key={index} className="glass relative overflow-hidden group hover:scale-105 transition-all duration-300">
                 <div className={`absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-300 ${
                   stat.color === 'cyan' 
-                    ? 'bg-gradient-to-br from-cyan-500/10 to-purple-500/10' 
-                    : 'bg-gradient-to-br from-purple-500/10 to-cyan-500/10'
+                    ? 'bg-gradient-to-br from-green-500/10 to-green-500/10' 
+                    : 'bg-gradient-to-br from-green-500/10 to-green-500/10'
                 }`}></div>
                 <CardContent className="p-6 relative z-10">
                   <div className="flex items-start justify-between mb-4">
                     <div className={`w-14 h-14 rounded-2xl flex items-center justify-center ${
-                      stat.color === 'cyan' ? 'bg-cyan-500/20' : 'bg-purple-500/20'
+                      stat.color === 'cyan' ? 'bg-green-500/20' : 'bg-green-500/20'
                     }`}>
-                      <Icon className={stat.color === 'cyan' ? 'text-cyan-400' : 'text-purple-400'} size={28} />
+                      <Icon className={stat.color === 'cyan' ? 'text-green-400' : 'text-green-400'} size={28} />
                     </div>
                     <div className="text-right">
                       <div className="text-xs text-red-400 font-semibold flex items-center">
@@ -145,7 +145,7 @@ export const CyberFraudStats = () => {
                     </div>
                   </div>
                   <div className={`text-4xl font-bold mb-2 ${
-                    stat.color === 'cyan' ? 'text-cyan-400' : 'text-purple-400'
+                    stat.color === 'cyan' ? 'text-green-400' : 'text-green-400'
                   }`}>
                     {stat.value}
                   </div>
@@ -174,11 +174,11 @@ export const CyberFraudStats = () => {
                   <div className="space-y-2 mb-3">
                     <div className="flex items-center justify-between">
                       <span className="text-gray-400 text-sm">Victims:</span>
-                      <span className="text-cyan-400 font-semibold">{fraud.victims}</span>
+                      <span className="text-green-400 font-semibold">{fraud.victims}</span>
                     </div>
                     <div className="flex items-center justify-between">
                       <span className="text-gray-400 text-sm">Financial Loss:</span>
-                      <span className="text-purple-400 font-semibold">{fraud.loss}</span>
+                      <span className="text-green-400 font-semibold">{fraud.loss}</span>
                     </div>
                   </div>
                   <p className="text-gray-400 text-xs">{fraud.description}</p>
@@ -195,16 +195,16 @@ export const CyberFraudStats = () => {
             {regionalStats.map((region, index) => (
               <Card key={index} className="glass-gradient text-center hover:scale-105 transition-all duration-300">
                 <CardContent className="p-6">
-                  <Globe className="text-cyan-400 mx-auto mb-4" size={32} />
+                  <Globe className="text-green-400 mx-auto mb-4" size={32} />
                   <h4 className="text-xl font-bold text-white mb-4">{region.region}</h4>
                   <div className="space-y-3">
                     <div>
                       <div className="text-sm text-gray-400 mb-1">Annual Cost</div>
-                      <div className="text-2xl font-bold text-cyan-400">{region.cost}</div>
+                      <div className="text-2xl font-bold text-green-400">{region.cost}</div>
                     </div>
                     <div>
                       <div className="text-sm text-gray-400 mb-1">Fraud Incidents</div>
-                      <div className="text-2xl font-bold text-purple-400">{region.incidents}</div>
+                      <div className="text-2xl font-bold text-green-400">{region.incidents}</div>
                     </div>
                   </div>
                 </CardContent>
@@ -251,33 +251,33 @@ export const CyberFraudStats = () => {
               </div>
 
               <div className="space-y-6">
-                <div className="bg-gradient-to-r from-cyan-500/10 to-purple-500/10 rounded-2xl p-6 border border-cyan-500/20">
+                <div className="bg-gradient-to-r from-green-500/10 to-green-500/10 rounded-2xl p-6 border border-green-500/20">
                   <h4 className="text-2xl font-bold text-white mb-4">The SEC@R Solution</h4>
                   <p className="text-gray-300 mb-4">
                     Instead of trying to prevent theft (which often fails), SEC@R makes stolen data completely worthless.
                   </p>
                   <div className="space-y-2">
                     <div className="flex items-center space-x-2">
-                      <Shield className="text-cyan-400 flex-shrink-0" size={16} />
+                      <Shield className="text-green-400 flex-shrink-0" size={16} />
                       <span className="text-gray-300 text-sm">Multi-device authentication required</span>
                     </div>
                     <div className="flex items-center space-x-2">
-                      <Shield className="text-purple-400 flex-shrink-0" size={16} />
+                      <Shield className="text-green-400 flex-shrink-0" size={16} />
                       <span className="text-gray-300 text-sm">Real-time Data Principal verification</span>
                     </div>
                     <div className="flex items-center space-x-2">
-                      <Shield className="text-cyan-400 flex-shrink-0" size={16} />
+                      <Shield className="text-green-400 flex-shrink-0" size={16} />
                       <span className="text-gray-300 text-sm">Data remains dormant without consent</span>
                     </div>
                     <div className="flex items-center space-x-2">
-                      <Shield className="text-purple-400 flex-shrink-0" size={16} />
+                      <Shield className="text-green-400 flex-shrink-0" size={16} />
                       <span className="text-gray-300 text-sm">180-second time-limited access</span>
                     </div>
                   </div>
                 </div>
 
                 <div className="text-center p-6 bg-gradient-to-r from-red-500/10 to-orange-500/10 rounded-xl border border-red-500/20">
-                  <div className="text-4xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 to-purple-400 mb-2">
+                  <div className="text-4xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-green-400 to-green-400 mb-2">
                     $0 in Losses
                   </div>
                   <p className="text-white font-semibold">With SEC@R's Consent-First Architecture</p>

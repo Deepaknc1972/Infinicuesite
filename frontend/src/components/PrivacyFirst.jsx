@@ -49,12 +49,12 @@ export const PrivacyFirst = () => {
         {/* Section Header */}
         <div className="text-center mb-16">
           <div className="inline-flex items-center space-x-2 glass-emerald rounded-full px-6 py-2 mb-6">
-            <Shield className="text-cyan-400" size={20} />
-            <span className="text-cyan-400 font-medium">Privacy-First Architecture</span>
+            <Shield className="text-green-400" size={20} />
+            <span className="text-green-400 font-medium">Privacy-First Architecture</span>
           </div>
           <h2 className="text-4xl md:text-6xl font-bold text-white mb-6">
             We Don't Store Your Data.
-            <span className="block text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 to-purple-500 mt-2">
+            <span className="block text-transparent bg-clip-text bg-gradient-to-r from-green-400 to-green-500 mt-2">
               We Don't Need To.
             </span>
           </h2>
@@ -71,8 +71,8 @@ export const PrivacyFirst = () => {
             return (
               <Card key={index} className="glass group hover:scale-105 transition-all duration-300">
                 <CardContent className="p-6 text-center">
-                  <div className="w-16 h-16 mx-auto mb-4 bg-gradient-to-br from-cyan-500/20 to-purple-500/20 rounded-2xl flex items-center justify-center group-hover:scale-110 transition-transform">
-                    <Icon className="text-cyan-400" size={32} />
+                  <div className="w-16 h-16 mx-auto mb-4 bg-gradient-to-br from-green-500/20 to-green-500/20 rounded-2xl flex items-center justify-center group-hover:scale-110 transition-transform">
+                    <Icon className="text-green-400" size={32} />
                   </div>
                   <h4 className="text-lg font-bold text-white mb-3">{feature.title}</h4>
                   <p className="text-gray-400 text-sm leading-relaxed">{feature.description}</p>
@@ -89,13 +89,13 @@ export const PrivacyFirst = () => {
             <Card className="glass-gradient">
               <CardContent className="p-8">
                 <h3 className="text-2xl font-bold text-white mb-6 flex items-center">
-                  <Lock className="text-cyan-400 mr-3" size={28} />
+                  <Lock className="text-green-400 mr-3" size={28} />
                   How We Achieve Zero Storage
                 </h3>
                 <div className="space-y-4">
                   <div className="flex items-start space-x-3">
-                    <div className="w-8 h-8 bg-cyan-500/20 rounded-full flex items-center justify-center flex-shrink-0 mt-1">
-                      <span className="text-cyan-400 font-bold text-sm">1</span>
+                    <div className="w-8 h-8 bg-green-500/20 rounded-full flex items-center justify-center flex-shrink-0 mt-1">
+                      <span className="text-green-400 font-bold text-sm">1</span>
                     </div>
                     <div>
                       <h5 className="text-white font-semibold mb-1">Real-Time Verification Only</h5>
@@ -103,8 +103,8 @@ export const PrivacyFirst = () => {
                     </div>
                   </div>
                   <div className="flex items-start space-x-3">
-                    <div className="w-8 h-8 bg-purple-500/20 rounded-full flex items-center justify-center flex-shrink-0 mt-1">
-                      <span className="text-purple-400 font-bold text-sm">2</span>
+                    <div className="w-8 h-8 bg-green-500/20 rounded-full flex items-center justify-center flex-shrink-0 mt-1">
+                      <span className="text-green-400 font-bold text-sm">2</span>
                     </div>
                     <div>
                       <h5 className="text-white font-semibold mb-1">Stateless Architecture</h5>
@@ -112,8 +112,8 @@ export const PrivacyFirst = () => {
                     </div>
                   </div>
                   <div className="flex items-start space-x-3">
-                    <div className="w-8 h-8 bg-cyan-500/20 rounded-full flex items-center justify-center flex-shrink-0 mt-1">
-                      <span className="text-cyan-400 font-bold text-sm">3</span>
+                    <div className="w-8 h-8 bg-green-500/20 rounded-full flex items-center justify-center flex-shrink-0 mt-1">
+                      <span className="text-green-400 font-bold text-sm">3</span>
                     </div>
                     <div>
                       <h5 className="text-white font-semibold mb-1">Device-Side Processing</h5>
@@ -121,8 +121,8 @@ export const PrivacyFirst = () => {
                     </div>
                   </div>
                   <div className="flex items-start space-x-3">
-                    <div className="w-8 h-8 bg-purple-500/20 rounded-full flex items-center justify-center flex-shrink-0 mt-1">
-                      <span className="text-purple-400 font-bold text-sm">4</span>
+                    <div className="w-8 h-8 bg-green-500/20 rounded-full flex items-center justify-center flex-shrink-0 mt-1">
+                      <span className="text-green-400 font-bold text-sm">4</span>
                     </div>
                     <div>
                       <h5 className="text-white font-semibold mb-1">Zero-Knowledge Protocol</h5>
@@ -139,19 +139,19 @@ export const PrivacyFirst = () => {
             <Card className="glass">
               <CardContent className="p-8">
                 <h3 className="text-2xl font-bold text-white mb-6 flex items-center">
-                  <CheckCircle2 className="text-purple-500 mr-3" size={28} />
+                  <CheckCircle2 className="text-green-500 mr-3" size={28} />
                   Why This Matters
                 </h3>
                 <div className="space-y-4">
                   {benefits.map((benefit, index) => (
-                    <div key={index} className="flex items-center space-x-3 p-3 rounded-lg bg-gradient-to-r from-cyan-500/5 to-purple-500/5 border border-white/5">
-                      <CheckCircle2 className="text-cyan-400 flex-shrink-0" size={20} />
+                    <div key={index} className="flex items-center space-x-3 p-3 rounded-lg bg-gradient-to-r from-green-500/5 to-green-500/5 border border-white/5">
+                      <CheckCircle2 className="text-green-400 flex-shrink-0" size={20} />
                       <span className="text-gray-300">{benefit}</span>
                     </div>
                   ))}
                 </div>
 
-                <div className="mt-8 p-6 bg-gradient-to-r from-cyan-500/10 to-purple-500/10 rounded-xl border border-cyan-500/20">
+                <div className="mt-8 p-6 bg-gradient-to-r from-green-500/10 to-green-500/10 rounded-xl border border-green-500/20">
                   <p className="text-white font-semibold mb-2">The Result:</p>
                   <p className="text-gray-300 text-sm leading-relaxed">
                     Even if attackers breach our systems, they find nothing. No databases, no profiles, no sensitive data. 
@@ -199,28 +199,28 @@ export const PrivacyFirst = () => {
 
                 {/* SEC@R */}
                 <div className="space-y-3">
-                  <h4 className="text-cyan-400 font-bold text-lg mb-4 flex items-center">
+                  <h4 className="text-green-400 font-bold text-lg mb-4 flex items-center">
                     <Shield className="mr-2" size={20} />
                     SEC@R Privacy-First
                   </h4>
                   <div className="flex items-start space-x-2">
-                    <CheckCircle2 className="text-cyan-400 flex-shrink-0 mt-0.5" size={16} />
+                    <CheckCircle2 className="text-green-400 flex-shrink-0 mt-0.5" size={16} />
                     <span className="text-gray-300 text-sm">Zero credential storage</span>
                   </div>
                   <div className="flex items-start space-x-2">
-                    <CheckCircle2 className="text-cyan-400 flex-shrink-0 mt-0.5" size={16} />
+                    <CheckCircle2 className="text-green-400 flex-shrink-0 mt-0.5" size={16} />
                     <span className="text-gray-300 text-sm">No profiling whatsoever</span>
                   </div>
                   <div className="flex items-start space-x-2">
-                    <CheckCircle2 className="text-cyan-400 flex-shrink-0 mt-0.5" size={16} />
+                    <CheckCircle2 className="text-green-400 flex-shrink-0 mt-0.5" size={16} />
                     <span className="text-gray-300 text-sm">No activity tracking</span>
                   </div>
                   <div className="flex items-start space-x-2">
-                    <CheckCircle2 className="text-cyan-400 flex-shrink-0 mt-0.5" size={16} />
+                    <CheckCircle2 className="text-green-400 flex-shrink-0 mt-0.5" size={16} />
                     <span className="text-gray-300 text-sm">Nothing to breach or steal</span>
                   </div>
                   <div className="flex items-start space-x-2">
-                    <CheckCircle2 className="text-cyan-400 flex-shrink-0 mt-0.5" size={16} />
+                    <CheckCircle2 className="text-green-400 flex-shrink-0 mt-0.5" size={16} />
                     <span className="text-gray-300 text-sm">Privacy by design, not compliance</span>
                   </div>
                 </div>
