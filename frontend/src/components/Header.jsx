@@ -55,7 +55,10 @@ export const Header = () => {
 
           {/* Desktop Navigation */}
           <div className="hidden md:flex items-center space-x-6">
-            <button onClick={() => scrollToSection('about')} className="text-gray-300 hover:text-green-400 transition-colors text-sm">
+            <button onClick={goToHome} className="text-gray-300 hover:text-green-400 transition-colors text-sm">
+              Home
+            </button>
+            <button onClick={() => navigate('/about-us')} className="text-gray-300 hover:text-green-400 transition-colors text-sm">
               About Us
             </button>
             <button onClick={() => navigate('/use-cases')} className="text-gray-300 hover:text-green-400 transition-colors text-sm">
@@ -69,9 +72,6 @@ export const Header = () => {
             </button>
             <button onClick={() => navigate('/mobile-app')} className="text-gray-300 hover:text-green-400 transition-colors text-sm">
               Solution
-            </button>
-            <button onClick={() => scrollToSection('architecture')} className="text-gray-300 hover:text-green-400 transition-colors text-sm">
-              Architecture
             </button>
             <button onClick={() => scrollToSection('contact')} className="text-gray-300 hover:text-green-400 transition-colors text-sm">
               Contact
@@ -93,7 +93,10 @@ export const Header = () => {
         {/* Mobile Menu */}
         {mobileMenuOpen && (
           <div className="md:hidden mt-4 pb-4 space-y-4">
-            <button onClick={() => scrollToSection('about')} className="block w-full text-left text-gray-300 hover:text-green-400 transition-colors py-2">
+            <button onClick={goToHome} className="block w-full text-left text-gray-300 hover:text-green-400 transition-colors py-2">
+              Home
+            </button>
+            <button onClick={() => { navigate('/about-us'); setMobileMenuOpen(false); }} className="block w-full text-left text-gray-300 hover:text-green-400 transition-colors py-2">
               About Us
             </button>
             <button onClick={() => { navigate('/use-cases'); setMobileMenuOpen(false); }} className="block w-full text-left text-gray-300 hover:text-green-400 transition-colors py-2">
@@ -107,9 +110,6 @@ export const Header = () => {
             </button>
             <button onClick={() => { navigate('/mobile-app'); setMobileMenuOpen(false); }} className="block w-full text-left text-gray-300 hover:text-green-400 transition-colors py-2">
               Solution
-            </button>
-            <button onClick={() => scrollToSection('architecture')} className="block w-full text-left text-gray-300 hover:text-green-400 transition-colors py-2">
-              Architecture
             </button>
             <button onClick={() => scrollToSection('contact')} className="block w-full text-left text-gray-300 hover:text-green-400 transition-colors py-2">
               Contact
