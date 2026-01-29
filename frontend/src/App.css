@@ -26,24 +26,24 @@ html {
 }
 
 .glass-emerald {
-    background: rgba(6, 182, 212, 0.1);
+    background: rgba(34, 197, 94, 0.12);
     backdrop-filter: blur(20px);
     -webkit-backdrop-filter: blur(20px);
-    border: 1px solid rgba(6, 182, 212, 0.3);
+    border: 1px solid rgba(34, 197, 94, 0.35);
 }
 
 .glass-purple {
-    background: rgba(168, 85, 247, 0.1);
+    background: rgba(34, 197, 94, 0.08);
     backdrop-filter: blur(20px);
     -webkit-backdrop-filter: blur(20px);
-    border: 1px solid rgba(168, 85, 247, 0.3);
+    border: 1px solid rgba(34, 197, 94, 0.25);
 }
 
 .glass-gradient {
-    background: linear-gradient(135deg, rgba(6, 182, 212, 0.1), rgba(168, 85, 247, 0.1));
+    background: linear-gradient(135deg, rgba(34, 197, 94, 0.12), rgba(22, 163, 74, 0.12));
     backdrop-filter: blur(20px);
     -webkit-backdrop-filter: blur(20px);
-    border: 1px solid rgba(255, 255, 255, 0.15);
+    border: 1px solid rgba(34, 197, 94, 0.2);
 }
 
 /* Custom Animations */
@@ -105,10 +105,10 @@ button, a {
 }
 
 .glass:hover {
-    background: rgba(255, 255, 255, 0.08);
-    border-color: rgba(168, 85, 247, 0.4);
+    background: rgba(34, 197, 94, 0.12);
+    border-color: rgba(34, 197, 94, 0.5);
     transform: translateY(-2px);
-    box-shadow: 0 8px 32px rgba(168, 85, 247, 0.15);
+    box-shadow: 0 8px 32px rgba(34, 197, 94, 0.2);
 }
 
 /* Custom Scrollbar */
@@ -122,23 +122,23 @@ button, a {
 }
 
 ::-webkit-scrollbar-thumb {
-    background: linear-gradient(180deg, rgba(6, 182, 212, 0.5), rgba(168, 85, 247, 0.5));
+    background: linear-gradient(180deg, rgba(34, 197, 94, 0.6), rgba(22, 163, 74, 0.6));
     backdrop-filter: blur(10px);
     border-radius: 5px;
 }
 
 ::-webkit-scrollbar-thumb:hover {
-    background: linear-gradient(180deg, rgba(6, 182, 212, 0.8), rgba(168, 85, 247, 0.8));
+    background: linear-gradient(180deg, rgba(34, 197, 94, 0.9), rgba(22, 163, 74, 0.9));
 }
 
 /* Selection Color */
 ::selection {
-    background: linear-gradient(135deg, rgba(6, 182, 212, 0.3), rgba(168, 85, 247, 0.3));
+    background: rgba(34, 197, 94, 0.35);
     color: #fff;
     backdrop-filter: blur(10px);
 }
 
 ::-moz-selection {
-    background: linear-gradient(135deg, rgba(6, 182, 212, 0.3), rgba(168, 85, 247, 0.3));
+    background: rgba(34, 197, 94, 0.35);
     color: #fff;
 }
