@@ -26,11 +26,11 @@ const AboutUsPage = () => {
             <h1 className="text-5xl md:text-7xl font-bold text-white mb-6">
               Revolutionizing
               <span className="block text-transparent bg-clip-text bg-gradient-to-r from-green-400 to-green-500 mt-2">
-                Data Security
+                Data Utility
               </span>
             </h1>
             <p className="text-xl text-gray-400 max-w-3xl mx-auto">
-              Understanding the global cyber threat landscape and how SEC@R is changing the game with consent-first architecture.
+              Understanding the global cyber fraud threat landscape and how SEC@R is changing the game with consent-first architecture.
             </p>
           </div>
         </div>
