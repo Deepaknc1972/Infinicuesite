@@ -19,6 +19,7 @@ import { Toaster } from "./components/ui/sonner";
 import ProductPage from "./pages/ProductPage";
 import MobileAppPage from "./pages/MobileAppPage";
 import UseCasesPage from "./pages/UseCasesPage";
+import AboutUsPage from "./pages/AboutUsPage";
 
 const Home = () => {
   return (
@@ -47,6 +48,7 @@ function App() {
         <BrowserRouter>
           <Routes>
             <Route path="/" element={<Home />} />
+            <Route path="/about-us" element={<AboutUsPage />} />
             <Route path="/products" element={<ProductPage />} />
             <Route path="/mobile-app" element={<MobileAppPage />} />
             <Route path="/use-cases" element={<UseCasesPage />} />
