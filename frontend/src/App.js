@@ -1,53 +1,60 @@
-import { useEffect } from "react";
-import "@/App.css";
+import React from "react";
+import "./App.css";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-import axios from "axios";
-
-const BACKEND_URL = process.env.REACT_APP_BACKEND_URL;
-const API = `${BACKEND_URL}/api`;
+import { ThemeProvider } from "./context/ThemeContext";
+import { Header } from "./components/Header";
+import { Hero } from "./components/Hero";
+import { CyberFraudStats } from "./components/CyberFraudStats";
+import { AboutUs } from "./components/AboutUs";
+import { HowItWorks } from "./components/HowItWorks";
+import { ThreatsPrevented } from "./components/ThreatsPrevented";
+import { PrivacyFirst } from "./components/PrivacyFirst";
+import { Features } from "./components/Features";
+import { Products } from "./components/Products";
+import { SolutionArchitecture } from "./components/SolutionArchitecture";
+import { Testimonials } from "./components/Testimonials";
+import { Contact } from "./components/Contact";
+import { Footer } from "./components/Footer";
+import { Toaster } from "./components/ui/sonner";
+import ProductPage from "./pages/ProductPage";
+import MobileAppPage from "./pages/MobileAppPage";
+import UseCasesPage from "./pages/UseCasesPage";
 
 const Home = () => {
-  const helloWorldApi = async () => {
-    try {
-      const response = await axios.get(`${API}/`);
-      console.log(response.data.message);
-    } catch (e) {
-      console.error(e, `errored out requesting / api`);
-    }
-  };
-
-  useEffect(() => {
-    helloWorldApi();
-  }, []);
-
   return (
-    <div>
-      <header className="App-header">
-        <a
-          className="App-link"
-          href="https://emergent.sh"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <img src="https://avatars.githubusercontent.com/in/1201222?s=120&u=2686cf91179bbafbc7a71bfbc43004cf9ae1acea&v=4" />
-        </a>
-        <p className="mt-5">Building something incredible ~!</p>
-      </header>
+    <div className="min-h-screen bg-background">
+      <Header />
+      <Hero />
+      <CyberFraudStats />
+      <AboutUs />
+      <HowItWorks />
+      <ThreatsPrevented />
+      <PrivacyFirst />
+      <Features />
+      <Products />
+      <SolutionArchitecture />
+      <Testimonials />
+      <Contact />
+      <Footer />
     </div>
   );
 };
 
 function App() {
   return (
-    <div className="App">
-      <BrowserRouter>
-        <Routes>
-          <Route path="/" element={<Home />}>
-            <Route index element={<Home />} />
-          </Route>
-        </Routes>
-      </BrowserRouter>
-    </div>
+    <ThemeProvider>
+      <div className="App">
+        <BrowserRouter>
+          <Routes>
+            <Route path="/" element={<Home />} />
+            <Route path="/products" element={<ProductPage />} />
+            <Route path="/mobile-app" element={<MobileAppPage />} />
+            <Route path="/use-cases" element={<UseCasesPage />} />
+          </Routes>
+        </BrowserRouter>
+        <Toaster />
+      </div>
+    </ThemeProvider>
   );
 }
 
