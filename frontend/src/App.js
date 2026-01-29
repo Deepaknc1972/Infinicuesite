@@ -27,7 +27,6 @@ const Home = () => {
       <Header />
       <Hero />
       <CyberFraudStats />
-      <AboutUs />
       <HowItWorks />
       <ThreatsPrevented />
       <PrivacyFirst />
