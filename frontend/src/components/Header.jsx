@@ -54,7 +54,7 @@ export const Header = () => {
           <button onClick={goToHome} className="flex items-center space-x-2">
             <div className="w-14 h-14 rounded-lg flex items-center justify-center">
               <img
-                src="/Infinilogo.png"
+                src="/infinilogo.png"
                 alt="Infinicue Solutions Logo"
                 className="w-20 h-20 object-contain"
               />
