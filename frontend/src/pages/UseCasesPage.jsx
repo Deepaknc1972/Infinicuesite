@@ -103,6 +103,20 @@ const UseCasesPage = () => {
         "Telecom API integration adds additional verification layer"
       ],
       result: "SS7 vulnerabilities become irrelevant as SEC@R uses hardware + biometric authentication, not SMS."
+    },
+    {
+      id: 8,
+      title: "Insider Threat Fraud",
+      image: "https://images.unsplash.com/photo-1542903660-eedba2cda473?crop=entropy&cs=srgb&fm=jpg&q=85",
+      problem: "Malicious insiders with legitimate access credentials exploit their position to conduct unauthorized transactions, steal sensitive data, or commit fraud. Even if they obtain consent from the Data Principal through coercion or deception, traditional systems cannot detect this abuse.",
+      impact: "60% of data breaches involve insiders, $15.4 million average cost per incident, 85% go undetected for months",
+      howSecarHelps: [
+        "Location-based verification requires Data Principal to be physically present at the same location for any transaction",
+        "Even with obtained consent, transactions are blocked if the Data Principal is not co-located",
+        "Real-time geolocation matching between insider device and Data Principal device",
+        "AMDA system flags anomalies when consent location differs from transaction location"
+      ],
+      result: "Insider threats are neutralized because SEC@R requires the Data Principal to be physically present at the same location - consent alone is not enough."
     }
   ];
 
