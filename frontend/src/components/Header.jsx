@@ -60,35 +60,35 @@ export const Header = () => {
               />
             </div>
             <div>
-              <div className="text-3xl font-regular text-white">Infinicue Solutions</div>
+              <div className="text-2xl font-regular text-white">Infinicue Solutions</div>
               <div className="text-xl bg-gradient-to-r from-green-400 to-green-500 bg-clip-text text-transparent">Simplify | Automate | Resolve</div>
             </div>
           </button>
 
           {/* Desktop Navigation */}
           <div className="hidden md:flex items-center space-x-6">
-            <button onClick={() => navigate('/')} className="text-xl text-gray-300 hover:text-green-400 transition-colors text-base">
+            <button onClick={() => navigate('/')} className="text-lg text-gray-400 hover:text-green-400 transition-colors">
               About Us
             </button>
-            <button onClick={goToHome} className="text-xl text-gray-300 hover:text-green-400 transition-colors text-base">
+            <button onClick={goToHome} className="text-lg text-gray-400 hover:text-green-400 transition-colors">
               Approach
             </button>
-            <button onClick={() => navigate('/use-cases')} className="text-xl text-gray-300 hover:text-green-400 transition-colors text-base">
+            <button onClick={() => navigate('/use-cases')} className="text-lg text-gray-400 hover:text-green-400 transition-colors">
               Use Cases
             </button>
-            <button onClick={() => scrollToSection('features')} className="text-xltext-gray-300 hover:text-green-400 transition-colors text-base">
+            <button onClick={() => scrollToSection('features')} className="text-lg text-gray-400 hover:text-green-400 transition-colors">
               Features
             </button>
-            <button onClick={goToProducts} className="text-xl text-gray-300 hover:text-green-400 transition-colors text-base">
+            <button onClick={goToProducts} className="text-lg text-gray-400 hover:text-green-400 transition-colors">
               Products
             </button>
-            <button onClick={() => navigate('/mobile-app')} className="text-xltext-gray-300 hover:text-green-400 transition-colors text-base">
+            <button onClick={() => navigate('/mobile-app')} className="text-lg text-gray-400 hover:text-green-400 transition-colors">
               Solution
             </button>
-            <button onClick={() => scrollToSection('contact')} className=" text-xltext-gray-300 hover:text-green-400 transition-colors text-base">
+            <button onClick={() => scrollToSection('contact')} className="text-lg text-gray-400 hover:text-green-400 transition-colors">
               Contact
             </button>
-            <Button onClick={() => scrollToSection('contact')} className="text-xl bg-gradient-to-r from-green-500 to-green-600 hover:from-green-600 hover:to-green-700 text-white font-semibold">
+            <Button onClick={() => scrollToSection('contact')} className="text-lg bg-gradient-to-r from-green-500 to-green-600 hover:from-green-600 hover:to-green-700 text-white font-semibold">
               Get Started
             </Button>
           </div>

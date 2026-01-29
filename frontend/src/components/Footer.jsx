@@ -1,6 +1,13 @@
 import React from 'react';
+
+import {
+  Github,
+  Linkedin,
+  Mail,
+  Twitter,
+} from 'lucide-react';
+
 import { mockData } from '../mock';
-import { Linkedin, Twitter, Github, Mail } from 'lucide-react';
 
 export const Footer = () => {
   const { company, contactInfo } = mockData;
@@ -19,8 +26,12 @@ export const Footer = () => {
           {/* Company Info */}
           <div className="md:col-span-2">
             <div className="flex items-center space-x-2 mb-4">
-              <div className="w-10 h-10 bg-gradient-to-br from-green-400 to-green-600 rounded-lg flex items-center justify-center font-bold text-black">
-                IS
+              <div className="w-10 h-10 rounded-lg flex items-center justify-center">
+                <img
+                  src="/infinilogo.png"
+                  alt="Infinicue Solutions Logo"
+                  className="w-8 h-8 object-contain"
+                />
               </div>
               <div>
                 <div className="text-xl font-bold text-white">{company.name}</div>
@@ -28,7 +39,7 @@ export const Footer = () => {
               </div>
             </div>
             <p className="text-gray-400 mb-4 max-w-md">
-              Leading cybersecurity solutions for consent control and fraud mitigation. 
+              Cybersecurity solutions for consent control and fraud mitigation.
               Protecting your digital assets with SEC@R platform.
             </p>
             <div className="flex items-center space-x-4">
