@@ -1,7 +1,9 @@
 import React from 'react';
-import { Button } from './ui/button';
-import { ArrowRight, Play } from 'lucide-react';
+
+import { ArrowRight } from 'lucide-react';
+
 import { mockData } from '../mock';
+import { Button } from './ui/button';
 
 export const Hero = () => {
   const { hero } = mockData;
@@ -10,9 +12,9 @@ export const Hero = () => {
     <section className="relative min-h-screen flex items-center justify-center overflow-hidden bg-black pt-20">
       {/* Background Image with Overlay */}
       <div className="absolute inset-0 z-0">
-        <img 
-          src={hero.image} 
-          alt="Cybersecurity Background" 
+        <img
+          src={hero.image}
+          alt="Cybersecurity Background"
           className="w-full h-full object-cover opacity-20"
         />
         <div className="absolute inset-0 bg-gradient-to-b from-black via-black/90 to-black"></div>
@@ -46,38 +48,38 @@ export const Hero = () => {
 
         {/* CTA Buttons */}
         <div className="flex flex-col sm:flex-row items-center justify-center gap-4 animate-slide-up" style={{ animationDelay: '0.2s' }}>
-          <Button 
-            size="lg" 
+          <Button
+            size="lg"
             className="bg-green-500 hover:bg-green-600 text-black font-semibold px-8 py-6 text-lg group"
             onClick={() => document.getElementById('contact').scrollIntoView({ behavior: 'smooth' })}
           >
             {hero.cta}
             <ArrowRight className="ml-2 group-hover:translate-x-1 transition-transform" />
           </Button>
-          <Button 
-            size="lg" 
-            variant="outline" 
+          {/* <Button
+            size="lg"
+            variant="outline"
             className="border-green-500 text-green-400 hover:bg-green-500/10 px-8 py-6 text-lg"
           >
             <Play className="mr-2" size={20} />
             {hero.secondaryCta}
-          </Button>
+          </Button> */}
         </div>
 
         {/* Trust Indicators */}
         <div className="mt-16 flex flex-wrap items-center justify-center gap-8 text-gray-400 animate-fade-in" style={{ animationDelay: '0.3s' }}>
-          <div className="flex items-center space-x-2 glass px-4 py-2 rounded-full">
+          {/* <div className="flex items-center space-x-2 glass px-4 py-2 rounded-full">
             <div className="w-6 h-6 bg-green-500/20 rounded flex items-center justify-center text-green-400 text-xs font-bold">✓</div>
             <span>SOC 2 Certified</span>
-          </div>
+          </div> */}
           <div className="flex items-center space-x-2 glass px-4 py-2 rounded-full">
             <div className="w-6 h-6 bg-green-500/20 rounded flex items-center justify-center text-green-400 text-xs font-bold">✓</div>
-            <span>GDPR Compliant</span>
+            <span>DPDP/GDPR Compliant</span>
           </div>
-          <div className="flex items-center space-x-2 glass px-4 py-2 rounded-full">
+          {/* <div className="flex items-center space-x-2 glass px-4 py-2 rounded-full">
             <div className="w-6 h-6 bg-green-500/20 rounded flex items-center justify-center text-green-400 text-xs font-bold">✓</div>
             <span>ISO 27001</span>
-          </div>
+          </div> */}
         </div>
       </div>
 

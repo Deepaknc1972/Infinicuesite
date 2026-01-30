@@ -1,6 +1,6 @@
 import React from 'react';
+
 import { mockData } from '../mock';
-import { Users, Target, Award, Shield } from 'lucide-react';
 
 export const AboutUs = () => {
   const { aboutUs } = mockData;
@@ -15,7 +15,7 @@ export const AboutUs = () => {
               <h2 className="text-sm font-semibold text-green-400 uppercase tracking-wider mb-4">About Us</h2>
               <h3 className="text-4xl md:text-5xl font-bold text-white mb-6">{aboutUs.title}</h3>
             </div>
-            
+
             <p className="text-lg text-gray-400 leading-relaxed">
               {aboutUs.description}
             </p>
@@ -40,9 +40,9 @@ export const AboutUs = () => {
           {/* Right Content - Image */}
           <div className="relative">
             <div className="relative rounded-2xl overflow-hidden">
-              <img 
-                src={aboutUs.image} 
-                alt="About Infinicue Solutions" 
+              <img
+                src={aboutUs.image}
+                alt="About Infinicue Solutions"
                 className="w-full h-[600px] object-cover"
               />
               <div className="absolute inset-0 bg-gradient-to-t from-black/80 to-transparent"></div>
@@ -50,9 +50,15 @@ export const AboutUs = () => {
 
             {/* Floating Cards */}
             <div className="absolute -bottom-8 -left-8 glass-strong rounded-xl p-6">
-              <Shield className="text-green-400 mb-2" size={32} />
-              <div className="text-2xl font-bold text-white">500+</div>
-              <div className="text-sm text-gray-400">Protected Organizations</div>
+              <img
+                src="/sec@r-logo.png"
+                alt="SEC@R Product Logo"
+                className="w-16 h-16 mb-2 object-contain
+             drop-shadow-[0_0_12px_rgba(255,255,255,0.9)]
+             drop-shadow-[0_0_24px_rgba(255,255,255,0.4)]"
+              />
+              <div className="text-2xl font-bold text-white">Sec@r</div>
+              <div className="text-sm text-gray-400">Data Utility</div>
             </div>
           </div>
         </div>
