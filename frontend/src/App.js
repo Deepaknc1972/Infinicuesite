@@ -1,25 +1,27 @@
-import React from "react";
-import "./App.css";
-import { BrowserRouter, Routes, Route } from "react-router-dom";
-import { ThemeProvider } from "./context/ThemeContext";
-import { Header } from "./components/Header";
-import { Hero } from "./components/Hero";
-import { CyberFraudStats } from "./components/CyberFraudStats";
-import { AboutUs } from "./components/AboutUs";
-import { HowItWorks } from "./components/HowItWorks";
-import { ThreatsPrevented } from "./components/ThreatsPrevented";
-import { PrivacyFirst } from "./components/PrivacyFirst";
-import { Features } from "./components/Features";
-import { Products } from "./components/Products";
-import { SolutionArchitecture } from "./components/SolutionArchitecture";
-import { Testimonials } from "./components/Testimonials";
-import { Contact } from "./components/Contact";
-import { Footer } from "./components/Footer";
-import { Toaster } from "./components/ui/sonner";
-import ProductPage from "./pages/ProductPage";
-import MobileAppPage from "./pages/MobileAppPage";
-import UseCasesPage from "./pages/UseCasesPage";
-import AboutUsPage from "./pages/AboutUsPage";
+import './App.css';
+
+import React from 'react';
+
+import {
+  BrowserRouter,
+  Route,
+  Routes,
+} from 'react-router-dom';
+
+import { Contact } from './components/Contact';
+import { CyberFraudStats } from './components/CyberFraudStats';
+import { Footer } from './components/Footer';
+import { Header } from './components/Header';
+import { Hero } from './components/Hero';
+import { HowItWorks } from './components/HowItWorks';
+import { PrivacyFirst } from './components/PrivacyFirst';
+import { ThreatsPrevented } from './components/ThreatsPrevented';
+import { Toaster } from './components/ui/sonner';
+import { ThemeProvider } from './context/ThemeContext';
+import AboutUsPage from './pages/AboutUsPage';
+import MobileAppPage from './pages/MobileAppPage';
+import ProductPage from './pages/ProductPage';
+import UseCasesPage from './pages/UseCasesPage';
 
 const Home = () => {
   return (
@@ -30,10 +32,10 @@ const Home = () => {
       <HowItWorks />
       <ThreatsPrevented />
       <PrivacyFirst />
-      <Features />
-      <Products />
-      <SolutionArchitecture />
-      <Testimonials />
+      {/* <Features /> */}
+      {/* <Products /> */}
+      {/* <SolutionArchitecture /> */}
+      {/* <Testimonials /> */}
       <Contact />
       <Footer />
     </div>

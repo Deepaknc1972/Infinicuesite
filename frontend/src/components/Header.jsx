@@ -76,12 +76,12 @@ export const Header = () => {
             <button onClick={() => navigate('/use-cases')} className="text-lg text-gray-400 hover:text-green-400 transition-colors">
               Use Cases
             </button>
-            <button onClick={() => scrollToSection('features')} className="text-lg text-gray-400 hover:text-green-400 transition-colors">
+            {/* <button onClick={() => scrollToSection('features')} className="text-lg text-gray-400 hover:text-green-400 transition-colors">
               Features
             </button>
             <button onClick={goToProducts} className="text-lg text-gray-400 hover:text-green-400 transition-colors">
               Products
-            </button>
+            </button> */}
             <button onClick={() => navigate('/mobile-app')} className="text-lg text-gray-400 hover:text-green-400 transition-colors">
               Solution
             </button>
@@ -114,12 +114,12 @@ export const Header = () => {
             <button onClick={() => { navigate('/use-cases'); setMobileMenuOpen(false); }} className="block w-full text-left text-gray-300 hover:text-green-400 transition-colors py-2 text-base">
               Use Cases
             </button>
-            <button onClick={() => scrollToSection('features')} className="block w-full text-left text-gray-300 hover:text-green-400 transition-colors py-2 text-base">
+            {/* <button onClick={() => scrollToSection('features')} className="block w-full text-left text-gray-300 hover:text-green-400 transition-colors py-2 text-base">
               Features
             </button>
             <button onClick={goToProducts} className="block w-full text-left text-gray-300 hover:text-green-400 transition-colors py-2 text-base">
               Products
-            </button>
+            </button> */}
             <button onClick={() => { navigate('/mobile-app'); setMobileMenuOpen(false); }} className="block w-full text-left text-gray-300 hover:text-green-400 transition-colors py-2 text-base">
               Solution
             </button>

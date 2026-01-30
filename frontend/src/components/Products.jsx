@@ -1,9 +1,16 @@
 import React from 'react';
-import { mockData } from '../mock';
-import { Card, CardContent, CardHeader, CardTitle } from './ui/card';
-import { Button } from './ui/button';
-import { Badge } from './ui/badge';
+
 import { Check } from 'lucide-react';
+
+import { mockData } from '../mock';
+import { Badge } from './ui/badge';
+import { Button } from './ui/button';
+import {
+  Card,
+  CardContent,
+  CardHeader,
+  CardTitle,
+} from './ui/card';
 
 export const Products = () => {
   const { products } = mockData;
@@ -14,20 +21,19 @@ export const Products = () => {
         {/* Section Header */}
         <div className="text-center mb-16">
           <h2 className="text-sm font-semibold text-green-400 uppercase tracking-wider mb-4">Products</h2>
-          <h3 className="text-4xl md:text-5xl font-bold text-white mb-6">SEC@R Platform Solutions</h3>
+          <h3 className="text-4xl md:text-5xl font-bold text-white mb-6">SEC@R Platform</h3>
           <p className="text-xl text-gray-400 max-w-3xl mx-auto">
-            Choose the perfect SEC@R solution tailored to your organization's security needs.
+            SEC@R delivers consent-first security through automated multi-device authentication, a secure mobile application, and BLE-based trusted devices.
           </p>
         </div>
 
         {/* Products Grid */}
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           {products.map((product, index) => (
-            <Card 
+            <Card
               key={product.id}
-              className={`glass relative overflow-hidden group hover:scale-105 ${
-                product.badge ? 'ring-2 ring-green-500/30' : ''
-              }`}
+              className={`glass relative overflow-hidden group hover:scale-105 ${product.badge ? 'ring-2 ring-green-500/30' : ''
+                }`}
               style={{ animationDelay: `${index * 0.1}s` }}
             >
               {product.badge && (
@@ -37,12 +43,12 @@ export const Products = () => {
                   </Badge>
                 </div>
               )}
-              
+
               <CardHeader className="pb-4">
                 <CardTitle className="text-2xl text-white mb-2">{product.name}</CardTitle>
                 <p className="text-gray-400">{product.description}</p>
               </CardHeader>
-              
+
               <CardContent className="space-y-4">
                 <ul className="space-y-3">
                   {product.features.map((feature, idx) => (
@@ -52,8 +58,8 @@ export const Products = () => {
                     </li>
                   ))}
                 </ul>
-                
-                <Button 
+
+                <Button
                   className="w-full bg-green-500 hover:bg-green-600 text-black font-semibold mt-6"
                   onClick={() => document.getElementById('contact').scrollIntoView({ behavior: 'smooth' })}
                 >

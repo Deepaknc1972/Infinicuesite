@@ -1,8 +1,19 @@
 import React from 'react';
-import { Header } from '../components/Header';
+
+import {
+  AlertTriangle,
+  Check,
+  Shield,
+} from 'lucide-react';
+
 import { Footer } from '../components/Footer';
-import { Card, CardContent, CardHeader, CardTitle } from '../components/ui/card';
-import { Shield, AlertTriangle, Check } from 'lucide-react';
+import { Header } from '../components/Header';
+import {
+  Card,
+  CardContent,
+  CardHeader,
+  CardTitle,
+} from '../components/ui/card';
 
 const UseCasesPage = () => {
   const useCases = [
@@ -123,7 +134,7 @@ const UseCasesPage = () => {
   return (
     <div className="min-h-screen bg-black">
       <Header />
-      
+
       {/* Page Hero */}
       <section className="pt-32 pb-16 bg-gradient-to-b from-black via-gray-950 to-black relative overflow-hidden">
         <div className="absolute inset-0 opacity-20">
@@ -157,14 +168,13 @@ const UseCasesPage = () => {
         <div className="container mx-auto px-6">
           <div className="space-y-20">
             {useCases.map((useCase, index) => (
-              <div key={useCase.id} className={`grid grid-cols-1 lg:grid-cols-2 gap-12 items-center ${
-                index % 2 === 1 ? 'lg:flex-row-reverse' : ''
-              }`}>
+              <div key={useCase.id} className={`grid grid-cols-1 lg:grid-cols-2 gap-12 items-center ${index % 2 === 1 ? 'lg:flex-row-reverse' : ''
+                }`}>
                 {/* Image */}
                 <div className={`${index % 2 === 1 ? 'lg:order-2' : ''}`}>
                   <div className="relative rounded-2xl overflow-hidden group">
-                    <img 
-                      src={useCase.image} 
+                    <img
+                      src={useCase.image}
                       alt={useCase.title}
                       className="w-full h-[400px] object-cover group-hover:scale-110 transition-transform duration-500"
                     />
@@ -187,7 +197,7 @@ const UseCasesPage = () => {
                     </CardHeader>
                     <CardContent className="space-y-6">
                       <p className="text-gray-300 leading-relaxed">{useCase.problem}</p>
-                      
+
                       <div className="bg-red-500/10 border border-red-500/30 rounded-xl p-4">
                         <div className="text-sm font-semibold text-red-400 mb-2">Impact:</div>
                         <p className="text-gray-300 text-sm">{useCase.impact}</p>
@@ -229,17 +239,17 @@ const UseCasesPage = () => {
               <h2 className="text-4xl font-bold text-white mb-6">
                 Ready to Make Fraud Impossible?
               </h2>
-              <p className="text-xl text-gray-300 mb-8 max-w-2xl mx-auto">
+              {/* <p className="text-xl text-gray-300 mb-8 max-w-2xl mx-auto">
                 Join hundreds of organizations protecting their users with SEC@R's consent-first architecture.
-              </p>
-              <button 
+              </p> */}
+              <button
                 onClick={() => {
                   window.scrollTo(0, 0);
                   window.location.href = '/#contact';
                 }}
                 className="bg-gradient-to-r from-green-500 to-green-600 hover:from-green-600 hover:to-green-700 text-white font-semibold px-12 py-4 rounded-lg text-lg transition-all duration-300 hover:scale-105"
               >
-                Get Started Today
+                Let us get Started!
               </button>
             </CardContent>
           </Card>
