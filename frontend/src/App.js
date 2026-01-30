@@ -22,6 +22,7 @@ import AboutUsPage from './pages/AboutUsPage';
 import MobileAppPage from './pages/MobileAppPage';
 import ProductPage from './pages/ProductPage';
 import UseCasesPage from './pages/UseCasesPage';
+import PrivacyPolicyPage from './pages/PrivacyPolicyPage';
 
 const Home = () => {
   return (
@@ -54,6 +55,7 @@ function App() {
             <Route path="/products" element={<ProductPage />} />
             <Route path="/mobile-app" element={<MobileAppPage />} />
             <Route path="/use-cases" element={<UseCasesPage />} />
+            <Route path="/privacy-policy" element={<PrivacyPolicyPage />} />
           </Routes>
         </BrowserRouter>
         <Toaster />
