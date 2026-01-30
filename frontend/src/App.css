@@ -1,144 +1,157 @@
 /* Smooth Scrolling */
 html {
-    scroll-behavior: smooth;
+  scroll-behavior: smooth;
 }
 
 /* Glassmorphism Utility Classes */
 .glass {
-    background: rgba(255, 255, 255, 0.05);
-    backdrop-filter: blur(20px);
-    -webkit-backdrop-filter: blur(20px);
-    border: 1px solid rgba(255, 255, 255, 0.1);
+  background: rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
 }
 
 .glass-strong {
-    background: rgba(255, 255, 255, 0.08);
-    backdrop-filter: blur(24px);
-    -webkit-backdrop-filter: blur(24px);
-    border: 1px solid rgba(255, 255, 255, 0.15);
+  background: rgba(255, 255, 255, 0.08);
+  backdrop-filter: blur(24px);
+  -webkit-backdrop-filter: blur(24px);
+  border: 1px solid rgba(255, 255, 255, 0.15);
 }
 
 .glass-dark {
-    background: rgba(0, 0, 0, 0.4);
-    backdrop-filter: blur(20px);
-    -webkit-backdrop-filter: blur(20px);
-    border: 1px solid rgba(255, 255, 255, 0.08);
+  background: rgba(0, 0, 0, 0.4);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border: 1px solid rgba(255, 255, 255, 0.08);
 }
 
 .glass-emerald {
-    background: rgba(34, 197, 94, 0.12);
-    backdrop-filter: blur(20px);
-    -webkit-backdrop-filter: blur(20px);
-    border: 1px solid rgba(34, 197, 94, 0.35);
+  background: rgba(196, 219, 240, 0.12);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border: 1px solid rgba(122, 169, 235, 0.35);
 }
 
 .glass-purple {
-    background: rgba(34, 197, 94, 0.08);
-    backdrop-filter: blur(20px);
-    -webkit-backdrop-filter: blur(20px);
-    border: 1px solid rgba(34, 197, 94, 0.25);
+  background: rgba(167, 34, 197, 0.08);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border: 1px solid rgba(34, 197, 94, 0.25);
 }
 
 .glass-gradient {
-    background: linear-gradient(135deg, rgba(34, 197, 94, 0.12), rgba(22, 163, 74, 0.12));
-    backdrop-filter: blur(20px);
-    -webkit-backdrop-filter: blur(20px);
-    border: 1px solid rgba(34, 197, 94, 0.2);
+  background: linear-gradient(
+    135deg,
+    rgba(34, 197, 94, 0.12),
+    rgba(22, 163, 74, 0.12)
+  );
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border: 1px solid rgba(34, 197, 94, 0.2);
 }
 
 /* Custom Animations */
 @keyframes fade-in {
-    from {
-        opacity: 0;
-    }
-    to {
-        opacity: 1;
-    }
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
 }
 
 @keyframes slide-up {
-    from {
-        opacity: 0;
-        transform: translateY(30px);
-    }
-    to {
-        opacity: 1;
-        transform: translateY(0);
-    }
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 
 @keyframes slide-down {
-    from {
-        opacity: 0;
-        transform: translateY(-30px);
-    }
-    to {
-        opacity: 1;
-        transform: translateY(0);
-    }
+  from {
+    opacity: 0;
+    transform: translateY(-30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 
 @keyframes glass-shimmer {
-    0% {
-        background-position: -1000px 0;
-    }
-    100% {
-        background-position: 1000px 0;
-    }
+  0% {
+    background-position: -1000px 0;
+  }
+  100% {
+    background-position: 1000px 0;
+  }
 }
 
 .animate-fade-in {
-    animation: fade-in 0.8s ease-out forwards;
+  animation: fade-in 0.8s ease-out forwards;
 }
 
 .animate-slide-up {
-    animation: slide-up 0.8s ease-out forwards;
+  animation: slide-up 0.8s ease-out forwards;
 }
 
 .animate-slide-down {
-    animation: slide-down 0.8s ease-out forwards;
+  animation: slide-down 0.8s ease-out forwards;
 }
 
 /* Hover Effects */
-button, a {
-    transition: all 0.3s ease;
+button,
+a {
+  transition: all 0.3s ease;
 }
 
 .glass:hover {
-    background: rgba(34, 197, 94, 0.12);
-    border-color: rgba(34, 197, 94, 0.5);
-    transform: translateY(-2px);
-    box-shadow: 0 8px 32px rgba(34, 197, 94, 0.2);
+  background: rgba(34, 197, 94, 0.12);
+  border-color: rgba(34, 197, 94, 0.5);
+  transform: translateY(-2px);
+  box-shadow: 0 8px 32px rgba(34, 197, 94, 0.2);
 }
 
 /* Custom Scrollbar */
 ::-webkit-scrollbar {
-    width: 10px;
+  width: 10px;
 }
 
 ::-webkit-scrollbar-track {
-    background: rgba(0, 0, 0, 0.5);
-    backdrop-filter: blur(10px);
+  background: rgba(0, 0, 0, 0.5);
+  backdrop-filter: blur(10px);
 }
 
 ::-webkit-scrollbar-thumb {
-    background: linear-gradient(180deg, rgba(34, 197, 94, 0.6), rgba(22, 163, 74, 0.6));
-    backdrop-filter: blur(10px);
-    border-radius: 5px;
+  background: linear-gradient(
+    180deg,
+    rgba(34, 197, 94, 0.6),
+    rgba(22, 163, 74, 0.6)
+  );
+  backdrop-filter: blur(10px);
+  border-radius: 5px;
 }
 
 ::-webkit-scrollbar-thumb:hover {
-    background: linear-gradient(180deg, rgba(34, 197, 94, 0.9), rgba(22, 163, 74, 0.9));
+  background: linear-gradient(
+    180deg,
+    rgba(34, 197, 94, 0.9),
+    rgba(22, 163, 74, 0.9)
+  );
 }
 
 /* Selection Color */
 ::selection {
-    background: rgba(34, 197, 94, 0.35);
-    color: #fff;
-    backdrop-filter: blur(10px);
+  background: rgba(34, 197, 94, 0.35);
+  color: #fff;
+  backdrop-filter: blur(10px);
 }
 
 ::-moz-selection {
-    background: rgba(34, 197, 94, 0.35);
-    color: #fff;
+  background: rgba(34, 197, 94, 0.35);
+  color: #fff;
 }

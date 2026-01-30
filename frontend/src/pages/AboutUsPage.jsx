@@ -1,14 +1,15 @@
 import React from 'react';
-import { Header } from '../components/Header';
-import { Footer } from '../components/Footer';
-import { CyberFraudStats } from '../components/CyberFraudStats';
+
 import { AboutUs } from '../components/AboutUs';
+import { CyberFraudStats } from '../components/CyberFraudStats';
+import { Footer } from '../components/Footer';
+import { Header } from '../components/Header';
 
 const AboutUsPage = () => {
   return (
     <div className="min-h-screen bg-black">
       <Header />
-      
+
       {/* Page Hero */}
       <section className="pt-32 pb-16 bg-gradient-to-b from-black via-gray-950 to-black relative overflow-hidden">
         <div className="absolute inset-0 opacity-20">
@@ -20,19 +21,49 @@ const AboutUsPage = () => {
 
         <div className="container mx-auto px-6 relative z-10">
           <div className="text-center mb-12">
-            <div className="inline-flex items-center space-x-2 glass-emerald rounded-full px-6 py-2 mb-6">
-              <span className="text-green-400 font-medium">About Infinicue Solutions</span>
+            <div className="inline-flex items-center space-x-2  rounded-full px-6 py-2 mb-6">
+              <span className="text-xl text-red-400 font-medium">The Uncomfortable Truth About Data</span>
             </div>
             <h1 className="text-5xl md:text-7xl font-bold text-white mb-6">
-              Revolutionizing
-              <span className="block text-transparent bg-clip-text bg-gradient-to-r from-green-400 to-green-500 mt-2">
-                Data Utility
+              Every Bank Will be
+              <span className="block text-transparent bg-clip-text bg-gradient-to-r from-red-400 to-red-400 mb-6">
+                Breached Eventually
               </span>
             </h1>
-            <p className="text-xl text-gray-400 max-w-3xl mx-auto">
-              Understanding the global cyber fraud threat landscape and how SEC@R is changing the game with consent-first architecture.
+            <p className="text-3xl text-white-400 max-w-3xl mx-auto">
+              The industry spends billions trying to prevent breaches.
+
             </p>
+            {/* <p className="text-3xl text-white-400 max-w-3xl mb-6">
+
+              Yet data theft happens every day.
+            </p> */}
+
+            <p className="text-3xl text-white-500 mac-w-4xl mb-6">
+              What if the real problem isn't theft —</p>
+            <p className="text-3xl text-white-500 mac-w-4xl mb-6">
+              but what stolen data can still be used for?</p>
+
+
+
+            <h1 className="text-4xl md:text-6xl font-bold text-white mb-6">
+              Introducing Sec@r – the Game Changer
+            </h1>
+
+
+            <h1 className="text-5xl md:text-7xl font-bold text-white mb-6">
+              <span className="block text-transparent bg-clip-text bg-gradient-to-r from-green-500 to-green-500 mb-6">
+                Revolutionizing Data Utility
+              </span>
+
+            </h1>
+
           </div>
+
+
+
+
+
         </div>
       </section>
 
@@ -52,7 +83,7 @@ const AboutUsPage = () => {
               </div>
               <h3 className="text-3xl font-bold text-white mb-4">Our Mission</h3>
               <p className="text-gray-300 leading-relaxed">
-                To eliminate the economic value of stolen data through consent-first architecture, making data breaches 
+                To eliminate the economic value of stolen data through consent-first architecture, making data breaches
                 pointless for cybercriminals. We don't just protect data - we make it worthless without the Data Principal's consent.
               </p>
             </div>
@@ -67,7 +98,7 @@ const AboutUsPage = () => {
               </div>
               <h3 className="text-3xl font-bold text-white mb-4">Our Vision</h3>
               <p className="text-gray-300 leading-relaxed">
-                A world where data theft is no longer profitable. Where stolen credentials, breached databases, and compromised 
+                A world where data theft is no longer profitable. Where stolen credentials, breached databases, and compromised
                 identities become instantly worthless. Where Data Principals have absolute control over their information.
               </p>
             </div>
@@ -128,18 +159,18 @@ const AboutUsPage = () => {
             <div className="glass-strong rounded-2xl p-12 text-center">
               <h2 className="text-4xl font-bold text-white mb-6">Why We Built SEC@R</h2>
               <p className="text-xl text-gray-300 leading-relaxed mb-6">
-                After witnessing countless data breaches where stolen information was immediately exploited, we realized 
+                After witnessing countless data breaches where stolen information was immediately exploited, we realized
                 the fundamental flaw in traditional security: it assumes prevention is enough.
               </p>
               <p className="text-xl text-gray-300 leading-relaxed mb-6">
-                But what happens when prevention fails? What happens when credentials are stolen, databases are breached, 
+                But what happens when prevention fails? What happens when credentials are stolen, databases are breached,
                 or identities are compromised?
               </p>
               <p className="text-2xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-green-400 to-green-500 mb-6">
                 With SEC@R, the answer is simple: Nothing.
               </p>
               <p className="text-lg text-gray-400">
-                Stolen data cannot be activated. Compromised credentials are worthless. Breached databases contain 
+                Stolen data cannot be activated. Compromised credentials are worthless. Breached databases contain
                 nothing of value. Because without the Data Principal's real-time, multi-device consent - data stays dormant.
               </p>
             </div>

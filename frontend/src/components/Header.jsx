@@ -61,7 +61,7 @@ export const Header = () => {
             </div>
             <div>
               <div className="text-2xl font-regular text-white">Infinicue Solutions</div>
-              <div className="text-xl bg-gradient-to-r from-green-400 to-green-500 bg-clip-text text-transparent">Simplify | Automate | Resolve</div>
+              {/* <div className="text-xl bg-gradient-to-r from-green-400 to-green-500 bg-clip-text text-transparent">Simplify | Automate | Resolve</div> */}
             </div>
           </button>
 
