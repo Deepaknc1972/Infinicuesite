@@ -24,9 +24,9 @@ const AboutUsPage = () => {
             <div className="inline-flex items-center space-x-2  rounded-full px-6 py-2 mb-6">
               <span className="text-xl text-red-400 font-medium">The Uncomfortable Truth About Data</span>
             </div>
-            <h1 className="text-5xl md:text-7xl font-bold text-white mb-6">
+            <h1 className="text-5xl md:text-7xl font-bold text-white mb-6 leading-tight">
               Every Bank Will be
-              <span className="block text-transparent bg-clip-text bg-gradient-to-r from-red-400 to-red-400 mb-6">
+              <span className="block text-transparent bg-clip-text bg-gradient-to-r from-red-400 to-red-400 pb-2">
                 Breached Eventually
               </span>
             </h1>
@@ -51,8 +51,8 @@ const AboutUsPage = () => {
             </h1>
 
 
-            <h1 className="text-5xl md:text-7xl font-bold text-white mb-6">
-              <span className="block text-transparent bg-clip-text bg-gradient-to-r from-green-500 to-green-500 mb-6">
+            <h1 className="text-5xl md:text-7xl font-bold text-white mb-6 leading-tight">
+              <span className="block text-transparent bg-clip-text bg-gradient-to-r from-green-500 to-green-500 pb-2">
                 Revolutionizing Data Utility
               </span>
 
