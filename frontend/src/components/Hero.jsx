@@ -23,7 +23,7 @@ export const Hero = () => {
       {/* Animated Grid Background */}
       <div className="absolute inset-0 z-0 opacity-20">
         <div className="absolute inset-0" style={{
-          backgroundImage: `linear-gradient(rgba(168, 85, 247, 0.15) 1px, transparent 1px), linear-gradient(90deg, rgba(168, 85, 247, 0.15) 1px, transparent 1px)`,
+          backgroundImage: `linear-gradient(rgba(34, 197, 94, 0.15) 1px, transparent 1px), linear-gradient(90deg, rgba(34, 197, 94, 0.15) 1px, transparent 1px)`,
           backgroundSize: '50px 50px'
         }}></div>
       </div>

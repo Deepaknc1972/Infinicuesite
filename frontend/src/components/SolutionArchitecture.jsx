@@ -107,7 +107,7 @@ export const SolutionArchitecture = () => {
       <div className="absolute inset-0 opacity-10">
         <div className="absolute inset-0" style={{
           backgroundImage: `radial-gradient(circle at 20% 30%, rgba(6, 182, 212, 0.4) 0%, transparent 50%),
-                           radial-gradient(circle at 80% 70%, rgba(168, 85, 247, 0.4) 0%, transparent 50%)`
+                           radial-gradient(circle at 80% 70%, rgba(34, 197, 94, 0.4) 0%, transparent 50%)`
         }}></div>
       </div>
 
