@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 import {
   Github,
@@ -105,9 +106,9 @@ export const Footer = () => {
                 </button>
               </li>
               <li>
-                <a href="#" className="text-gray-400 hover:text-green-400 transition-colors">
+                <Link to="/privacy-policy" className="text-gray-400 hover:text-green-400 transition-colors">
                   Privacy Policy
-                </a>
+                </Link>
               </li>
             </ul>
           </div>
@@ -122,9 +123,9 @@ export const Footer = () => {
             <a href="#" className="text-gray-500 hover:text-green-400 text-sm transition-colors">
               Terms of Service
             </a>
-            <a href="#" className="text-gray-500 hover:text-green-400 text-sm transition-colors">
+            <Link to="/privacy-policy" className="text-gray-500 hover:text-green-400 text-sm transition-colors">
               Privacy Policy
-            </a>
+            </Link>
             <a href="#" className="text-gray-500 hover:text-green-400 text-sm transition-colors">
               Cookie Policy
             </a>
