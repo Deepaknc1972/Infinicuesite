@@ -84,7 +84,7 @@ code {
     }
 }
 
-/* Dark Theme with Green - Full Site */
+/* Dark Theme with Purple - Full Site */
 body {
   background: #0a0a0a;
 }
@@ -94,28 +94,28 @@ body {
 }
 
 .light .glass {
-  background: rgba(34, 197, 94, 0.08);
-  border: 1px solid rgba(34, 197, 94, 0.2);
+  background: rgba(168, 85, 247, 0.08);
+  border: 1px solid rgba(168, 85, 247, 0.2);
 }
 
 .light .glass-strong {
-  background: rgba(34, 197, 94, 0.12);
-  border: 1px solid rgba(34, 197, 94, 0.25);
+  background: rgba(168, 85, 247, 0.12);
+  border: 1px solid rgba(168, 85, 247, 0.25);
 }
 
 .light .glass-dark {
   background: rgba(0, 0, 0, 0.6);
-  border: 1px solid rgba(34, 197, 94, 0.15);
+  border: 1px solid rgba(168, 85, 247, 0.15);
 }
 
 .light .glass-emerald {
-  background: rgba(34, 197, 94, 0.15);
-  border: 1px solid rgba(34, 197, 94, 0.35);
+  background: rgba(168, 85, 247, 0.15);
+  border: 1px solid rgba(168, 85, 247, 0.35);
 }
 
 .light .glass-gradient {
-  background: linear-gradient(135deg, rgba(34, 197, 94, 0.15), rgba(22, 163, 74, 0.15));
-  border: 1px solid rgba(34, 197, 94, 0.2);
+  background: linear-gradient(135deg, rgba(168, 85, 247, 0.15), rgba(147, 51, 234, 0.15));
+  border: 1px solid rgba(168, 85, 247, 0.2);
 }
 
 /* Dark Theme Specific Styles */
