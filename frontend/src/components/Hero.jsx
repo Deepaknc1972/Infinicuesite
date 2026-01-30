@@ -32,8 +32,8 @@ export const Hero = () => {
       <div className="container mx-auto px-6 z-10 text-center">
         {/* Product Badge */}
         <div className="inline-flex items-center space-x-2 glass-emerald rounded-full px-6 py-2 mb-8 animate-fade-in">
-          <div className="w-2 h-2 bg-green-400 rounded-full animate-pulse"></div>
-          <span className="text-green-400 font-medium">SEC@R - Consent at Real-Time</span>
+          <div className="w-2 h-2 bg-purple-400 rounded-full animate-pulse"></div>
+          <span className="text-purple-400 font-medium">SEC@R - Consent at Real-Time</span>
         </div>
 
         {/* Main Heading */}
@@ -50,7 +50,7 @@ export const Hero = () => {
         <div className="flex flex-col sm:flex-row items-center justify-center gap-4 animate-slide-up" style={{ animationDelay: '0.2s' }}>
           <Button
             size="lg"
-            className="bg-green-500 hover:bg-green-600 text-black font-semibold px-8 py-6 text-lg group"
+            className="bg-purple-500 hover:bg-purple-600 text-black font-semibold px-8 py-6 text-lg group"
             onClick={() => document.getElementById('contact').scrollIntoView({ behavior: 'smooth' })}
           >
             {hero.cta}
@@ -59,7 +59,7 @@ export const Hero = () => {
           {/* <Button
             size="lg"
             variant="outline"
-            className="border-green-500 text-green-400 hover:bg-green-500/10 px-8 py-6 text-lg"
+            className="border-purple-500 text-purple-400 hover:bg-purple-500/10 px-8 py-6 text-lg"
           >
             <Play className="mr-2" size={20} />
             {hero.secondaryCta}
@@ -69,15 +69,15 @@ export const Hero = () => {
         {/* Trust Indicators */}
         <div className="mt-16 flex flex-wrap items-center justify-center gap-8 text-gray-400 animate-fade-in" style={{ animationDelay: '0.3s' }}>
           {/* <div className="flex items-center space-x-2 glass px-4 py-2 rounded-full">
-            <div className="w-6 h-6 bg-green-500/20 rounded flex items-center justify-center text-green-400 text-xs font-bold">✓</div>
+            <div className="w-6 h-6 bg-purple-500/20 rounded flex items-center justify-center text-purple-400 text-xs font-bold">✓</div>
             <span>SOC 2 Certified</span>
           </div> */}
           <div className="flex items-center space-x-2 glass px-4 py-2 rounded-full">
-            <div className="w-6 h-6 bg-green-500/20 rounded flex items-center justify-center text-green-400 text-xs font-bold">✓</div>
+            <div className="w-6 h-6 bg-purple-500/20 rounded flex items-center justify-center text-purple-400 text-xs font-bold">✓</div>
             <span>DPDP/GDPR Compliant</span>
           </div>
           {/* <div className="flex items-center space-x-2 glass px-4 py-2 rounded-full">
-            <div className="w-6 h-6 bg-green-500/20 rounded flex items-center justify-center text-green-400 text-xs font-bold">✓</div>
+            <div className="w-6 h-6 bg-purple-500/20 rounded flex items-center justify-center text-purple-400 text-xs font-bold">✓</div>
             <span>ISO 27001</span>
           </div> */}
         </div>
@@ -85,8 +85,8 @@ export const Hero = () => {
 
       {/* Scroll Indicator */}
       <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2 z-10 animate-bounce">
-        <div className="w-6 h-10 border-2 border-green-500 rounded-full flex items-start justify-center p-2">
-          <div className="w-1 h-3 bg-green-400 rounded-full"></div>
+        <div className="w-6 h-10 border-2 border-purple-500 rounded-full flex items-start justify-center p-2">
+          <div className="w-1 h-3 bg-purple-400 rounded-full"></div>
         </div>
       </div>
     </section>

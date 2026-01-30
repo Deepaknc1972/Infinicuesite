@@ -27,7 +27,7 @@ const ProductPage = () => {
       <section className="pt-32 pb-16 bg-gradient-to-b from-black to-gray-950">
         <div className="container mx-auto px-6">
           <div className="text-center mb-12">
-            <Badge className="bg-green-500/20 text-green-400 border-green-500/30 mb-4">
+            <Badge className="bg-purple-500/20 text-purple-400 border-purple-500/30 mb-4">
               SEC@R Hardware Ecosystem
             </Badge>
             <h1 className="text-5xl md:text-7xl font-bold text-white mb-6">
@@ -53,17 +53,17 @@ const ProductPage = () => {
                   onClick={() => setSelectedProduct(product)}
                   className={`cursor-pointer transition-all duration-300 ${
                     selectedProduct.name === product.name 
-                      ? 'bg-green-500/20 border-green-500 scale-105' 
-                      : 'bg-gray-900/50 border-gray-800 hover:border-green-500/50'
+                      ? 'bg-purple-500/20 border-purple-500 scale-105' 
+                      : 'bg-gray-900/50 border-gray-800 hover:border-purple-500/50'
                   }`}
                 >
                   <CardContent className="p-6 text-center">
                     <div className={`w-16 h-16 mx-auto mb-4 rounded-2xl flex items-center justify-center ${
                       selectedProduct.name === product.name 
-                        ? 'bg-green-500/30' 
+                        ? 'bg-purple-500/30' 
                         : 'bg-gray-800'
                     }`}>
-                      <Icon className="text-green-400" size={32} />
+                      <Icon className="text-purple-400" size={32} />
                     </div>
                     <h3 className="text-lg font-bold text-white">{product.name}</h3>
                   </CardContent>
@@ -86,7 +86,7 @@ const ProductPage = () => {
                   <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent"></div>
                   {selectedProduct.badge && (
                     <div className="absolute top-4 right-4">
-                      <Badge className="bg-green-500 text-black font-semibold">
+                      <Badge className="bg-purple-500 text-black font-semibold">
                         {selectedProduct.badge}
                       </Badge>
                     </div>
@@ -98,14 +98,14 @@ const ProductPage = () => {
                   
                   <div className="space-y-4">
                     <div>
-                      <h4 className="text-sm font-semibold text-green-400 uppercase mb-2">Price</h4>
+                      <h4 className="text-sm font-semibold text-purple-400 uppercase mb-2">Price</h4>
                       <p className="text-2xl font-bold text-white">{selectedProduct.price}</p>
                     </div>
                     
                     <div>
-                      <h4 className="text-sm font-semibold text-green-400 uppercase mb-2">Availability</h4>
+                      <h4 className="text-sm font-semibold text-purple-400 uppercase mb-2">Availability</h4>
                       <div className="flex items-center space-x-2">
-                        <div className="w-2 h-2 bg-green-400 rounded-full animate-pulse"></div>
+                        <div className="w-2 h-2 bg-purple-400 rounded-full animate-pulse"></div>
                         <span className="text-gray-300">In Stock</span>
                       </div>
                     </div>
@@ -113,7 +113,7 @@ const ProductPage = () => {
 
                   <div className="flex gap-4 mt-8">
                     <Button 
-                      className="flex-1 bg-green-500 hover:bg-green-600 text-black font-semibold"
+                      className="flex-1 bg-purple-500 hover:bg-purple-600 text-black font-semibold"
                       onClick={() => document.getElementById('contact').scrollIntoView({ behavior: 'smooth' })}
                     >
                       Order Now
@@ -121,7 +121,7 @@ const ProductPage = () => {
                     </Button>
                     <Button 
                       variant="outline" 
-                      className="flex-1 border-green-500 text-green-400 hover:bg-green-500/10"
+                      className="flex-1 border-purple-500 text-purple-400 hover:bg-purple-500/10"
                     >
                       Learn More
                     </Button>
@@ -134,13 +134,13 @@ const ProductPage = () => {
             <div>
               <Tabs defaultValue="features" className="w-full">
                 <TabsList className="grid w-full grid-cols-3 bg-gray-900 border border-gray-800">
-                  <TabsTrigger value="features" className="data-[state=active]:bg-green-500 data-[state=active]:text-black">
+                  <TabsTrigger value="features" className="data-[state=active]:bg-purple-500 data-[state=active]:text-black">
                     Features
                   </TabsTrigger>
-                  <TabsTrigger value="specs" className="data-[state=active]:bg-green-500 data-[state=active]:text-black">
+                  <TabsTrigger value="specs" className="data-[state=active]:bg-purple-500 data-[state=active]:text-black">
                     Specifications
                   </TabsTrigger>
-                  <TabsTrigger value="security" className="data-[state=active]:bg-green-500 data-[state=active]:text-black">
+                  <TabsTrigger value="security" className="data-[state=active]:bg-purple-500 data-[state=active]:text-black">
                     Security
                   </TabsTrigger>
                 </TabsList>
@@ -153,7 +153,7 @@ const ProductPage = () => {
                     <CardContent className="space-y-4">
                       {selectedProduct.features.map((feature, idx) => (
                         <div key={idx} className="flex items-start space-x-3">
-                          <Check className="text-green-400 flex-shrink-0 mt-1" size={20} />
+                          <Check className="text-purple-400 flex-shrink-0 mt-1" size={20} />
                           <span className="text-gray-300">{feature}</span>
                         </div>
                       ))}
@@ -184,8 +184,8 @@ const ProductPage = () => {
                     </CardHeader>
                     <CardContent className="space-y-4">
                       {selectedProduct.security.map((item, idx) => (
-                        <div key={idx} className="flex items-start space-x-3 p-4 bg-green-500/5 rounded-lg border border-green-500/20">
-                          <Shield className="text-green-400 flex-shrink-0 mt-1" size={20} />
+                        <div key={idx} className="flex items-start space-x-3 p-4 bg-purple-500/5 rounded-lg border border-purple-500/20">
+                          <Shield className="text-purple-400 flex-shrink-0 mt-1" size={20} />
                           <div>
                             <h5 className="text-white font-semibold mb-1">{item.title}</h5>
                             <p className="text-gray-400 text-sm">{item.description}</p>
@@ -198,7 +198,7 @@ const ProductPage = () => {
               </Tabs>
 
               {/* Use Cases */}
-              <Card className="mt-6 bg-gradient-to-r from-green-500/10 to-green-500/10 border-green-500/30">
+              <Card className="mt-6 bg-gradient-to-r from-purple-500/10 to-purple-500/10 border-purple-500/30">
                 <CardHeader>
                   <CardTitle className="text-white">Perfect For</CardTitle>
                 </CardHeader>
@@ -206,7 +206,7 @@ const ProductPage = () => {
                   <div className="grid grid-cols-2 gap-4">
                     {selectedProduct.useCases.map((useCase, idx) => (
                       <div key={idx} className="flex items-center space-x-2">
-                        <Zap className="text-green-400" size={16} />
+                        <Zap className="text-purple-400" size={16} />
                         <span className="text-gray-300 text-sm">{useCase}</span>
                       </div>
                     ))}
@@ -234,10 +234,10 @@ const ProductPage = () => {
             {productData.benefits.map((benefit, index) => {
               const Icon = benefit.icon === 'Shield' ? Shield : benefit.icon === 'Zap' ? Zap : Fingerprint;
               return (
-                <Card key={index} className="bg-gray-900/50 border-gray-800 hover:border-green-500/50 transition-all duration-300">
+                <Card key={index} className="bg-gray-900/50 border-gray-800 hover:border-purple-500/50 transition-all duration-300">
                   <CardContent className="p-8 text-center">
-                    <div className="w-16 h-16 mx-auto mb-6 bg-green-500/20 rounded-2xl flex items-center justify-center">
-                      <Icon className="text-green-400" size={32} />
+                    <div className="w-16 h-16 mx-auto mb-6 bg-purple-500/20 rounded-2xl flex items-center justify-center">
+                      <Icon className="text-purple-400" size={32} />
                     </div>
                     <h3 className="text-xl font-bold text-white mb-3">{benefit.title}</h3>
                     <p className="text-gray-400 leading-relaxed">{benefit.description}</p>

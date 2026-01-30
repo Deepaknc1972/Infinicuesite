@@ -34,7 +34,7 @@ export const HowItWorks = () => {
       <div className="container mx-auto px-6 relative z-10">
         {/* Section Header */}
         <div className="text-center mb-16">
-          <h2 className="text-sm font-semibold text-green-400 uppercase tracking-wider mb-4">How It Works</h2>
+          <h2 className="text-sm font-semibold text-purple-400 uppercase tracking-wider mb-4">How It Works</h2>
           <h3 className="text-4xl md:text-5xl font-bold text-white mb-6">
             Consent-First Architecture in Action
           </h3>
@@ -46,7 +46,7 @@ export const HowItWorks = () => {
         {/* Process Flow */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 relative">
           {/* Connecting Line */}
-          <div className="hidden lg:block absolute top-1/4 left-0 right-0 h-0.5 bg-gradient-to-r from-green-500/0 via-green-500/50 to-green-500/0" style={{ top: '80px' }}></div>
+          <div className="hidden lg:block absolute top-1/4 left-0 right-0 h-0.5 bg-gradient-to-r from-purple-500/0 via-purple-500/50 to-purple-500/0" style={{ top: '80px' }}></div>
 
           {steps.map((step, index) => {
             const Icon = step.icon;
@@ -57,13 +57,13 @@ export const HowItWorks = () => {
               >
                 <CardContent className="p-8 text-center">
                   {/* Step Number */}
-                  <div className="absolute -top-4 left-1/2 transform -translate-x-1/2 w-8 h-8 bg-green-500 rounded-full flex items-center justify-center text-black font-bold text-sm z-20">
+                  <div className="absolute -top-4 left-1/2 transform -translate-x-1/2 w-8 h-8 bg-purple-500 rounded-full flex items-center justify-center text-black font-bold text-sm z-20">
                     {index + 1}
                   </div>
 
                   {/* Icon */}
-                  <div className="w-16 h-16 mx-auto mb-6 bg-green-500/20 rounded-2xl flex items-center justify-center group-hover:scale-110 transition-transform duration-300">
-                    <Icon className="text-green-400" size={32} />
+                  <div className="w-16 h-16 mx-auto mb-6 bg-purple-500/20 rounded-2xl flex items-center justify-center group-hover:scale-110 transition-transform duration-300">
+                    <Icon className="text-purple-400" size={32} />
                   </div>
 
                   {/* Content */}
