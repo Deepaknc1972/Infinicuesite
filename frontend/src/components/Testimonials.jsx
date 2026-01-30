@@ -20,7 +20,7 @@ export const Testimonials = () => {
       <div className="container mx-auto px-6 relative z-10">
         {/* Section Header */}
         <div className="text-center mb-16">
-          <h2 className="text-sm font-semibold text-purple-400 uppercase tracking-wider mb-4">Testimonials</h2>
+          <h2 className="text-sm font-semibold text-green-400 uppercase tracking-wider mb-4">Testimonials</h2>
           <h3 className="text-4xl md:text-5xl font-bold text-white mb-6">Trusted by Industry Leaders</h3>
           <p className="text-xl text-gray-400 max-w-3xl mx-auto">
             See what security professionals are saying about Infinicue Solutions and SEC@R.
@@ -38,13 +38,13 @@ export const Testimonials = () => {
               <CardContent className="p-8 relative">
                 {/* Quote Icon */}
                 <div className="absolute top-6 right-6 opacity-10 group-hover:opacity-20 transition-opacity">
-                  <Quote size={64} className="text-purple-400" />
+                  <Quote size={64} className="text-green-400" />
                 </div>
 
                 {/* Rating */}
                 <div className="flex items-center space-x-1 mb-4">
                   {[...Array(testimonial.rating)].map((_, i) => (
-                    <Star key={i} className="text-purple-400 fill-purple-400" size={18} />
+                    <Star key={i} className="text-green-400 fill-green-400" size={18} />
                   ))}
                 </div>
 
@@ -55,13 +55,13 @@ export const Testimonials = () => {
 
                 {/* Author */}
                 <div className="flex items-center space-x-4">
-                  <Avatar className="w-12 h-12 bg-gradient-to-br from-purple-400 to-purple-600">
+                  <Avatar className="w-12 h-12 bg-gradient-to-br from-green-400 to-green-600">
                     <AvatarFallback className="text-black font-bold">{testimonial.avatar}</AvatarFallback>
                   </Avatar>
                   <div>
                     <div className="text-white font-semibold">{testimonial.name}</div>
                     <div className="text-sm text-gray-400">{testimonial.role}</div>
-                    <div className="text-sm text-purple-400">{testimonial.company}</div>
+                    <div className="text-sm text-green-400">{testimonial.company}</div>
                   </div>
                 </div>
               </CardContent>

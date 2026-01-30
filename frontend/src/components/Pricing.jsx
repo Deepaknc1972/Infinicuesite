@@ -13,7 +13,7 @@ export const Pricing = () => {
       <div className="container mx-auto px-6">
         {/* Section Header */}
         <div className="text-center mb-16">
-          <h2 className="text-sm font-semibold text-purple-400 uppercase tracking-wider mb-4">Pricing</h2>
+          <h2 className="text-sm font-semibold text-green-400 uppercase tracking-wider mb-4">Pricing</h2>
           <h3 className="text-4xl md:text-5xl font-bold text-white mb-6">Simple, Transparent Pricing</h3>
           <p className="text-xl text-gray-400 max-w-3xl mx-auto">
             Choose the plan that fits your organization. All plans include 14-day free trial.
@@ -26,13 +26,13 @@ export const Pricing = () => {
             <Card 
               key={plan.id}
               className={`glass relative hover:scale-105 ${
-                plan.popular ? 'ring-2 ring-purple-500 scale-105' : ''
+                plan.popular ? 'ring-2 ring-green-500 scale-105' : ''
               }`}
               style={{ animationDelay: `${index * 0.1}s` }}
             >
               {plan.popular && (
                 <div className="absolute -top-4 left-1/2 transform -translate-x-1/2">
-                  <Badge className="bg-purple-500 text-black font-semibold px-4 py-1">
+                  <Badge className="bg-green-500 text-black font-semibold px-4 py-1">
                     Most Popular
                   </Badge>
                 </div>
@@ -51,8 +51,8 @@ export const Pricing = () => {
                 <ul className="space-y-4">
                   {plan.features.map((feature, idx) => (
                     <li key={idx} className="flex items-start space-x-3">
-                      <div className="w-5 h-5 rounded-full bg-purple-500/20 flex items-center justify-center flex-shrink-0 mt-0.5">
-                        <Check className="text-purple-400" size={14} />
+                      <div className="w-5 h-5 rounded-full bg-green-500/20 flex items-center justify-center flex-shrink-0 mt-0.5">
+                        <Check className="text-green-400" size={14} />
                       </div>
                       <span className="text-gray-300">{feature}</span>
                     </li>
@@ -62,7 +62,7 @@ export const Pricing = () => {
                 <Button 
                   className={`w-full font-semibold ${
                     plan.popular 
-                      ? 'bg-purple-500 hover:bg-purple-600 text-black' 
+                      ? 'bg-green-500 hover:bg-green-600 text-black' 
                       : 'bg-gray-800 hover:bg-gray-700 text-white'
                   }`}
                   onClick={() => document.getElementById('contact').scrollIntoView({ behavior: 'smooth' })}
@@ -79,7 +79,7 @@ export const Pricing = () => {
           <p className="text-gray-400 mb-4">Need a custom solution?</p>
           <Button 
             variant="outline" 
-            className="border-purple-500 text-purple-400 hover:bg-purple-500/10"
+            className="border-green-500 text-green-400 hover:bg-green-500/10"
             onClick={() => document.getElementById('contact').scrollIntoView({ behavior: 'smooth' })}
           >
             Contact Sales Team

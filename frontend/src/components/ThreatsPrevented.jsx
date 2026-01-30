@@ -59,7 +59,7 @@ export const ThreatsPrevented = () => {
       <div className="container mx-auto px-6 relative z-10">
         {/* Section Header */}
         <div className="text-center mb-16">
-          <h2 className="text-sm font-semibold text-purple-400 uppercase tracking-wider mb-4">Threats Prevented</h2>
+          <h2 className="text-sm font-semibold text-green-400 uppercase tracking-wider mb-4">Threats Prevented</h2>
           <h3 className="text-4xl md:text-5xl font-bold text-white mb-6">
             Protecting Banks and Customers from Cyber Fraud
           </h3>
@@ -81,12 +81,12 @@ export const ThreatsPrevented = () => {
               >
                 <CardContent className="p-6">
                   {/* Icon */}
-                  <div className="w-14 h-14 mb-4 bg-red-500/10 rounded-xl flex items-center justify-center group-hover:bg-purple-500/20 transition-colors duration-300">
-                    <Icon className="text-red-400 group-hover:text-purple-400 transition-colors duration-300" size={28} />
+                  <div className="w-14 h-14 mb-4 bg-red-500/10 rounded-xl flex items-center justify-center group-hover:bg-green-500/20 transition-colors duration-300">
+                    <Icon className="text-red-400 group-hover:text-green-400 transition-colors duration-300" size={28} />
                   </div>
 
                   {/* Content */}
-                  <h4 className="text-lg font-bold text-white mb-2 group-hover:text-purple-400 transition-colors">
+                  <h4 className="text-lg font-bold text-white mb-2 group-hover:text-green-400 transition-colors">
                     {threat.title}
                   </h4>
                   <p className="text-gray-400 text-sm leading-relaxed">
@@ -105,32 +105,32 @@ export const ThreatsPrevented = () => {
               <div className="grid md:grid-cols-2 gap-8">
                 <div>
                   <h4 className="text-xl font-bold text-white mb-3 flex items-center">
-                    <Shield className="text-purple-400 mr-2" size={24} />
+                    <Shield className="text-green-400 mr-2" size={24} />
                     Protected Identity Documents
                   </h4>
                   <div className="space-y-2 text-gray-300">
                     <div className="flex items-center space-x-2">
-                      <div className="w-2 h-2 bg-purple-400 rounded-full"></div>
+                      <div className="w-2 h-2 bg-green-400 rounded-full"></div>
                       <span>Passport Numbers</span>
                     </div>
                     <div className="flex items-center space-x-2">
-                      <div className="w-2 h-2 bg-purple-400 rounded-full"></div>
+                      <div className="w-2 h-2 bg-green-400 rounded-full"></div>
                       <span>AADHAAR (India)</span>
                     </div>
                     <div className="flex items-center space-x-2">
-                      <div className="w-2 h-2 bg-purple-400 rounded-full"></div>
+                      <div className="w-2 h-2 bg-green-400 rounded-full"></div>
                       <span>PAN Card (India)</span>
                     </div>
                     <div className="flex items-center space-x-2">
-                      <div className="w-2 h-2 bg-purple-400 rounded-full"></div>
+                      <div className="w-2 h-2 bg-green-400 rounded-full"></div>
                       <span>Voter ID</span>
                     </div>
                     <div className="flex items-center space-x-2">
-                      <div className="w-2 h-2 bg-purple-400 rounded-full"></div>
+                      <div className="w-2 h-2 bg-green-400 rounded-full"></div>
                       <span>Social Security Number (SSN)</span>
                     </div>
                     <div className="flex items-center space-x-2">
-                      <div className="w-2 h-2 bg-purple-400 rounded-full"></div>
+                      <div className="w-2 h-2 bg-green-400 rounded-full"></div>
                       <span>Driver's License</span>
                     </div>
                   </div>
@@ -147,11 +147,11 @@ export const ThreatsPrevented = () => {
                   </p>
                   <div className="grid grid-cols-2 gap-4 mt-4">
                     <div className="bg-black/50 rounded-lg p-3">
-                      <div className="text-2xl font-bold text-purple-400">100%</div>
+                      <div className="text-2xl font-bold text-green-400">100%</div>
                       <div className="text-xs text-gray-400">Fraud Prevention Rate</div>
                     </div>
                     <div className="bg-black/50 rounded-lg p-3">
-                      <div className="text-2xl font-bold text-purple-400">$0</div>
+                      <div className="text-2xl font-bold text-green-400">$0</div>
                       <div className="text-xs text-gray-400">Fraud Losses</div>
                     </div>
                   </div>

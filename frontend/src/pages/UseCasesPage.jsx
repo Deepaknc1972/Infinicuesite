@@ -141,7 +141,7 @@ const UseCasesPage = () => {
             </div>
             <h1 className="text-5xl md:text-7xl font-bold text-white mb-6">
               How SEC@R Stops
-              <span className="block text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-purple-500 mt-2">
+              <span className="block text-transparent bg-clip-text bg-gradient-to-r from-green-400 to-green-500 mt-2">
                 Every Major Fraud
               </span>
             </h1>
@@ -181,7 +181,7 @@ const UseCasesPage = () => {
 
                 {/* Content */}
                 <div className={`${index % 2 === 1 ? 'lg:order-1' : ''}`}>
-                  <Card className="glass-gradient border-purple-500/30">
+                  <Card className="glass-gradient border-green-500/30">
                     <CardHeader>
                       <CardTitle className="text-2xl text-white">The Problem</CardTitle>
                     </CardHeader>
@@ -195,21 +195,21 @@ const UseCasesPage = () => {
 
                       <div>
                         <div className="flex items-center space-x-2 mb-4">
-                          <Shield className="text-purple-400" size={24} />
+                          <Shield className="text-green-400" size={24} />
                           <h4 className="text-xl font-bold text-white">How SEC@R Helps</h4>
                         </div>
                         <div className="space-y-3">
                           {useCase.howSecarHelps.map((help, idx) => (
                             <div key={idx} className="flex items-start space-x-3">
-                              <Check className="text-purple-400 flex-shrink-0 mt-1" size={16} />
+                              <Check className="text-green-400 flex-shrink-0 mt-1" size={16} />
                               <span className="text-gray-300 text-sm">{help}</span>
                             </div>
                           ))}
                         </div>
                       </div>
 
-                      <div className="bg-gradient-to-r from-purple-500/10 to-purple-500/10 border border-purple-500/30 rounded-xl p-4">
-                        <div className="text-sm font-semibold text-purple-400 mb-2">Result:</div>
+                      <div className="bg-gradient-to-r from-green-500/10 to-green-500/10 border border-green-500/30 rounded-xl p-4">
+                        <div className="text-sm font-semibold text-green-400 mb-2">Result:</div>
                         <p className="text-white font-medium">{useCase.result}</p>
                       </div>
                     </CardContent>
@@ -224,7 +224,7 @@ const UseCasesPage = () => {
       {/* CTA Section */}
       <section className="py-24 bg-black">
         <div className="container mx-auto px-6">
-          <Card className="glass-strong border-purple-500/30">
+          <Card className="glass-strong border-green-500/30">
             <CardContent className="p-12 text-center">
               <h2 className="text-4xl font-bold text-white mb-6">
                 Ready to Make Fraud Impossible?
@@ -237,7 +237,7 @@ const UseCasesPage = () => {
                   window.scrollTo(0, 0);
                   window.location.href = '/#contact';
                 }}
-                className="bg-gradient-to-r from-purple-500 to-purple-600 hover:from-purple-600 hover:to-purple-700 text-white font-semibold px-12 py-4 rounded-lg text-lg transition-all duration-300 hover:scale-105"
+                className="bg-gradient-to-r from-green-500 to-green-600 hover:from-green-600 hover:to-green-700 text-white font-semibold px-12 py-4 rounded-lg text-lg transition-all duration-300 hover:scale-105"
               >
                 Get Started Today
               </button>

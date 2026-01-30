@@ -61,34 +61,34 @@ export const Header = () => {
             </div>
             <div>
               <div className="text-2xl font-regular text-white">Infinicue Solutions</div>
-              {/* <div className="text-xl bg-gradient-to-r from-purple-400 to-purple-500 bg-clip-text text-transparent">Simplify | Automate | Resolve</div> */}
+              {/* <div className="text-xl bg-gradient-to-r from-green-400 to-green-500 bg-clip-text text-transparent">Simplify | Automate | Resolve</div> */}
             </div>
           </button>
 
           {/* Desktop Navigation */}
           <div className="hidden md:flex items-center space-x-6">
-            <button onClick={() => navigate('/')} className="text-lg text-gray-400 hover:text-purple-400 transition-colors">
+            <button onClick={() => navigate('/')} className="text-lg text-gray-400 hover:text-green-400 transition-colors">
               About Us
             </button>
-            <button onClick={goToHome} className="text-lg text-gray-400 hover:text-purple-400 transition-colors">
+            <button onClick={goToHome} className="text-lg text-gray-400 hover:text-green-400 transition-colors">
               Approach
             </button>
-            <button onClick={() => navigate('/use-cases')} className="text-lg text-gray-400 hover:text-purple-400 transition-colors">
+            <button onClick={() => navigate('/use-cases')} className="text-lg text-gray-400 hover:text-green-400 transition-colors">
               Use Cases
             </button>
-            <button onClick={() => scrollToSection('features')} className="text-lg text-gray-400 hover:text-purple-400 transition-colors">
+            <button onClick={() => scrollToSection('features')} className="text-lg text-gray-400 hover:text-green-400 transition-colors">
               Features
             </button>
-            <button onClick={goToProducts} className="text-lg text-gray-400 hover:text-purple-400 transition-colors">
+            <button onClick={goToProducts} className="text-lg text-gray-400 hover:text-green-400 transition-colors">
               Products
             </button>
-            <button onClick={() => navigate('/mobile-app')} className="text-lg text-gray-400 hover:text-purple-400 transition-colors">
+            <button onClick={() => navigate('/mobile-app')} className="text-lg text-gray-400 hover:text-green-400 transition-colors">
               Solution
             </button>
-            <button onClick={() => scrollToSection('contact')} className="text-lg text-gray-400 hover:text-purple-400 transition-colors">
+            <button onClick={() => scrollToSection('contact')} className="text-lg text-gray-400 hover:text-green-400 transition-colors">
               Contact
             </button>
-            <Button onClick={() => scrollToSection('contact')} className="text-lg bg-gradient-to-r from-purple-500 to-purple-600 hover:from-purple-600 hover:to-purple-700 text-white font-semibold">
+            <Button onClick={() => scrollToSection('contact')} className="text-lg bg-gradient-to-r from-green-500 to-green-600 hover:from-green-600 hover:to-green-700 text-white font-semibold">
               Get Started
             </Button>
           </div>
@@ -105,28 +105,28 @@ export const Header = () => {
         {/* Mobile Menu */}
         {mobileMenuOpen && (
           <div className="md:hidden mt-4 pb-4 space-y-4">
-            <button onClick={() => { navigate('/'); setMobileMenuOpen(false); }} className="block w-full text-left text-gray-300 hover:text-purple-400 transition-colors py-2 text-base">
+            <button onClick={() => { navigate('/'); setMobileMenuOpen(false); }} className="block w-full text-left text-gray-300 hover:text-green-400 transition-colors py-2 text-base">
               About Us
             </button>
-            <button onClick={goToHome} className="block w-full text-left text-gray-300 hover:text-purple-400 transition-colors py-2 text-base">
+            <button onClick={goToHome} className="block w-full text-left text-gray-300 hover:text-green-400 transition-colors py-2 text-base">
               Approach
             </button>
-            <button onClick={() => { navigate('/use-cases'); setMobileMenuOpen(false); }} className="block w-full text-left text-gray-300 hover:text-purple-400 transition-colors py-2 text-base">
+            <button onClick={() => { navigate('/use-cases'); setMobileMenuOpen(false); }} className="block w-full text-left text-gray-300 hover:text-green-400 transition-colors py-2 text-base">
               Use Cases
             </button>
-            <button onClick={() => scrollToSection('features')} className="block w-full text-left text-gray-300 hover:text-purple-400 transition-colors py-2 text-base">
+            <button onClick={() => scrollToSection('features')} className="block w-full text-left text-gray-300 hover:text-green-400 transition-colors py-2 text-base">
               Features
             </button>
-            <button onClick={goToProducts} className="block w-full text-left text-gray-300 hover:text-purple-400 transition-colors py-2 text-base">
+            <button onClick={goToProducts} className="block w-full text-left text-gray-300 hover:text-green-400 transition-colors py-2 text-base">
               Products
             </button>
-            <button onClick={() => { navigate('/mobile-app'); setMobileMenuOpen(false); }} className="block w-full text-left text-gray-300 hover:text-purple-400 transition-colors py-2 text-base">
+            <button onClick={() => { navigate('/mobile-app'); setMobileMenuOpen(false); }} className="block w-full text-left text-gray-300 hover:text-green-400 transition-colors py-2 text-base">
               Solution
             </button>
-            <button onClick={() => scrollToSection('contact')} className="block w-full text-left text-gray-300 hover:text-purple-400 transition-colors py-2 text-base">
+            <button onClick={() => scrollToSection('contact')} className="block w-full text-left text-gray-300 hover:text-green-400 transition-colors py-2 text-base">
               Contact
             </button>
-            <Button onClick={() => scrollToSection('contact')} className="w-full bg-gradient-to-r from-purple-500 to-purple-600 hover:from-purple-600 hover:to-purple-700 text-white font-semibold">
+            <Button onClick={() => scrollToSection('contact')} className="w-full bg-gradient-to-r from-green-500 to-green-600 hover:from-green-600 hover:to-green-700 text-white font-semibold">
               Get Started
             </Button>
           </div>

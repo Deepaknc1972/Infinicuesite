@@ -146,14 +146,14 @@ const MobileAppPage = () => {
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             {/* Left Content */}
             <div>
-              <Badge className="bg-purple-500/20 text-purple-400 border-purple-500/30 mb-6">
+              <Badge className="bg-green-500/20 text-green-400 border-green-500/30 mb-6">
                 <MonitorSmartphone className="mr-2" size={16} />
                 Complete SEC@R Solution
               </Badge>
               
               <h1 className="text-5xl md:text-6xl font-bold text-white mb-6 leading-tight">
                 End-to-End Consent Control
-                <span className="block text-purple-400 mt-2">Ecosystem</span>
+                <span className="block text-green-400 mt-2">Ecosystem</span>
               </h1>
               
               <p className="text-xl text-gray-400 mb-8 leading-relaxed">
@@ -191,15 +191,15 @@ const MobileAppPage = () => {
 
               <div className="grid grid-cols-3 gap-4">
                 <div className="bg-gray-900/50 border border-gray-800 rounded-lg p-4">
-                  <div className="text-2xl font-bold text-purple-400">99.7%</div>
+                  <div className="text-2xl font-bold text-green-400">99.7%</div>
                   <div className="text-sm text-gray-400">Threat Detection</div>
                 </div>
                 <div className="bg-gray-900/50 border border-gray-800 rounded-lg p-4">
-                  <div className="text-2xl font-bold text-purple-400">&lt;100ms</div>
+                  <div className="text-2xl font-bold text-green-400">&lt;100ms</div>
                   <div className="text-sm text-gray-400">Response Time</div>
                 </div>
                 <div className="bg-gray-900/50 border border-gray-800 rounded-lg p-4">
-                  <div className="text-2xl font-bold text-purple-400">24/7</div>
+                  <div className="text-2xl font-bold text-green-400">24/7</div>
                   <div className="text-sm text-gray-400">Protection</div>
                 </div>
               </div>
@@ -212,71 +212,71 @@ const MobileAppPage = () => {
                 <div className="absolute top-0 left-1/2 transform -translate-x-1/2 w-40 h-7 bg-black rounded-b-3xl z-20"></div>
                 
                 {/* Screen Content */}
-                <div className="h-full bg-gradient-to-br from-purple-500/20 to-purple-500/20 p-8 pt-12">
+                <div className="h-full bg-gradient-to-br from-green-500/20 to-green-500/20 p-8 pt-12">
                   <div className="text-center mb-8">
-                    <div className="w-20 h-20 mx-auto bg-purple-500 rounded-3xl flex items-center justify-center mb-4">
+                    <div className="w-20 h-20 mx-auto bg-green-500 rounded-3xl flex items-center justify-center mb-4">
                       <Shield className="text-black" size={40} />
                     </div>
                     <h3 className="text-white text-xl font-bold">SEC@R</h3>
-                    <p className="text-purple-400 text-sm">Consent Controller</p>
+                    <p className="text-green-400 text-sm">Consent Controller</p>
                   </div>
 
                   <div className="space-y-4">
-                    <div className="bg-black/40 backdrop-blur rounded-xl p-4 border border-purple-500/30">
+                    <div className="bg-black/40 backdrop-blur rounded-xl p-4 border border-green-500/30">
                       <div className="flex items-center justify-between">
                         <div className="flex items-center space-x-3">
-                          <div className="w-10 h-10 bg-purple-500/30 rounded-lg flex items-center justify-center">
-                            <Bluetooth className="text-purple-400" size={20} />
+                          <div className="w-10 h-10 bg-green-500/30 rounded-lg flex items-center justify-center">
+                            <Bluetooth className="text-green-400" size={20} />
                           </div>
                           <div>
                             <div className="text-white text-sm font-semibold">BLE Devices</div>
-                            <div className="text-purple-400 text-xs">8 devices detected</div>
+                            <div className="text-green-400 text-xs">8 devices detected</div>
                           </div>
                         </div>
-                        <Check className="text-purple-400" size={20} />
+                        <Check className="text-green-400" size={20} />
                       </div>
                     </div>
 
-                    <div className="bg-black/40 backdrop-blur rounded-xl p-4 border border-purple-500/30">
+                    <div className="bg-black/40 backdrop-blur rounded-xl p-4 border border-green-500/30">
                       <div className="flex items-center justify-between">
                         <div className="flex items-center space-x-3">
-                          <div className="w-10 h-10 bg-purple-500/30 rounded-lg flex items-center justify-center">
-                            <MapPin className="text-purple-400" size={20} />
+                          <div className="w-10 h-10 bg-green-500/30 rounded-lg flex items-center justify-center">
+                            <MapPin className="text-green-400" size={20} />
                           </div>
                           <div>
                             <div className="text-white text-sm font-semibold">Location</div>
-                            <div className="text-purple-400 text-xs">Verified</div>
+                            <div className="text-green-400 text-xs">Verified</div>
                           </div>
                         </div>
-                        <Check className="text-purple-400" size={20} />
+                        <Check className="text-green-400" size={20} />
                       </div>
                     </div>
 
-                    <div className="bg-black/40 backdrop-blur rounded-xl p-4 border border-purple-500/30">
+                    <div className="bg-black/40 backdrop-blur rounded-xl p-4 border border-green-500/30">
                       <div className="flex items-center justify-between">
                         <div className="flex items-center space-x-3">
-                          <div className="w-10 h-10 bg-purple-500/30 rounded-lg flex items-center justify-center">
-                            <Shield className="text-purple-400" size={20} />
+                          <div className="w-10 h-10 bg-green-500/30 rounded-lg flex items-center justify-center">
+                            <Shield className="text-green-400" size={20} />
                           </div>
                           <div>
                             <div className="text-white text-sm font-semibold">Security Scan</div>
-                            <div className="text-purple-400 text-xs">No threats</div>
+                            <div className="text-green-400 text-xs">No threats</div>
                           </div>
                         </div>
-                        <Check className="text-purple-400" size={20} />
+                        <Check className="text-green-400" size={20} />
                       </div>
                     </div>
                   </div>
 
-                  <Button className="w-full mt-8 bg-purple-500 hover:bg-purple-600 text-black font-semibold">
+                  <Button className="w-full mt-8 bg-green-500 hover:bg-green-600 text-black font-semibold">
                     Approve Transaction
                   </Button>
                 </div>
               </div>
 
               {/* Floating Elements */}
-              <div className="absolute -top-4 -right-4 w-24 h-24 bg-purple-500/20 rounded-full blur-2xl"></div>
-              <div className="absolute -bottom-4 -left-4 w-32 h-32 bg-purple-500/20 rounded-full blur-2xl"></div>
+              <div className="absolute -top-4 -right-4 w-24 h-24 bg-green-500/20 rounded-full blur-2xl"></div>
+              <div className="absolute -bottom-4 -left-4 w-32 h-32 bg-green-500/20 rounded-full blur-2xl"></div>
             </div>
           </div>
         </div>
@@ -286,7 +286,7 @@ const MobileAppPage = () => {
       <section className="py-24 bg-gray-950">
         <div className="container mx-auto px-6">
           <div className="text-center mb-16">
-            <h2 className="text-sm font-semibold text-purple-400 uppercase tracking-wider mb-4">Powerful Features</h2>
+            <h2 className="text-sm font-semibold text-green-400 uppercase tracking-wider mb-4">Powerful Features</h2>
             <h3 className="text-4xl md:text-5xl font-bold text-white mb-6">
               Advanced Detection & Monitoring
             </h3>
@@ -299,15 +299,15 @@ const MobileAppPage = () => {
             {appFeatures.map((feature, index) => {
               const Icon = feature.icon;
               return (
-                <Card key={index} className="bg-gray-900/50 border-gray-800 hover:border-purple-500/50 transition-all duration-300">
+                <Card key={index} className="bg-gray-900/50 border-gray-800 hover:border-green-500/50 transition-all duration-300">
                   <CardContent className="p-6">
-                    <div className="w-14 h-14 mb-4 bg-purple-500/20 rounded-xl flex items-center justify-center">
-                      <Icon className="text-purple-400" size={28} />
+                    <div className="w-14 h-14 mb-4 bg-green-500/20 rounded-xl flex items-center justify-center">
+                      <Icon className="text-green-400" size={28} />
                     </div>
                     <h4 className="text-xl font-bold text-white mb-3">{feature.title}</h4>
                     <p className="text-gray-400 mb-4 leading-relaxed">{feature.description}</p>
-                    <div className="bg-purple-500/5 border border-purple-500/20 rounded-lg p-3">
-                      <p className="text-purple-400 text-sm">
+                    <div className="bg-green-500/5 border border-green-500/20 rounded-lg p-3">
+                      <p className="text-green-400 text-sm">
                         <span className="font-semibold">Technical:</span> {feature.technical}
                       </p>
                     </div>
@@ -325,7 +325,7 @@ const MobileAppPage = () => {
           <div className="max-w-5xl mx-auto">
             <div className="text-center mb-12">
               <h2 className="text-4xl md:text-5xl font-bold text-white mb-6">
-                Consent <span className="text-purple-400">Controller</span>, Not Manager
+                Consent <span className="text-green-400">Controller</span>, Not Manager
               </h2>
               <p className="text-xl text-gray-400">
                 SEC@R doesn't just manage consent - it controls and enforces it at every transaction.
@@ -366,32 +366,32 @@ const MobileAppPage = () => {
               </Card>
 
               {/* Consent Controller */}
-              <Card className="bg-purple-500/5 border-purple-500/30">
+              <Card className="bg-green-500/5 border-green-500/30">
                 <CardHeader>
                   <CardTitle className="text-white flex items-center">
-                    <Shield className="text-purple-400 mr-2" size={24} />
+                    <Shield className="text-green-400 mr-2" size={24} />
                     SEC@R Consent Controller
                   </CardTitle>
                 </CardHeader>
                 <CardContent className="space-y-3">
                   <div className="flex items-start space-x-2">
-                    <Check className="text-purple-400 mt-1 flex-shrink-0" size={16} />
+                    <Check className="text-green-400 mt-1 flex-shrink-0" size={16} />
                     <span className="text-gray-300">Active consent enforcement</span>
                   </div>
                   <div className="flex items-start space-x-2">
-                    <Check className="text-purple-400 mt-1 flex-shrink-0" size={16} />
+                    <Check className="text-green-400 mt-1 flex-shrink-0" size={16} />
                     <span className="text-gray-300">Continuous verification</span>
                   </div>
                   <div className="flex items-start space-x-2">
-                    <Check className="text-purple-400 mt-1 flex-shrink-0" size={16} />
+                    <Check className="text-green-400 mt-1 flex-shrink-0" size={16} />
                     <span className="text-gray-300">Instant transaction blocking</span>
                   </div>
                   <div className="flex items-start space-x-2">
-                    <Check className="text-purple-400 mt-1 flex-shrink-0" size={16} />
+                    <Check className="text-green-400 mt-1 flex-shrink-0" size={16} />
                     <span className="text-gray-300">Real-time decision making</span>
                   </div>
                   <div className="flex items-start space-x-2">
-                    <Check className="text-purple-400 mt-1 flex-shrink-0" size={16} />
+                    <Check className="text-green-400 mt-1 flex-shrink-0" size={16} />
                     <span className="text-gray-300">Zero-trust architecture</span>
                   </div>
                 </CardContent>
@@ -405,7 +405,7 @@ const MobileAppPage = () => {
       <section className="py-24 bg-gradient-to-b from-black to-gray-950">
         <div className="container mx-auto px-6">
           <div className="text-center mb-16">
-            <h2 className="text-sm font-semibold text-purple-400 uppercase tracking-wider mb-4">Backend Architecture</h2>
+            <h2 className="text-sm font-semibold text-green-400 uppercase tracking-wider mb-4">Backend Architecture</h2>
             <h3 className="text-4xl md:text-5xl font-bold text-white mb-6">
               Intelligent Decision Engine with API Gateway
             </h3>
@@ -419,10 +419,10 @@ const MobileAppPage = () => {
             {backendCapabilities.map((capability, index) => {
               const Icon = capability.icon;
               return (
-                <Card key={index} className="bg-gray-900/50 border-gray-800 hover:border-purple-500/50 transition-all duration-300">
+                <Card key={index} className="bg-gray-900/50 border-gray-800 hover:border-green-500/50 transition-all duration-300">
                   <CardContent className="p-6 text-center">
-                    <div className="w-16 h-16 mx-auto mb-4 bg-purple-500/20 rounded-2xl flex items-center justify-center">
-                      <Icon className="text-purple-400" size={32} />
+                    <div className="w-16 h-16 mx-auto mb-4 bg-green-500/20 rounded-2xl flex items-center justify-center">
+                      <Icon className="text-green-400" size={32} />
                     </div>
                     <h4 className="text-lg font-bold text-white mb-2">{capability.title}</h4>
                     <p className="text-gray-400 text-sm leading-relaxed">{capability.description}</p>
@@ -433,39 +433,39 @@ const MobileAppPage = () => {
           </div>
 
           {/* Architecture Diagram */}
-          <Card className="bg-gradient-to-r from-gray-900/50 to-gray-800/50 border-purple-500/30">
+          <Card className="bg-gradient-to-r from-gray-900/50 to-gray-800/50 border-green-500/30">
             <CardContent className="p-8">
               <div className="grid grid-cols-1 md:grid-cols-5 gap-6 items-center">
                 {/* Mobile App */}
                 <div className="text-center">
-                  <div className="w-20 h-20 mx-auto mb-4 bg-purple-500/20 rounded-2xl flex items-center justify-center">
-                    <Smartphone className="text-purple-400" size={40} />
+                  <div className="w-20 h-20 mx-auto mb-4 bg-green-500/20 rounded-2xl flex items-center justify-center">
+                    <Smartphone className="text-green-400" size={40} />
                   </div>
                   <h4 className="text-white font-bold mb-2">Mobile App</h4>
                   <p className="text-gray-400 text-sm">iOS & Android</p>
                 </div>
 
                 <div className="flex justify-center">
-                  <ArrowRight className="text-purple-400 hidden md:block" size={32} />
+                  <ArrowRight className="text-green-400 hidden md:block" size={32} />
                 </div>
 
                 {/* Backend */}
                 <div className="text-center">
-                  <div className="w-20 h-20 mx-auto mb-4 bg-purple-500/20 rounded-2xl flex items-center justify-center">
-                    <Server className="text-purple-400" size={40} />
+                  <div className="w-20 h-20 mx-auto mb-4 bg-green-500/20 rounded-2xl flex items-center justify-center">
+                    <Server className="text-green-400" size={40} />
                   </div>
                   <h4 className="text-white font-bold mb-2">Decision Engine</h4>
                   <p className="text-gray-400 text-sm">AI-Powered Backend</p>
                 </div>
 
                 <div className="flex justify-center">
-                  <ArrowRight className="text-purple-400 hidden md:block" size={32} />
+                  <ArrowRight className="text-green-400 hidden md:block" size={32} />
                 </div>
 
                 {/* Authorities */}
                 <div className="text-center">
-                  <div className="w-20 h-20 mx-auto mb-4 bg-purple-500/20 rounded-2xl flex items-center justify-center">
-                    <Building2 className="text-purple-400" size={40} />
+                  <div className="w-20 h-20 mx-auto mb-4 bg-green-500/20 rounded-2xl flex items-center justify-center">
+                    <Building2 className="text-green-400" size={40} />
                   </div>
                   <h4 className="text-white font-bold mb-2">Authorities</h4>
                   <p className="text-gray-400 text-sm">Banks, Govt, Telecom</p>
@@ -488,7 +488,7 @@ const MobileAppPage = () => {
       <section className="py-24 bg-black">
         <div className="container mx-auto px-6">
           <div className="text-center mb-16">
-            <h2 className="text-sm font-semibold text-purple-400 uppercase tracking-wider mb-4">API Architecture</h2>
+            <h2 className="text-sm font-semibold text-green-400 uppercase tracking-wider mb-4">API Architecture</h2>
             <h3 className="text-4xl md:text-5xl font-bold text-white mb-6">
               Enterprise-Grade REST APIs
             </h3>
@@ -500,8 +500,8 @@ const MobileAppPage = () => {
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mb-12">
             <Card className="bg-gray-900/50 border-gray-800">
               <CardContent className="p-6 text-center">
-                <div className="w-16 h-16 mx-auto mb-4 bg-purple-500/20 rounded-2xl flex items-center justify-center">
-                  <Shield className="text-purple-400" size={32} />
+                <div className="w-16 h-16 mx-auto mb-4 bg-green-500/20 rounded-2xl flex items-center justify-center">
+                  <Shield className="text-green-400" size={32} />
                 </div>
                 <h4 className="text-white font-bold mb-2">Secure</h4>
                 <p className="text-gray-400 text-sm">OAuth 2.0, mTLS, end-to-end encryption</p>
@@ -510,8 +510,8 @@ const MobileAppPage = () => {
 
             <Card className="bg-gray-900/50 border-gray-800">
               <CardContent className="p-6 text-center">
-                <div className="w-16 h-16 mx-auto mb-4 bg-purple-500/20 rounded-2xl flex items-center justify-center">
-                  <Zap className="text-purple-400" size={32} />
+                <div className="w-16 h-16 mx-auto mb-4 bg-green-500/20 rounded-2xl flex items-center justify-center">
+                  <Zap className="text-green-400" size={32} />
                 </div>
                 <h4 className="text-white font-bold mb-2">Fast</h4>
                 <p className="text-gray-400 text-sm">Sub-100ms latency, real-time webhooks</p>
@@ -520,8 +520,8 @@ const MobileAppPage = () => {
 
             <Card className="bg-gray-900/50 border-gray-800">
               <CardContent className="p-6 text-center">
-                <div className="w-16 h-16 mx-auto mb-4 bg-purple-500/20 rounded-2xl flex items-center justify-center">
-                  <Server className="text-purple-400" size={32} />
+                <div className="w-16 h-16 mx-auto mb-4 bg-green-500/20 rounded-2xl flex items-center justify-center">
+                  <Server className="text-green-400" size={32} />
                 </div>
                 <h4 className="text-white font-bold mb-2">Scalable</h4>
                 <p className="text-gray-400 text-sm">Handles millions of requests per day</p>
@@ -530,8 +530,8 @@ const MobileAppPage = () => {
 
             <Card className="bg-gray-900/50 border-gray-800">
               <CardContent className="p-6 text-center">
-                <div className="w-16 h-16 mx-auto mb-4 bg-purple-500/20 rounded-2xl flex items-center justify-center">
-                  <FileCheck className="text-purple-400" size={32} />
+                <div className="w-16 h-16 mx-auto mb-4 bg-green-500/20 rounded-2xl flex items-center justify-center">
+                  <FileCheck className="text-green-400" size={32} />
                 </div>
                 <h4 className="text-white font-bold mb-2">Documented</h4>
                 <p className="text-gray-400 text-sm">Comprehensive API docs & SDKs</p>
@@ -539,35 +539,35 @@ const MobileAppPage = () => {
             </Card>
           </div>
 
-          <Card className="bg-gradient-to-r from-gray-900/50 to-gray-800/50 border-purple-500/30">
+          <Card className="bg-gradient-to-r from-gray-900/50 to-gray-800/50 border-green-500/30">
             <CardContent className="p-8">
               <h4 className="text-2xl font-bold text-white mb-6">Key API Endpoints</h4>
               <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                 <div className="space-y-3">
                   <div className="bg-black/40 rounded-lg p-4 border border-gray-800">
-                    <code className="text-purple-400 text-sm">POST /api/consent/request</code>
+                    <code className="text-green-400 text-sm">POST /api/consent/request</code>
                     <p className="text-gray-400 text-xs mt-2">Initiate consent verification request</p>
                   </div>
                   <div className="bg-black/40 rounded-lg p-4 border border-gray-800">
-                    <code className="text-purple-400 text-sm">GET /api/consent/status</code>
+                    <code className="text-green-400 text-sm">GET /api/consent/status</code>
                     <p className="text-gray-400 text-xs mt-2">Check consent verification status</p>
                   </div>
                   <div className="bg-black/40 rounded-lg p-4 border border-gray-800">
-                    <code className="text-purple-400 text-sm">POST /api/device/verify</code>
+                    <code className="text-green-400 text-sm">POST /api/device/verify</code>
                     <p className="text-gray-400 text-xs mt-2">Verify device authenticity and health</p>
                   </div>
                 </div>
                 <div className="space-y-3">
                   <div className="bg-black/40 rounded-lg p-4 border border-gray-800">
-                    <code className="text-purple-400 text-sm">POST /api/transaction/authorize</code>
+                    <code className="text-green-400 text-sm">POST /api/transaction/authorize</code>
                     <p className="text-gray-400 text-xs mt-2">Request transaction authorization</p>
                   </div>
                   <div className="bg-black/40 rounded-lg p-4 border border-gray-800">
-                    <code className="text-purple-400 text-sm">POST /api/identity/verify</code>
+                    <code className="text-green-400 text-sm">POST /api/identity/verify</code>
                     <p className="text-gray-400 text-xs mt-2">Verify Data Principal identity</p>
                   </div>
                   <div className="bg-black/40 rounded-lg p-4 border border-gray-800">
-                    <code className="text-purple-400 text-sm">POST /api/webhook/register</code>
+                    <code className="text-green-400 text-sm">POST /api/webhook/register</code>
                     <p className="text-gray-400 text-xs mt-2">Register webhook for real-time events</p>
                   </div>
                 </div>
@@ -581,7 +581,7 @@ const MobileAppPage = () => {
       <section className="py-24 bg-gray-950">
         <div className="container mx-auto px-6">
           <div className="text-center mb-16">
-            <h2 className="text-sm font-semibold text-purple-400 uppercase tracking-wider mb-4">API Integrations</h2>
+            <h2 className="text-sm font-semibold text-green-400 uppercase tracking-wider mb-4">API Integrations</h2>
             <h3 className="text-4xl md:text-5xl font-bold text-white mb-6">
               Connect with Any Authority or Institution
             </h3>
@@ -595,11 +595,11 @@ const MobileAppPage = () => {
             {integrations.map((integration, index) => {
               const Icon = integration.icon;
               return (
-                <Card key={index} className="bg-gray-900/50 border-gray-800 hover:border-purple-500/50 transition-all duration-300">
+                <Card key={index} className="bg-gray-900/50 border-gray-800 hover:border-green-500/50 transition-all duration-300">
                   <CardHeader>
                     <CardTitle className="flex items-center text-white">
-                      <div className="w-12 h-12 mr-4 bg-purple-500/20 rounded-xl flex items-center justify-center">
-                        <Icon className="text-purple-400" size={24} />
+                      <div className="w-12 h-12 mr-4 bg-green-500/20 rounded-xl flex items-center justify-center">
+                        <Icon className="text-green-400" size={24} />
                       </div>
                       {integration.title}
                     </CardTitle>
@@ -609,7 +609,7 @@ const MobileAppPage = () => {
                     <div className="grid grid-cols-2 gap-2">
                       {integration.features.map((feature, idx) => (
                         <div key={idx} className="flex items-center space-x-2">
-                          <Check className="text-purple-400 flex-shrink-0" size={16} />
+                          <Check className="text-green-400 flex-shrink-0" size={16} />
                           <span className="text-gray-300 text-sm">{feature}</span>
                         </div>
                       ))}
@@ -625,7 +625,7 @@ const MobileAppPage = () => {
       {/* CTA Section */}
       <section className="py-24 bg-gradient-to-b from-gray-950 to-black">
         <div className="container mx-auto px-6">
-          <Card className="bg-gradient-to-r from-purple-500/10 to-purple-500/10 border-purple-500/30">
+          <Card className="bg-gradient-to-r from-green-500/10 to-green-500/10 border-green-500/30">
             <CardContent className="p-12 text-center">
               <h2 className="text-4xl md:text-5xl font-bold text-white mb-6">
                 Ready to Take Control?

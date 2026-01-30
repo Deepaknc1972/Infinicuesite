@@ -12,7 +12,7 @@ export const AboutUs = () => {
           {/* Left Content */}
           <div className="space-y-8">
             <div>
-              <h2 className="text-sm font-semibold text-purple-400 uppercase tracking-wider mb-4">About Us</h2>
+              <h2 className="text-sm font-semibold text-green-400 uppercase tracking-wider mb-4">About Us</h2>
               <h3 className="text-4xl md:text-5xl font-bold text-white mb-6">{aboutUs.title}</h3>
             </div>
 
@@ -30,7 +30,7 @@ export const AboutUs = () => {
             <div className="grid grid-cols-2 gap-6 pt-8">
               {aboutUs.stats.map((stat, index) => (
                 <div key={index} className="glass rounded-xl p-6 hover:scale-105 transition-all duration-300">
-                  <div className="text-3xl font-bold text-purple-400 mb-2">{stat.value}</div>
+                  <div className="text-3xl font-bold text-green-400 mb-2">{stat.value}</div>
                   <div className="text-sm text-gray-400">{stat.label}</div>
                 </div>
               ))}
