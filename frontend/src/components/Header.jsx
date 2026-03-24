@@ -129,7 +129,7 @@ export const Header = () => {
 
         {/* Mobile Menu */}
         {mobileMenuOpen && (
-          <div className="md:hidden mt-4 pb-4 space-y-4 border-t border-[#1E2D4A] pt-4">
+          <div className="md:hidden mt-4 pb-4 space-y-4 border-t border-[#1E2D4A] pt-4" data-testid="mobile-menu">
             <button onClick={() => scrollToSection('about')} className="block w-full text-left text-[#CCD6F6] hover:text-[#64FFDA] transition-colors py-2">
               About Us
             </button>
