@@ -1,0 +1,166 @@
+{
+  "theme": "dark",
+  "typography": {
+    "headings": {
+      "fontFamily": "Outfit, sans-serif",
+      "weights": ["400", "700"],
+      "usage": "Use Outfit for all headings. Ensure tracking-tight for H1/H2."
+    },
+    "body": {
+      "fontFamily": "IBM Plex Sans, sans-serif",
+      "weights": ["400", "500"],
+      "usage": "Use IBM Plex Sans for body text to maintain high legibility and a corporate technical aesthetic."
+    },
+    "mono": {
+      "fontFamily": "IBM Plex Mono, monospace",
+      "weights": ["400", "500"],
+      "usage": "Use for overlines, labels, API endpoints, stats numbers, and technical details. Uppercase, tracking-widest for overlines."
+    }
+  },
+  "colors": {
+    "background": "#0A192F",
+    "background_secondary": "#112240",
+    "primary": "#64FFDA",
+    "primary_foreground": "#0A192F",
+    "text_primary": "#FFFFFF",
+    "text_secondary": "#CCD6F6",
+    "text_muted": "#8892B0",
+    "border": "#1E2D4A",
+    "surface": "#112240",
+    "surface_glass": "rgba(10, 25, 47, 0.7)",
+    "accent_hover": "#4CD9B4",
+    "error": "#FF4B4B",
+    "warning": "#FFD166",
+    "success": "#06D6A0"
+  },
+  "visual_enhancers": {
+    "shadows": {
+      "sm": "0 2px 4px rgba(0,0,0,0.5)",
+      "md": "0 4px 8px rgba(0,0,0,0.5)",
+      "lg": "0 8px 16px rgba(0,0,0,0.5)",
+      "glow": "0 0 15px rgba(100, 255, 218, 0.3)",
+      "glow_lg": "0 0 30px rgba(100, 255, 218, 0.2)"
+    },
+    "borders": {
+      "default": "1px solid #1E2D4A",
+      "active": "1px solid #64FFDA",
+      "radius": {
+        "sm": "0.25rem",
+        "md": "0.5rem",
+        "lg": "1rem",
+        "xl": "1.5rem"
+      }
+    },
+    "textures": {
+      "noise": "Add a subtle grain/noise overlay using a mix-blend-overlay or opacity-5 background image to break digital flatness.",
+      "grid": "Use a subtle SVG geometric grid pattern in the background (color #1E2D4A, opacity 0.4) to reinforce the 'cybersecurity architecture' theme."
+    },
+    "glassmorphism": {
+      "header": "backdrop-blur-xl bg-[#0A192F]/80 border-b border-[#1E2D4A]",
+      "cards": "bg-[#112240]/60 backdrop-blur-md border border-[#1E2D4A] hover:border-[#64FFDA]/50 transition-colors"
+    }
+  },
+  "layouts": {
+    "spacing": "Use generous padding. p-8, p-12, p-24 for section dividers. Ensure empty spaces highlight the content.",
+    "container": "Max-width of 1280px. Use standard Tailwind max-w-7xl mx-auto px-6 md:px-12.",
+    "grids": {
+      "bento": "For Features/Architecture sections. Use grid-cols-1 md:grid-cols-3 lg:grid-cols-4 with gap-6. Mix tall, wide, and square items. Avoid uniform grids.",
+      "stats": "grid-cols-2 md:grid-cols-4 with heavy borders separating the numbers, 'border-collapse' style."
+    }
+  },
+  "components_instructions": {
+    "buttons": "Pill-shaped or slightly rounded (rounded-md) with sharp interactions. Primary button: bg-[#64FFDA] text-[#0A192F] hover:bg-[#4CD9B4]. Secondary: border border-[#64FFDA] text-[#64FFDA] hover:bg-[#64FFDA]/10. Never use standard blue/purple gradients.",
+    "cards": "Flat solid background (#112240) with 1px border (#1E2D4A). Hover state: slight lift (-translate-y-1) and subtle teal glow shadow.",
+    "inputs": "Shadcn UI customized. bg-[#0A192F] border-[#1E2D4A] focus:border-[#64FFDA] focus:ring-1 focus:ring-[#64FFDA].",
+    "charts": "Use Recharts or Shadcn charts for Cyber Fraud Stats. Theme them with teal (#64FFDA), muted blue (#1E2D4A), and gray."
+  },
+  "motion": {
+    "hover": "Transition transform 0.2s ease, opacity 0.2s ease. Always explicitly set text color on hover.",
+    "entrance": "Staggered fade-up for list items, bento grid items, and stats.",
+    "tracing_beam": "Implement a glowing gradient line that traces the border of pricing or premium feature cards for an active tech feel."
+  },
+  "icons": {
+    "library": "lucide-react",
+    "style": "Use stroke-width 1.5 or 1.25. Use teal (#64FFDA) for active/primary icons, text-muted (#8892B0) for secondary."
+  },
+  "images": {
+    "hero_background": {
+      "url": "https://images.unsplash.com/photo-1754348523153-5cf8e4129ded?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NDk1ODB8MHwxfHNlYXJjaHw0fHxhYnN0cmFjdCUyMGN5YmVyc2VjdXJpdHklMjBnZW9tZXRyaWN8ZW58MHx8fHwxNzc0MzcwMTc4fDA&ixlib=rb-4.1.0&q=85",
+      "description": "Abstract pattern with blue, green, and black colors for the hero section background with low opacity.",
+      "category": "Hero Background"
+    },
+    "threats_prevented": {
+      "url": "https://images.pexels.com/photos/225769/pexels-photo-225769.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+      "description": "Abstract depiction of green matrix code on a computer monitor to represent digital threats and monitoring.",
+      "category": "Section Image"
+    },
+    "products_hardware": {
+      "url": "https://images.unsplash.com/photo-1759836096317-e746643cc277?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjA0MTJ8MHwxfHNlYXJjaHwxfHxzZXJ2ZXIlMjBoYXJkd2FyZSUyMHRlY2h8ZW58MHx8fHwxNzc0MzcwMTc5fDA&ixlib=rb-4.1.0&q=85",
+      "description": "Close-up of computer server rack components representing physical security products.",
+      "category": "Products Page"
+    },
+    "mobile_app": {
+      "url": "https://images.pexels.com/photos/2048774/pexels-photo-2048774.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+      "description": "Close-up of a woman's hands using a VPN app on a smartphone.",
+      "category": "Mobile App Page"
+    }
+  },
+  "pages": [
+    {
+      "path": "/",
+      "name": "Home",
+      "sections": [
+        "Hero (with SEC@R tagline)",
+        "Cyber Fraud Statistics (Charts/Graphs)",
+        "About Us",
+        "How It Works (Process flow)",
+        "Threats Prevented",
+        "Privacy-First Architecture",
+        "Features (Bento Grid)",
+        "Products/Solutions Showcase",
+        "Solution Architecture (API integration)",
+        "Testimonials",
+        "Contact Form"
+      ]
+    },
+    {
+      "path": "/products",
+      "name": "Products",
+      "description": "Showcase of hardware and software security solutions."
+    },
+    {
+      "path": "/mobile-app",
+      "name": "Mobile App",
+      "description": "Details on the secure mobile solution, biometric auth, remote wiping, etc."
+    },
+    {
+      "path": "/use-cases",
+      "name": "Use Cases",
+      "description": "Industry-specific solutions (Banking, Enterprise, Government)."
+    }
+  ],
+  "accessibility": {
+    "contrast": "Ensure contrast ratios > 4.5:1. Primary text is white on #0A192F. Secondary text is #CCD6F6. Do not use pure gray; always tint with navy. Teal (#64FFDA) on navy is high contrast.",
+    "focus": "focus:outline-none focus:ring-2 focus:ring-[#64FFDA] focus:ring-offset-2 focus:ring-offset-[#0A192F]",
+    "reduced_motion": "Wrap animations in respects-reduced-motion media queries."
+  },
+  "instructions_to_main_agent": [
+    "Read the guidelines thoroughly. The vibe is 'Swiss & High-Contrast' tailored for Cybersecurity with Deep Navy and Teal.",
+    "Do NOT use generic UI gradients (cyan/purple). Remove any existing background gradients from the old theme.",
+    "Replace all primary brand colors with #0A192F (bg) and #64FFDA (accent).",
+    "Use Shadcn UI extensively but modify standard styles to remove rounded/soft appearance; use sharper corners (rounded-md max) and 1px #1E2D4A borders.",
+    "Implement a subtle geometric grid background using SVG or CSS.",
+    "Ensure the layout feels 'spacious' using p-8 to p-24.",
+    "Create the pages: Home, /products, /mobile-app, /use-cases.",
+    "Add 'data-testid' to all interactive elements."
+  ],
+  "UNIVERSAL_GUIDELINES_FOR_MAIN_AGENT": [
+    "Do not center-align the app container globally.",
+    "Do not use universal 'transition: all'.",
+    "Do not use emojis for icons. Use lucide-react.",
+    "Every interaction needs micro-animations.",
+    "Use 2-3x more spacing than typical.",
+    "Do not use complete transparent background in headers/overlays; use glassmorphism with backdrop-blur.",
+    "Ensure named exports for components, default exports for pages."
+  ]
+}
