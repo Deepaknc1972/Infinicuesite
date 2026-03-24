@@ -55,25 +55,12 @@ export const CyberAura = () => {
   ];
 
   return (
-    <section className="py-24 bg-[#0A192F] relative overflow-hidden" data-testid="cyber-aura-section">
-      {/* Animated Background Grid */}
-      <div className="absolute inset-0 opacity-20">
-        <div className="absolute inset-0" style={{
-          backgroundImage: `linear-gradient(rgba(100, 255, 218, 0.1) 1px, transparent 1px), linear-gradient(90deg, rgba(100, 255, 218, 0.1) 1px, transparent 1px)`,
-          backgroundSize: '40px 40px',
-          animation: 'gridMove 20s linear infinite'
-        }}></div>
-      </div>
-
+    <section className="py-24 bg-[#F5F5F7] relative overflow-hidden" data-testid="cyber-aura-section">
       <style>{`
-        @keyframes gridMove {
-          0% { transform: translate(0, 0); }
-          100% { transform: translate(40px, 40px); }
-        }
         @keyframes pulse-ring {
-          0% { transform: scale(0.8); opacity: 0.8; }
-          50% { transform: scale(1.2); opacity: 0.3; }
-          100% { transform: scale(0.8); opacity: 0.8; }
+          0% { transform: scale(0.95); opacity: 0.8; }
+          50% { transform: scale(1.05); opacity: 0.3; }
+          100% { transform: scale(0.95); opacity: 0.8; }
         }
         @keyframes rotate-slow {
           from { transform: rotate(0deg); }
@@ -90,11 +77,11 @@ export const CyberAura = () => {
         }
         @keyframes float {
           0%, 100% { transform: translateY(0px); }
-          50% { transform: translateY(-10px); }
+          50% { transform: translateY(-8px); }
         }
         @keyframes glow-pulse {
-          0%, 100% { filter: drop-shadow(0 0 10px rgba(100, 255, 218, 0.5)); }
-          50% { filter: drop-shadow(0 0 25px rgba(100, 255, 218, 0.8)); }
+          0%, 100% { box-shadow: 0 0 20px rgba(0, 113, 227, 0.2); }
+          50% { box-shadow: 0 0 40px rgba(0, 113, 227, 0.4); }
         }
         .node-active {
           animation: glow-pulse 1.5s ease-in-out infinite;
@@ -107,12 +94,12 @@ export const CyberAura = () => {
       <div className="max-w-7xl mx-auto px-6 relative z-10">
         {/* Section Header */}
         <div className="text-center mb-16">
-          <span className="overline text-[#64FFDA] mb-4 block">Multi-Device Authentication</span>
-          <h2 className="text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-6 tracking-tight">
+          <span className="overline text-[#0071E3] mb-4 block">Multi-Device Authentication</span>
+          <h2 className="text-4xl md:text-5xl lg:text-6xl font-semibold text-[#1D1D1F] mb-6 tracking-tight">
             The Cyber Aura
-            <span className="block text-[#64FFDA] mt-2">Ecosystem</span>
+            <span className="block text-[#0071E3]">Ecosystem</span>
           </h2>
-          <p className="text-base md:text-lg text-[#8892B0] max-w-3xl mx-auto">
+          <p className="text-lg text-[#86868B] max-w-3xl mx-auto">
             SEC@R creates an impenetrable security aura around the Data Principal through seamless integration 
             of FIDO-compliant hardware, mobile app, and BLE proximity authentication.
           </p>
@@ -120,39 +107,36 @@ export const CyberAura = () => {
 
         {/* Cyber Aura Visualization */}
         <div className="relative max-w-4xl mx-auto">
-          {/* Central Shield - The Protected Zone */}
           <div className="relative w-[500px] h-[500px] md:w-[600px] md:h-[600px] mx-auto">
             
             {/* Outer Rotating Ring */}
             <div 
-              className="absolute inset-0 rounded-full border-2 border-dashed border-[#64FFDA]/30"
+              className="absolute inset-0 rounded-full border-2 border-dashed border-gray-300"
               style={{ animation: 'rotate-slow 30s linear infinite' }}
             ></div>
 
             {/* Middle Pulse Ring */}
             <div 
-              className="absolute inset-8 rounded-full border border-[#64FFDA]/40"
+              className="absolute inset-8 rounded-full border border-[#0071E3]/30"
               style={{ animation: 'pulse-ring 3s ease-in-out infinite' }}
             ></div>
 
-            {/* Inner Rotating Ring (reverse) */}
+            {/* Inner Rotating Ring */}
             <div 
-              className="absolute inset-16 rounded-full border-2 border-[#64FFDA]/20"
+              className="absolute inset-16 rounded-full border-2 border-gray-200"
               style={{ animation: 'rotate-reverse 20s linear infinite' }}
             ></div>
 
             {/* Connection Lines SVG */}
             <svg className="absolute inset-0 w-full h-full" viewBox="0 0 600 600">
-              {/* Data flow paths */}
               <defs>
-                <linearGradient id="flowGradient" x1="0%" y1="0%" x2="100%" y2="0%">
-                  <stop offset="0%" stopColor="#64FFDA" stopOpacity="0" />
-                  <stop offset="50%" stopColor="#64FFDA" stopOpacity="1" />
-                  <stop offset="100%" stopColor="#64FFDA" stopOpacity="0" />
+                <linearGradient id="flowGradientLight" x1="0%" y1="0%" x2="100%" y2="0%">
+                  <stop offset="0%" stopColor="#0071E3" stopOpacity="0" />
+                  <stop offset="50%" stopColor="#0071E3" stopOpacity="1" />
+                  <stop offset="100%" stopColor="#0071E3" stopOpacity="0" />
                 </linearGradient>
               </defs>
               
-              {/* Connecting lines between nodes */}
               {[0, 1, 2, 3].map((i) => {
                 const nextI = (i + 1) % 4;
                 const angles = [270, 0, 90, 180];
@@ -164,18 +148,16 @@ export const CyberAura = () => {
                 
                 return (
                   <g key={i}>
-                    {/* Static connection line */}
                     <path
                       d={`M ${x1} ${y1} Q 300 300 ${x2} ${y2}`}
                       fill="none"
-                      stroke="#1E2D4A"
+                      stroke="#E5E5E5"
                       strokeWidth="2"
                     />
-                    {/* Animated data flow */}
                     <path
                       d={`M ${x1} ${y1} Q 300 300 ${x2} ${y2}`}
                       fill="none"
-                      stroke="url(#flowGradient)"
+                      stroke="url(#flowGradientLight)"
                       strokeWidth="3"
                       strokeDasharray="20 80"
                       style={{
@@ -191,15 +173,12 @@ export const CyberAura = () => {
             {/* Central Core - Shield Icon */}
             <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2">
               <div className={`relative ${pulseActive ? 'node-active' : ''}`}>
-                {/* Glow effect */}
-                <div className="absolute -inset-8 bg-[#64FFDA]/20 rounded-full blur-2xl"></div>
-                
-                {/* Core circle */}
-                <div className="relative w-32 h-32 md:w-40 md:h-40 bg-[#112240] border-2 border-[#64FFDA] rounded-full flex items-center justify-center">
+                <div className="absolute -inset-8 bg-[#0071E3]/10 rounded-full blur-2xl"></div>
+                <div className="relative w-32 h-32 md:w-40 md:h-40 bg-white border-2 border-[#0071E3] rounded-full flex items-center justify-center shadow-lg">
                   <div className="text-center">
-                    <Shield className="text-[#64FFDA] mx-auto mb-2" size={40} />
-                    <div className="text-white font-bold text-sm">SEC@R</div>
-                    <div className="text-[#64FFDA] text-xs">Protected</div>
+                    <Shield className="text-[#0071E3] mx-auto mb-2" size={40} />
+                    <div className="text-[#1D1D1F] font-semibold text-sm">SEC@R</div>
+                    <div className="text-[#0071E3] text-xs font-medium">Protected</div>
                   </div>
                 </div>
               </div>
@@ -208,12 +187,6 @@ export const CyberAura = () => {
             {/* Node Positions */}
             {nodes.map((node, index) => {
               const Icon = node.icon;
-              const angles = [270, 0, 90, 180]; // top, right, bottom, left
-              const radius = 200;
-              const angle = angles[index];
-              const x = 50 + (radius / 3) * Math.cos((angle * Math.PI) / 180);
-              const y = 50 + (radius / 3) * Math.sin((angle * Math.PI) / 180);
-              
               const positions = {
                 top: { top: '0%', left: '50%', transform: 'translate(-50%, 0)' },
                 right: { top: '50%', right: '0%', transform: 'translate(0, -50%)' },
@@ -233,55 +206,27 @@ export const CyberAura = () => {
                   }}
                 >
                   <div className={`relative group cursor-pointer transition-all duration-300 ${isActive ? 'scale-110' : 'hover:scale-105'}`}>
-                    {/* Outer glow */}
                     {isActive && (
-                      <div className="absolute -inset-4 bg-[#64FFDA]/30 rounded-full blur-xl"></div>
+                      <div className="absolute -inset-4 bg-[#0071E3]/20 rounded-full blur-xl"></div>
                     )}
                     
-                    {/* Node circle */}
                     <div className={`relative w-24 h-24 md:w-28 md:h-28 rounded-full flex flex-col items-center justify-center transition-all duration-300 ${
                       isActive 
-                        ? 'bg-[#64FFDA]/20 border-2 border-[#64FFDA]' 
-                        : 'bg-[#112240]/80 border border-[#1E2D4A] hover:border-[#64FFDA]/50'
+                        ? 'bg-[#0071E3]/10 border-2 border-[#0071E3] shadow-lg' 
+                        : 'bg-white border border-gray-200 shadow-md hover:border-[#0071E3]/50 hover:shadow-lg'
                     }`}>
-                      <Icon className={`mb-1 transition-colors ${isActive ? 'text-[#64FFDA]' : 'text-[#8892B0] group-hover:text-[#64FFDA]'}`} size={28} />
-                      <div className={`text-xs font-semibold text-center transition-colors ${isActive ? 'text-white' : 'text-[#CCD6F6]'}`}>
+                      <Icon className={`mb-1 transition-colors ${isActive ? 'text-[#0071E3]' : 'text-[#86868B] group-hover:text-[#0071E3]'}`} size={28} />
+                      <div className={`text-xs font-semibold text-center transition-colors ${isActive ? 'text-[#1D1D1F]' : 'text-[#1D1D1F]'}`}>
                         {node.label}
                       </div>
-                      <div className={`text-xs transition-colors ${isActive ? 'text-[#64FFDA]' : 'text-[#8892B0]'}`}>
+                      <div className={`text-xs transition-colors ${isActive ? 'text-[#0071E3]' : 'text-[#86868B]'}`}>
                         {node.sublabel}
                       </div>
-                    </div>
-
-                    {/* Tooltip */}
-                    <div className="absolute opacity-0 group-hover:opacity-100 transition-opacity duration-300 bg-[#0A192F] border border-[#64FFDA]/30 rounded-lg p-3 text-center w-48 z-20 pointer-events-none"
-                      style={{
-                        [node.position === 'top' ? 'top' : node.position === 'bottom' ? 'bottom' : 'top']: node.position === 'top' ? '110%' : node.position === 'bottom' ? '110%' : '50%',
-                        [node.position === 'left' ? 'left' : node.position === 'right' ? 'right' : 'left']: node.position === 'left' ? '110%' : node.position === 'right' ? '110%' : '50%',
-                        transform: node.position === 'top' || node.position === 'bottom' ? 'translateX(-50%)' : 'translateY(-50%)'
-                      }}
-                    >
-                      <p className="text-[#CCD6F6] text-xs">{node.description}</p>
                     </div>
                   </div>
                 </div>
               );
             })}
-
-            {/* BLE Signal Waves */}
-            <div className="absolute top-1/2 left-0 transform -translate-y-1/2 -translate-x-4">
-              {[1, 2, 3].map((i) => (
-                <div
-                  key={i}
-                  className="absolute w-8 h-16 border-r-2 border-[#64FFDA]/40 rounded-r-full"
-                  style={{
-                    left: `${i * 8}px`,
-                    animation: `pulse-ring ${1.5 + i * 0.3}s ease-out infinite`,
-                    animationDelay: `${i * 0.2}s`
-                  }}
-                ></div>
-              ))}
-            </div>
           </div>
         </div>
 
@@ -292,25 +237,25 @@ export const CyberAura = () => {
             return (
               <div 
                 key={node.id}
-                className={`p-6 rounded-xl transition-all duration-300 cursor-pointer ${
+                className={`p-6 rounded-2xl transition-all duration-300 cursor-pointer ${
                   activeNode === index 
-                    ? 'bg-[#64FFDA]/10 border border-[#64FFDA]' 
-                    : 'bg-[#112240]/60 border border-[#1E2D4A] hover:border-[#64FFDA]/50'
+                    ? 'bg-white border-2 border-[#0071E3] shadow-lg' 
+                    : 'bg-white border border-gray-200 shadow-sm hover:shadow-md hover:border-[#0071E3]/30'
                 }`}
                 onClick={() => setActiveNode(index)}
               >
                 <div className="flex items-center space-x-3 mb-3">
-                  <div className={`w-10 h-10 rounded-lg flex items-center justify-center ${
-                    activeNode === index ? 'bg-[#64FFDA]/20' : 'bg-[#1E2D4A]'
+                  <div className={`w-10 h-10 rounded-xl flex items-center justify-center ${
+                    activeNode === index ? 'bg-[#0071E3]/10' : 'bg-[#F5F5F7]'
                   }`}>
-                    <Icon className="text-[#64FFDA]" size={20} />
+                    <Icon className="text-[#0071E3]" size={20} />
                   </div>
                   <div>
-                    <h4 className="text-white font-semibold">{node.label}</h4>
-                    <p className="text-[#8892B0] text-xs">{node.sublabel}</p>
+                    <h4 className="text-[#1D1D1F] font-semibold">{node.label}</h4>
+                    <p className="text-[#86868B] text-xs">{node.sublabel}</p>
                   </div>
                 </div>
-                <p className="text-[#8892B0] text-sm">{node.description}</p>
+                <p className="text-[#86868B] text-sm">{node.description}</p>
               </div>
             );
           })}
@@ -324,11 +269,11 @@ export const CyberAura = () => {
             { icon: Shield, title: "Zero Trust", desc: "Every authentication request is verified across multiple device layers before consent" }
           ].map((item, i) => (
             <div key={i} className="text-center">
-              <div className="w-16 h-16 mx-auto mb-4 bg-[#64FFDA]/10 rounded-xl flex items-center justify-center">
-                <item.icon className="text-[#64FFDA]" size={32} />
+              <div className="w-16 h-16 mx-auto mb-4 bg-[#0071E3]/10 rounded-2xl flex items-center justify-center">
+                <item.icon className="text-[#0071E3]" size={32} />
               </div>
-              <h4 className="text-white font-bold mb-2">{item.title}</h4>
-              <p className="text-[#8892B0] text-sm">{item.desc}</p>
+              <h4 className="text-[#1D1D1F] font-semibold mb-2">{item.title}</h4>
+              <p className="text-[#86868B] text-sm">{item.desc}</p>
             </div>
           ))}
         </div>

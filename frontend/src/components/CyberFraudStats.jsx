@@ -43,37 +43,20 @@ export const CyberFraudStats = () => {
     { type: "Synthetic Identity", victims: "Unknown scale", loss: "$6B estimated", percentage: "85%" }
   ];
 
-  const regionalStats = [
-    { region: "North America", cost: "$1.8T", incidents: "1.2B" },
-    { region: "Europe", cost: "$1.2T", incidents: "850M" },
-    { region: "Asia Pacific", cost: "$2.1T", incidents: "1.5B" },
-    { region: "Latin America", cost: "$90B", incidents: "420M" }
-  ];
-
   return (
-    <section className="py-24 bg-[#0A192F] relative overflow-hidden" data-testid="cyber-fraud-section">
-      {/* Dramatic Background */}
-      <div className="absolute inset-0 opacity-20">
-        <div className="absolute inset-0" style={{
-          backgroundImage: `radial-gradient(circle at 20% 20%, rgba(239, 68, 68, 0.3) 0%, transparent 50%),
-                           radial-gradient(circle at 80% 80%, rgba(239, 68, 68, 0.2) 0%, transparent 50%)`
-        }}></div>
-      </div>
-
+    <section className="py-24 bg-white relative overflow-hidden" data-testid="cyber-fraud-section">
       <div className="max-w-7xl mx-auto px-6 relative z-10">
         {/* Section Header */}
         <div className="text-center mb-16">
-          <div className="inline-flex items-center space-x-2 glass-teal rounded-full px-6 py-2 mb-6">
-            <AlertTriangle className="text-red-400" size={20} />
-            <span className="text-red-400 font-medium">Global Crisis</span>
+          <div className="inline-flex items-center space-x-2 bg-red-50 rounded-full px-5 py-2 mb-6">
+            <AlertTriangle className="text-red-500" size={18} />
+            <span className="text-red-600 font-medium text-sm">Global Crisis</span>
           </div>
-          <h2 className="text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-6 tracking-tight">
+          <h2 className="text-4xl md:text-5xl lg:text-6xl font-semibold text-[#1D1D1F] mb-6 tracking-tight">
             The Cyber Fraud
-            <span className="block text-red-400 mt-2">
-              Pandemic
-            </span>
+            <span className="block text-red-500 mt-2">Pandemic</span>
           </h2>
-          <p className="text-base md:text-lg text-[#8892B0] max-w-3xl mx-auto">
+          <p className="text-lg text-[#86868B] max-w-3xl mx-auto">
             Cybercrime is growing at an alarming rate, costing the global economy trillions annually. 
             Traditional security measures are failing to protect sensitive data.
           </p>
@@ -84,24 +67,24 @@ export const CyberFraudStats = () => {
           {globalStats.map((stat, index) => {
             const Icon = stat.icon;
             return (
-              <Card key={index} className="bg-[#112240]/60 border-[#1E2D4A] hover:border-[#64FFDA]/50 transition-all duration-300 hover:-translate-y-1">
+              <Card key={index} className="bg-white border border-gray-200 shadow-sm hover:shadow-lg hover:-translate-y-1 transition-all duration-300 rounded-2xl">
                 <CardContent className="p-6">
                   <div className="flex items-start justify-between mb-4">
-                    <div className="w-14 h-14 rounded-xl flex items-center justify-center bg-[#64FFDA]/10">
-                      <Icon className="text-[#64FFDA]" size={28} />
+                    <div className="w-14 h-14 rounded-2xl flex items-center justify-center bg-[#0071E3]/10">
+                      <Icon className="text-[#0071E3]" size={28} />
                     </div>
                     <div className="text-right">
-                      <div className="text-xs text-red-400 font-semibold flex items-center">
+                      <div className="text-xs text-red-500 font-semibold flex items-center">
                         <TrendingUp size={12} className="mr-1" />
                         {stat.trend}
                       </div>
                     </div>
                   </div>
-                  <div className="text-3xl font-bold text-[#64FFDA] mb-2 stat-number">
+                  <div className="text-3xl font-semibold text-[#0071E3] mb-2 stat-number">
                     {stat.value}
                   </div>
-                  <div className="text-white font-semibold mb-2">{stat.label}</div>
-                  <div className="text-[#8892B0] text-sm">{stat.description}</div>
+                  <div className="text-[#1D1D1F] font-medium mb-2">{stat.label}</div>
+                  <div className="text-[#86868B] text-sm">{stat.description}</div>
                 </CardContent>
               </Card>
             );
@@ -110,26 +93,26 @@ export const CyberFraudStats = () => {
 
         {/* Fraud Types Breakdown */}
         <div className="mb-20">
-          <h3 className="text-3xl font-bold text-white mb-8 text-center tracking-tight">Major Fraud Types & Impact</h3>
+          <h3 className="text-3xl font-semibold text-[#1D1D1F] mb-8 text-center tracking-tight">Major Fraud Types & Impact</h3>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
             {fraudTypes.map((fraud, index) => (
-              <Card key={index} className="bg-[#112240]/60 border-[#1E2D4A] hover:border-[#64FFDA]/50 transition-all duration-300 hover:-translate-y-1">
+              <Card key={index} className="bg-white border border-gray-200 shadow-sm hover:shadow-lg hover:-translate-y-1 transition-all duration-300 rounded-2xl">
                 <CardContent className="p-6">
                   <div className="flex items-start justify-between mb-4">
-                    <h4 className="text-lg font-bold text-white">{fraud.type}</h4>
+                    <h4 className="text-lg font-semibold text-[#1D1D1F]">{fraud.type}</h4>
                     <div className="text-right">
-                      <div className="text-2xl font-bold text-red-400 stat-number">{fraud.percentage}</div>
-                      <div className="text-xs text-[#8892B0]">Growth/Impact</div>
+                      <div className="text-2xl font-semibold text-red-500 stat-number">{fraud.percentage}</div>
+                      <div className="text-xs text-[#86868B]">Growth</div>
                     </div>
                   </div>
-                  <div className="space-y-2 mb-3">
+                  <div className="space-y-2">
                     <div className="flex items-center justify-between">
-                      <span className="text-[#8892B0] text-sm">Victims:</span>
-                      <span className="text-[#64FFDA] font-semibold">{fraud.victims}</span>
+                      <span className="text-[#86868B] text-sm">Victims:</span>
+                      <span className="text-[#0071E3] font-medium">{fraud.victims}</span>
                     </div>
                     <div className="flex items-center justify-between">
-                      <span className="text-[#8892B0] text-sm">Financial Loss:</span>
-                      <span className="text-[#CCD6F6] font-semibold">{fraud.loss}</span>
+                      <span className="text-[#86868B] text-sm">Financial Loss:</span>
+                      <span className="text-[#1D1D1F] font-medium">{fraud.loss}</span>
                     </div>
                   </div>
                 </CardContent>
@@ -138,91 +121,36 @@ export const CyberFraudStats = () => {
           </div>
         </div>
 
-        {/* Regional Breakdown */}
-        <div className="mb-20">
-          <h3 className="text-3xl font-bold text-white mb-8 text-center tracking-tight">Regional Impact</h3>
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
-            {regionalStats.map((region, index) => (
-              <Card key={index} className="bg-[#112240]/60 border-[#1E2D4A] hover:border-[#64FFDA]/50 text-center transition-all duration-300 hover:-translate-y-1">
-                <CardContent className="p-6">
-                  <Globe className="text-[#64FFDA] mx-auto mb-4" size={32} />
-                  <h4 className="text-xl font-bold text-white mb-4">{region.region}</h4>
-                  <div className="space-y-3">
-                    <div>
-                      <div className="text-sm text-[#8892B0] mb-1">Annual Cost</div>
-                      <div className="text-2xl font-bold text-[#64FFDA] stat-number">{region.cost}</div>
-                    </div>
-                    <div>
-                      <div className="text-sm text-[#8892B0] mb-1">Fraud Incidents</div>
-                      <div className="text-2xl font-bold text-[#CCD6F6] stat-number">{region.incidents}</div>
-                    </div>
-                  </div>
-                </CardContent>
-              </Card>
-            ))}
-          </div>
-        </div>
-
-        {/* The Problem Summary */}
-        <Card className="bg-[#112240]/80 border-red-500/30">
+        {/* The Solution */}
+        <Card className="bg-[#F5F5F7] border-0 rounded-3xl">
           <CardContent className="p-8 lg:p-12">
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
               <div>
-                <h3 className="text-2xl md:text-3xl font-bold text-white mb-6 flex items-center tracking-tight">
-                  <AlertTriangle className="text-red-400 mr-3" size={32} />
-                  Why Traditional Security Fails
+                <h3 className="text-2xl md:text-3xl font-semibold text-[#1D1D1F] mb-6 flex items-center tracking-tight">
+                  <Shield className="text-[#0071E3] mr-3" size={32} />
+                  The SEC@R Solution
                 </h3>
-                <div className="space-y-4">
-                  <div className="flex items-start space-x-3">
-                    <div className="w-2 h-2 bg-red-400 rounded-full mt-2 flex-shrink-0"></div>
-                    <p className="text-[#CCD6F6]">
-                      <span className="font-semibold text-white">Stolen credentials are used immediately:</span> Once data is breached, attackers can access accounts within minutes.
-                    </p>
-                  </div>
-                  <div className="flex items-start space-x-3">
-                    <div className="w-2 h-2 bg-red-400 rounded-full mt-2 flex-shrink-0"></div>
-                    <p className="text-[#CCD6F6]">
-                      <span className="font-semibold text-white">Data remains valuable after theft:</span> Traditional security tries to prevent breaches but doesn't address what happens after.
-                    </p>
-                  </div>
-                  <div className="flex items-start space-x-3">
-                    <div className="w-2 h-2 bg-red-400 rounded-full mt-2 flex-shrink-0"></div>
-                    <p className="text-[#CCD6F6]">
-                      <span className="font-semibold text-white">No real-time consent verification:</span> Systems can't differentiate between legitimate users and attackers with stolen credentials.
-                    </p>
-                  </div>
+                <p className="text-[#86868B] mb-6">
+                  Instead of trying to prevent theft (which often fails), SEC@R makes stolen data completely worthless.
+                </p>
+                <div className="space-y-3">
+                  {["Multi-device authentication required", "Real-time Data Principal verification", "Data remains dormant without consent"].map((item, i) => (
+                    <div key={i} className="flex items-center space-x-3">
+                      <div className="w-6 h-6 bg-[#0071E3] rounded-full flex items-center justify-center">
+                        <span className="text-white text-xs">✓</span>
+                      </div>
+                      <span className="text-[#1D1D1F]">{item}</span>
+                    </div>
+                  ))}
                 </div>
               </div>
 
-              <div className="space-y-6">
-                <div className="bg-[#64FFDA]/5 rounded-xl p-6 border border-[#64FFDA]/20">
-                  <h4 className="text-xl font-bold text-white mb-4">The SEC@R Solution</h4>
-                  <p className="text-[#CCD6F6] mb-4">
-                    Instead of trying to prevent theft (which often fails), SEC@R makes stolen data completely worthless.
-                  </p>
-                  <div className="space-y-2">
-                    <div className="flex items-center space-x-2">
-                      <Shield className="text-[#64FFDA] flex-shrink-0" size={16} />
-                      <span className="text-[#CCD6F6] text-sm">Multi-device authentication required</span>
-                    </div>
-                    <div className="flex items-center space-x-2">
-                      <Shield className="text-[#64FFDA] flex-shrink-0" size={16} />
-                      <span className="text-[#CCD6F6] text-sm">Real-time Data Principal verification</span>
-                    </div>
-                    <div className="flex items-center space-x-2">
-                      <Shield className="text-[#64FFDA] flex-shrink-0" size={16} />
-                      <span className="text-[#CCD6F6] text-sm">Data remains dormant without consent</span>
-                    </div>
-                  </div>
+              <div className="text-center p-8 bg-white rounded-2xl shadow-sm">
+                <div className="text-5xl font-semibold text-[#0071E3] mb-2 stat-number">
+                  $0
                 </div>
-
-                <div className="text-center p-6 bg-[#64FFDA]/5 rounded-xl border border-[#64FFDA]/20">
-                  <div className="text-4xl font-bold text-[#64FFDA] mb-2 stat-number">
-                    $0 in Losses
-                  </div>
-                  <p className="text-white font-semibold">With SEC@R's Consent-First Architecture</p>
-                  <p className="text-[#8892B0] text-sm mt-2">Stolen data = Worthless data</p>
-                </div>
+                <p className="text-[#1D1D1F] font-medium text-lg">Fraud Losses with SEC@R</p>
+                <p className="text-[#86868B] text-sm mt-2">Stolen data = Worthless data</p>
               </div>
             </div>
           </CardContent>
