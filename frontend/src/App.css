@@ -1,34 +1,138 @@
-.App-logo {
-    height: 40vmin;
-    pointer-events: none;
+/* SEC@R Theme Styles */
+
+/* Glassmorphism Utility Classes */
+.glass {
+    background: rgba(17, 34, 64, 0.6);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    border: 1px solid #1E2D4A;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-    .App-logo {
-        animation: App-logo-spin infinite 20s linear;
-    }
+.glass-strong {
+    background: rgba(17, 34, 64, 0.8);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+    border: 1px solid #1E2D4A;
 }
 
-.App-header {
-    background-color: #0f0f10;
-    min-height: 100vh;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    font-size: calc(10px + 2vmin);
-    color: white;
+.glass-dark {
+    background: rgba(10, 25, 47, 0.9);
+    backdrop-filter: blur(16px);
+    -webkit-backdrop-filter: blur(16px);
+    border: 1px solid #1E2D4A;
 }
 
-.App-link {
-    color: #61dafb;
+.glass-teal {
+    background: rgba(100, 255, 218, 0.08);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    border: 1px solid rgba(100, 255, 218, 0.3);
 }
 
-@keyframes App-logo-spin {
+/* Custom Animations */
+@keyframes fade-in {
     from {
-        transform: rotate(0deg);
+        opacity: 0;
     }
     to {
-        transform: rotate(360deg);
+        opacity: 1;
     }
+}
+
+@keyframes slide-up {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes slide-down {
+    from {
+        opacity: 0;
+        transform: translateY(-30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes glow-pulse {
+    0%, 100% {
+        box-shadow: 0 0 15px rgba(100, 255, 218, 0.3);
+    }
+    50% {
+        box-shadow: 0 0 25px rgba(100, 255, 218, 0.5);
+    }
+}
+
+.animate-fade-in {
+    animation: fade-in 0.8s ease-out forwards;
+}
+
+.animate-slide-up {
+    animation: slide-up 0.8s ease-out forwards;
+}
+
+.animate-slide-down {
+    animation: slide-down 0.8s ease-out forwards;
+}
+
+.animate-glow {
+    animation: glow-pulse 2s ease-in-out infinite;
+}
+
+/* Hover Effects */
+.glass:hover {
+    border-color: rgba(100, 255, 218, 0.5);
+    transform: translateY(-2px);
+    box-shadow: 0 8px 32px rgba(100, 255, 218, 0.1);
+    transition: all 0.3s ease;
+}
+
+/* Background Grid Pattern */
+.bg-grid-pattern {
+    background-image: 
+        linear-gradient(rgba(30, 45, 74, 0.4) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(30, 45, 74, 0.4) 1px, transparent 1px);
+    background-size: 50px 50px;
+}
+
+/* Geometric dot pattern */
+.bg-dot-pattern {
+    background-image: radial-gradient(circle at 2px 2px, rgba(100, 255, 218, 0.15) 1px, transparent 0);
+    background-size: 40px 40px;
+}
+
+/* Teal glow effect */
+.teal-glow {
+    box-shadow: 0 0 30px rgba(100, 255, 218, 0.2);
+}
+
+/* Text gradient */
+.text-gradient-teal {
+    background: linear-gradient(135deg, #64FFDA, #4CD9B4);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+/* Stat number styling */
+.stat-number {
+    font-family: 'IBM Plex Mono', monospace;
+    font-weight: 500;
+    letter-spacing: -0.02em;
+}
+
+/* Overline text */
+.overline {
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 0.75rem;
+    font-weight: 500;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
 }
