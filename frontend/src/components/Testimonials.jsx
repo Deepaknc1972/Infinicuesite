@@ -8,51 +8,39 @@ export const Testimonials = () => {
   const { testimonials } = mockData;
 
   return (
-    <section id="testimonials" className="py-24 bg-white relative" data-testid="testimonials-section">
+    <section id="testimonials" className="py-24 relative" style={{ backgroundColor: 'var(--bg-primary)' }} data-testid="testimonials-section">
       <div className="max-w-7xl mx-auto px-6 relative z-10">
-        {/* Section Header */}
         <div className="text-center mb-16">
-          <span className="overline text-[#0071E3] mb-4 block">Testimonials</span>
-          <h2 className="text-4xl md:text-5xl font-semibold text-[#1D1D1F] mb-6 tracking-tight">Trusted by Leaders</h2>
-          <p className="text-lg text-[#86868B] max-w-3xl mx-auto">
+          <span className="overline mb-4 block" style={{ color: 'var(--accent)' }}>Testimonials</span>
+          <h2 className="text-4xl md:text-5xl font-bold mb-6 tracking-tight" style={{ color: 'var(--text-primary)' }}>Trusted by Leaders</h2>
+          <p className="text-lg max-w-3xl mx-auto" style={{ color: 'var(--text-secondary)' }}>
             See what security professionals are saying about SEC@R.
           </p>
         </div>
 
-        {/* Testimonials Grid */}
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-6xl mx-auto">
-          {testimonials.map((testimonial, index) => (
-            <Card 
-              key={testimonial.id}
-              className="bg-[#F5F5F7] border-0 shadow-none hover:shadow-lg transition-all duration-300 hover:-translate-y-1 group rounded-2xl"
-            >
+          {testimonials.map((testimonial) => (
+            <Card key={testimonial.id} className="card-hover group rounded-xl" style={{ backgroundColor: 'var(--bg-secondary)', border: '1px solid var(--border)' }}>
               <CardContent className="p-8 relative">
-                {/* Quote Icon */}
                 <div className="absolute top-6 right-6 opacity-10 group-hover:opacity-20 transition-opacity">
-                  <Quote size={48} className="text-[#0071E3]" />
+                  <Quote size={48} style={{ color: 'var(--accent)' }} />
                 </div>
-
-                {/* Rating */}
                 <div className="flex items-center space-x-1 mb-4">
                   {[...Array(testimonial.rating)].map((_, i) => (
-                    <Star key={i} className="text-yellow-400 fill-yellow-400" size={18} />
+                    <Star key={i} size={18} className="fill-yellow-400 text-yellow-400" />
                   ))}
                 </div>
-
-                {/* Content */}
-                <p className="text-[#1D1D1F] text-lg mb-6 leading-relaxed relative z-10">
+                <p className="text-lg mb-6 leading-relaxed relative z-10" style={{ color: 'var(--text-primary)' }}>
                   "{testimonial.content}"
                 </p>
-
-                {/* Author */}
                 <div className="flex items-center space-x-4">
-                  <Avatar className="w-12 h-12 bg-[#0071E3]">
+                  <Avatar className="w-12 h-12" style={{ backgroundColor: 'var(--accent)' }}>
                     <AvatarFallback className="text-white font-semibold">{testimonial.avatar}</AvatarFallback>
                   </Avatar>
                   <div>
-                    <div className="text-[#1D1D1F] font-semibold">{testimonial.name}</div>
-                    <div className="text-sm text-[#86868B]">{testimonial.role}</div>
-                    <div className="text-sm text-[#0071E3]">{testimonial.company}</div>
+                    <div className="font-semibold" style={{ color: 'var(--text-primary)' }}>{testimonial.name}</div>
+                    <div className="text-sm" style={{ color: 'var(--text-muted)' }}>{testimonial.role}</div>
+                    <div className="text-sm" style={{ color: 'var(--accent)' }}>{testimonial.company}</div>
                   </div>
                 </div>
               </CardContent>

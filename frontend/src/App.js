@@ -1,10 +1,11 @@
 import React from "react";
 import "@/App.css";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { ThemeProvider } from "./context/ThemeContext";
 import { Header } from "./components/Header";
 import { Hero } from "./components/Hero";
-import { CyberFraudStats } from "./components/CyberFraudStats";
 import { CyberAura } from "./components/CyberAura";
+import { CyberFraudStats } from "./components/CyberFraudStats";
 import { AboutUs } from "./components/AboutUs";
 import { HowItWorks } from "./components/HowItWorks";
 import { ThreatsPrevented } from "./components/ThreatsPrevented";
@@ -22,7 +23,7 @@ import UseCasesPage from "./pages/UseCasesPage";
 
 const Home = () => {
   return (
-    <div className="min-h-screen bg-[#0A192F]" data-testid="home-page">
+    <div className="min-h-screen" style={{ backgroundColor: 'var(--bg-primary)' }} data-testid="home-page">
       <Header />
       <Hero />
       <CyberAura />
@@ -43,17 +44,19 @@ const Home = () => {
 
 function App() {
   return (
-    <div className="App">
-      <BrowserRouter>
-        <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="/products" element={<ProductPage />} />
-          <Route path="/mobile-app" element={<MobileAppPage />} />
-          <Route path="/use-cases" element={<UseCasesPage />} />
-        </Routes>
-      </BrowserRouter>
-      <Toaster />
-    </div>
+    <ThemeProvider>
+      <div className="App">
+        <BrowserRouter>
+          <Routes>
+            <Route path="/" element={<Home />} />
+            <Route path="/products" element={<ProductPage />} />
+            <Route path="/mobile-app" element={<MobileAppPage />} />
+            <Route path="/use-cases" element={<UseCasesPage />} />
+          </Routes>
+        </BrowserRouter>
+        <Toaster />
+      </div>
+    </ThemeProvider>
   );
 }
 

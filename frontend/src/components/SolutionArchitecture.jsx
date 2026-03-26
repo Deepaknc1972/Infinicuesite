@@ -1,77 +1,67 @@
 import React from 'react';
 import { Card, CardContent, CardHeader, CardTitle } from './ui/card';
-import { 
-  Wallet, Smartphone, Server, Building2, ArrowRight, Clock,
-  Shield, Zap, CheckCircle2, AlertCircle, Layers, Radio, Lock
-} from 'lucide-react';
+import { Wallet, Smartphone, Server, Building2, Clock, Shield, Zap, CheckCircle2, Layers, Radio, Lock } from 'lucide-react';
 
 export const SolutionArchitecture = () => {
-  const architectureSteps = [
-    { step: 1, icon: Wallet, title: "Hardware Trigger", description: "Data Principal opens SEC@R Wallet", detail: "Physical action triggers authentication" },
-    { step: 2, icon: Radio, title: "Event Signal", description: "Wallet sends event to SEC@R App", detail: "Secure BLE/NFC communication" },
-    { step: 3, icon: Smartphone, title: "App Processing", description: "SEC@R App initiates authentication", detail: "Collects device signals & biometrics" },
-    { step: 4, icon: Layers, title: "AMDA System", description: "Multi-Device-Layer Authentication", detail: "AI-powered decision engine" },
-    { step: 5, icon: Server, title: "API Call to Bank", description: "AMDA makes secure API call", detail: "Authorizes data activation" },
-    { step: 6, icon: CheckCircle2, title: "Data Activation", description: "Bank enables data with 180s threshold", detail: "Time-limited transaction window" }
+  const steps = [
+    { step: 1, icon: Wallet, title: "Hardware Trigger", description: "Data Principal opens SEC@R Wallet" },
+    { step: 2, icon: Radio, title: "Event Signal", description: "Wallet sends event to SEC@R App" },
+    { step: 3, icon: Smartphone, title: "App Processing", description: "SEC@R App initiates authentication" },
+    { step: 4, icon: Layers, title: "AMDA System", description: "Multi-Device-Layer Authentication" },
+    { step: 5, icon: Server, title: "API Call to Bank", description: "AMDA makes secure API call" },
+    { step: 6, icon: CheckCircle2, title: "Data Activation", description: "Bank enables data (180s threshold)" }
   ];
 
-  const apiIntegrations = [
-    { icon: Building2, title: "Banking APIs", endpoints: ["POST /api/auth/enable-data", "POST /api/transaction/authorize"], description: "Direct integration with core banking" },
-    { icon: Shield, title: "Insurance APIs", endpoints: ["POST /api/policy/activate", "POST /api/claim/authorize"], description: "Claims authorization through consent" },
-    { icon: Lock, title: "Government APIs", endpoints: ["POST /api/identity/verify", "POST /api/document/authorize"], description: "Secure identity verification" }
+  const apis = [
+    { icon: Building2, title: "Banking APIs", endpoints: ["POST /api/auth/enable-data", "POST /api/transaction/authorize"] },
+    { icon: Shield, title: "Insurance APIs", endpoints: ["POST /api/policy/activate", "POST /api/claim/authorize"] },
+    { icon: Lock, title: "Government APIs", endpoints: ["POST /api/identity/verify", "POST /api/document/authorize"] }
   ];
 
   return (
-    <section id="architecture" className="py-24 bg-[#F5F5F7] relative" data-testid="architecture-section">
+    <section id="architecture" className="py-24 relative" style={{ backgroundColor: 'var(--bg-secondary)' }} data-testid="architecture-section">
       <div className="max-w-7xl mx-auto px-6 relative z-10">
-        {/* Section Header */}
         <div className="text-center mb-16">
-          <div className="inline-flex items-center space-x-2 bg-[#0071E3]/10 rounded-full px-5 py-2 mb-6">
-            <Server className="text-[#0071E3]" size={18} />
-            <span className="text-[#0071E3] font-medium text-sm">API-Driven Architecture</span>
+          <div className="inline-flex items-center space-x-2 rounded-full px-5 py-2 mb-6" style={{ backgroundColor: 'var(--accent-light)', border: '1px solid var(--accent)' }}>
+            <Server size={18} style={{ color: 'var(--accent)' }} />
+            <span className="font-medium text-sm" style={{ color: 'var(--accent)' }}>API-Driven Architecture</span>
           </div>
-          <h2 className="text-4xl md:text-5xl lg:text-6xl font-semibold text-[#1D1D1F] mb-6 tracking-tight">
+          <h2 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6 tracking-tight" style={{ color: 'var(--text-primary)' }}>
             How SEC@R Works
           </h2>
-          <p className="text-lg text-[#86868B] max-w-3xl mx-auto">
-            API-driven, real-time consent architecture that enables data only when the Data Principal authorizes.
+          <p className="text-lg max-w-3xl mx-auto" style={{ color: 'var(--text-secondary)' }}>
+            Real-time consent architecture that enables data only with Data Principal authorization.
           </p>
         </div>
 
-        {/* Architecture Flow */}
+        {/* Flow */}
         <div className="mb-20">
-          <h3 className="text-3xl font-semibold text-[#1D1D1F] mb-8 text-center tracking-tight">Authentication Flow</h3>
+          <h3 className="text-3xl font-bold mb-8 text-center tracking-tight" style={{ color: 'var(--text-primary)' }}>Authentication Flow</h3>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-            {architectureSteps.map((step, index) => {
-              const Icon = step.icon;
+            {steps.map((s, index) => {
+              const Icon = s.icon;
               return (
-                <div key={index} className="relative">
-                  <Card className="bg-white border border-gray-200 shadow-sm hover:shadow-lg transition-all duration-300 hover:-translate-y-1 rounded-2xl">
-                    <CardContent className="p-6">
-                      <div className="absolute -top-3 -right-3 w-10 h-10 rounded-full flex items-center justify-center font-semibold text-white bg-[#0071E3]">
-                        {step.step}
-                      </div>
-                      <div className="w-14 h-14 mx-auto mb-4 rounded-2xl flex items-center justify-center bg-[#0071E3]/10">
-                        <Icon className="text-[#0071E3]" size={28} />
-                      </div>
-                      <h4 className="text-lg font-semibold text-[#1D1D1F] text-center mb-2">{step.title}</h4>
-                      <p className="text-center mb-1 font-medium text-[#0071E3] text-sm">{step.description}</p>
-                      <p className="text-[#86868B] text-sm text-center">{step.detail}</p>
-                    </CardContent>
-                  </Card>
-                </div>
+                <Card key={index} className="card-hover relative rounded-xl" style={{ backgroundColor: 'var(--bg-card)', border: '1px solid var(--border)' }}>
+                  <CardContent className="p-6">
+                    <div className="absolute -top-3 -right-3 w-10 h-10 rounded-lg flex items-center justify-center font-bold text-white" style={{ backgroundColor: 'var(--accent)' }}>{s.step}</div>
+                    <div className="w-14 h-14 mx-auto mb-4 rounded-xl flex items-center justify-center" style={{ backgroundColor: 'var(--accent-light)' }}>
+                      <Icon size={28} style={{ color: 'var(--accent)' }} />
+                    </div>
+                    <h4 className="text-lg font-semibold text-center mb-2" style={{ color: 'var(--text-primary)' }}>{s.title}</h4>
+                    <p className="text-sm text-center" style={{ color: 'var(--text-secondary)' }}>{s.description}</p>
+                  </CardContent>
+                </Card>
               );
             })}
           </div>
         </div>
 
-        {/* AMDA System Details */}
+        {/* AMDA */}
         <div className="mb-20">
-          <Card className="bg-white border border-[#0071E3]/30 shadow-lg rounded-3xl">
+          <Card className="rounded-2xl" style={{ backgroundColor: 'var(--bg-card)', border: '2px solid var(--accent)' }}>
             <CardHeader>
-              <CardTitle className="text-2xl md:text-3xl text-[#1D1D1F] flex items-center justify-center tracking-tight">
-                <Layers className="text-[#0071E3] mr-3" size={32} />
-                AMDA: Automated Multi-Device Authentication
+              <CardTitle className="text-2xl md:text-3xl flex items-center justify-center tracking-tight" style={{ color: 'var(--text-primary)' }}>
+                <Layers size={32} className="mr-3" style={{ color: 'var(--accent)' }} />AMDA: Automated Multi-Device Authentication
               </CardTitle>
             </CardHeader>
             <CardContent className="p-8">
@@ -82,29 +72,26 @@ export const SolutionArchitecture = () => {
                   { icon: Zap, title: "Decision Layer", desc: "AI-powered consent engine" }
                 ].map((item, i) => (
                   <div key={i} className="text-center">
-                    <div className="w-20 h-20 mx-auto mb-4 bg-[#0071E3]/10 rounded-2xl flex items-center justify-center">
-                      <item.icon className="text-[#0071E3]" size={40} />
+                    <div className="w-20 h-20 mx-auto mb-4 rounded-2xl flex items-center justify-center" style={{ backgroundColor: 'var(--accent-light)' }}>
+                      <item.icon size={40} style={{ color: 'var(--accent)' }} />
                     </div>
-                    <h5 className="text-[#1D1D1F] font-semibold mb-2">{item.title}</h5>
-                    <p className="text-[#86868B] text-sm">{item.desc}</p>
+                    <h5 className="font-semibold mb-2" style={{ color: 'var(--text-primary)' }}>{item.title}</h5>
+                    <p className="text-sm" style={{ color: 'var(--text-secondary)' }}>{item.desc}</p>
                   </div>
                 ))}
               </div>
-
-              <div className="bg-[#F5F5F7] rounded-2xl p-6">
-                <h5 className="text-[#1D1D1F] font-semibold mb-4 flex items-center">
-                  <Clock className="text-[#0071E3] mr-2" size={20} />
-                  180-Second Time Threshold
+              <div className="rounded-xl p-6" style={{ backgroundColor: 'var(--bg-secondary)', border: '1px solid var(--border)' }}>
+                <h5 className="font-semibold mb-4 flex items-center" style={{ color: 'var(--text-primary)' }}>
+                  <Clock size={20} className="mr-2" style={{ color: 'var(--accent)' }} />180-Second Time Threshold
                 </h5>
-                <p className="text-[#86868B] mb-4">
-                  Once AMDA authorizes, data is activated for exactly <span className="text-[#0071E3] font-semibold">180 seconds</span>. 
-                  This time-limited window ensures minimal exposure.
+                <p className="mb-4" style={{ color: 'var(--text-secondary)' }}>
+                  Once AMDA authorizes, data is activated for exactly <span className="font-semibold" style={{ color: 'var(--accent)' }}>180 seconds</span>.
                 </p>
                 <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
-                  {["Minimum exposure window", "Automatic deactivation", "Real-time enforcement", "No extended access"].map((item, i) => (
+                  {["Minimum exposure", "Auto deactivation", "Real-time enforcement", "No extended access"].map((item, i) => (
                     <div key={i} className="flex items-start space-x-2">
-                      <CheckCircle2 className="text-[#0071E3] flex-shrink-0 mt-0.5" size={14} />
-                      <span className="text-[#86868B] text-xs">{item}</span>
+                      <CheckCircle2 size={14} className="mt-0.5 flex-shrink-0" style={{ color: 'var(--accent)' }} />
+                      <span className="text-xs" style={{ color: 'var(--text-muted)' }}>{item}</span>
                     </div>
                   ))}
                 </div>
@@ -113,29 +100,27 @@ export const SolutionArchitecture = () => {
           </Card>
         </div>
 
-        {/* API Integration */}
+        {/* APIs */}
         <div className="mb-20">
-          <h3 className="text-3xl font-semibold text-[#1D1D1F] mb-8 text-center tracking-tight">API Integrations</h3>
+          <h3 className="text-3xl font-bold mb-8 text-center tracking-tight" style={{ color: 'var(--text-primary)' }}>API Integrations</h3>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-            {apiIntegrations.map((integration, index) => {
-              const Icon = integration.icon;
+            {apis.map((api, index) => {
+              const Icon = api.icon;
               return (
-                <Card key={index} className="bg-white border border-gray-200 shadow-sm hover:shadow-lg transition-all duration-300 hover:-translate-y-1 rounded-2xl">
+                <Card key={index} className="card-hover rounded-xl" style={{ backgroundColor: 'var(--bg-card)', border: '1px solid var(--border)' }}>
                   <CardHeader>
-                    <CardTitle className="flex items-center text-[#1D1D1F]">
-                      <div className="w-12 h-12 mr-4 bg-[#0071E3]/10 rounded-xl flex items-center justify-center">
-                        <Icon className="text-[#0071E3]" size={24} />
+                    <CardTitle className="flex items-center" style={{ color: 'var(--text-primary)' }}>
+                      <div className="w-12 h-12 mr-4 rounded-xl flex items-center justify-center" style={{ backgroundColor: 'var(--accent-light)' }}>
+                        <Icon size={24} style={{ color: 'var(--accent)' }} />
                       </div>
-                      {integration.title}
+                      {api.title}
                     </CardTitle>
                   </CardHeader>
                   <CardContent>
-                    <p className="text-[#86868B] mb-4 text-sm">{integration.description}</p>
                     <div className="space-y-2">
-                      <div className="overline text-[#0071E3] mb-2">Key Endpoints:</div>
-                      {integration.endpoints.map((endpoint, idx) => (
-                        <div key={idx} className="bg-[#F5F5F7] rounded-lg p-2">
-                          <code className="text-[#0071E3] text-xs font-mono">{endpoint}</code>
+                      {api.endpoints.map((endpoint, idx) => (
+                        <div key={idx} className="rounded-lg p-2" style={{ backgroundColor: 'var(--bg-secondary)' }}>
+                          <code className="text-xs font-mono" style={{ color: 'var(--accent)' }}>{endpoint}</code>
                         </div>
                       ))}
                     </div>
@@ -146,10 +131,10 @@ export const SolutionArchitecture = () => {
           </div>
         </div>
 
-        {/* Technical Specifications */}
-        <Card className="bg-white border border-gray-200 shadow-lg rounded-3xl">
+        {/* Specs */}
+        <Card className="rounded-2xl" style={{ backgroundColor: 'var(--bg-card)', border: '1px solid var(--border)', boxShadow: 'var(--shadow-lg)' }}>
           <CardHeader>
-            <CardTitle className="text-2xl text-[#1D1D1F] text-center tracking-tight">Technical Specifications</CardTitle>
+            <CardTitle className="text-2xl text-center tracking-tight" style={{ color: 'var(--text-primary)' }}>Technical Specifications</CardTitle>
           </CardHeader>
           <CardContent className="p-8">
             <div className="grid grid-cols-2 md:grid-cols-4 gap-6">
@@ -159,9 +144,9 @@ export const SolutionArchitecture = () => {
                 { value: "99.99%", label: "Uptime SLA" },
                 { value: "256-bit", label: "AES Encryption" }
               ].map((spec, i) => (
-                <div key={i} className="text-center p-6 bg-[#F5F5F7] rounded-2xl">
-                  <div className="text-3xl font-semibold text-[#0071E3] mb-2 stat-number">{spec.value}</div>
-                  <div className="text-sm text-[#86868B]">{spec.label}</div>
+                <div key={i} className="text-center p-6 rounded-xl" style={{ backgroundColor: 'var(--accent-light)' }}>
+                  <div className="text-3xl font-bold mb-2 stat-number" style={{ color: 'var(--accent)' }}>{spec.value}</div>
+                  <div className="text-sm" style={{ color: 'var(--text-muted)' }}>{spec.label}</div>
                 </div>
               ))}
             </div>
